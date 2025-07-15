@@ -1,35 +1,28 @@
 name: 🏫 College Scraper
-
 on:
-  schedule:
-    # every day at 00:00 UTC
+  schedule:    # every day at 00:00 UTC
     - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+      - name: Dump repo contents
+        run: ls -R .
+
+      - uses: actions/setup-python@v4
+        with: python-version: '3.x'
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run overview.py
         run: python overview.py
-        # if you moved credentials to secrets, add:
-        # env:
-        #   SCRAPER_EMAIL:    ${{ secrets.SCRAPER_EMAIL }}
-        #   SCRAPER_PASSWORD: ${{ secrets.SCRAPER_PASSWORD }}
 
       - name: Commit & push results
         run: |
