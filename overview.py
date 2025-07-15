@@ -74,6 +74,7 @@ def main():
             if driver.title.lower().startswith("404") or driver.find_elements(
                 By.CSS_SELECTOR, "div.pageNotFound_container__1Wxjd"
             ):
+                logger.warning(f"⚠️ 404 for ID {cid} at {url}")
                 continue
 
             # scrape fields
