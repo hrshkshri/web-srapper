@@ -1,7 +1,7 @@
 name: 🏫 College Scraper
 on:
-  schedule:    # every day at 00:00 UTC
-    - cron: '0 0 * * *'
+  schedule: # every day at 00:00 UTC
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,8 @@ jobs:
         run: ls -R .
 
       - uses: actions/setup-python@v4
-        with: python-version: '3.x'
+        with:
+          python-version: "3.x"
 
       - name: Install dependencies
         run: |
