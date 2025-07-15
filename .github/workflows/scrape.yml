@@ -1,17 +1,17 @@
 name: 🏫 College Scraper
+
 on:
-  schedule: # every day at 00:00 UTC
+  schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 360 # ⏱️ prevent timeout-related cancel
+
     steps:
       - uses: actions/checkout@v3
-
-      - name: Dump repo contents
-        run: ls -R .
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -23,9 +23,17 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run overview.py
+      - name: Run scraper
         run: python overview.py
 
+      # ✅ Upload as artifact for safe backup
+      - name: Upload scraped data
+        uses: actions/upload-artifact@v4
+        with:
+          name: college-overviews
+          path: college_overviews.json
+
+      # ✅ Git commit only if data changed
       - name: Commit & push results
         run: |
           git config user.name "github-actions[bot]"
@@ -36,4 +44,3 @@ jobs:
             git push
           else
             echo "No changes to commit"
-          fi

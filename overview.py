@@ -32,8 +32,20 @@ def main():
     TIMEOUT = 20
     OUTPUT_FILE = "college_overviews.json"
 
-    # ─── RANGE TO TRY ─────────────────────────────────────────────────────
+    # ─── LOAD CHECKPOINT ──────────────────────────────────────────────────
+    overviews = []
+    counter = 0
     START_ID = 1
+
+    if os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            overviews = data.get("colleges", [])
+            counter = data.get("count", 0)
+            if overviews:
+                START_ID = overviews[-1]["id"] + 1
+                logger.info(f"🔁 Resuming from ID {START_ID}")
+
     END_ID = 10000
 
     # ─── START DRIVER ────────────────────────────────────────────────────
@@ -47,9 +59,6 @@ def main():
     driver = webdriver.Chrome(
         service=ChromeService(ChromeDriverManager().install()), options=options
     )
-
-    overviews = []
-    counter = 0
 
     try:
         # ─── 1) LOGIN ────────────────────────────────────────────────────────
@@ -113,7 +122,7 @@ def main():
                 except NoSuchElementException:
                     continue
 
-            # ─── only now count & append ───────────────────────────────────────
+            # ─── count, append, and periodically save ──────────────────────────
             counter += 1
             overviews.append(
                 {
@@ -127,13 +136,24 @@ def main():
             )
             logger.info(f"→ [{counter}] Scraped ID {cid}: {name or '[no name]'}")
 
+            # ✅ PERIODIC SAVE EVERY 100 ITEMS
+            if counter % 100 == 0:
+                with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+                    json.dump(
+                        {"count": counter, "colleges": overviews},
+                        f,
+                        indent=2,
+                        ensure_ascii=False,
+                    )
+                    logger.info(f"💾 Saved checkpoint at {counter} entries")
+
     except Exception:
         logger.error("❌ An error occurred:\n" + traceback.format_exc())
 
     finally:
-        # ─── DUMP WITH COUNTER ──────────────────────────────────────────────
+        # ✅ FINAL SAVE
         output = {"count": counter, "colleges": overviews}
-        logger.info(f"Writing {output['count']} overviews to {OUTPUT_FILE}")
+        logger.info(f"✅ Writing final {output['count']} overviews to {OUTPUT_FILE}")
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
         driver.quit()
