@@ -68,16 +68,19 @@ def main():
         for cid in range(START_ID, END_ID + 1):
             url = f"{BASE_URL}/{cid}/overview"
             driver.get(url)
-            time.sleep(1)
 
-            # skip 404 or React “page not found”
-            if driver.title.lower().startswith("404") or driver.find_elements(
-                By.CSS_SELECTOR, "div.pageNotFound_container__1Wxjd"
-            ):
-                logger.warning(f"⚠️ 404 for ID {cid} at {url}")
+            # ─── only proceed if the detail container actually loads ────────────
+            try:
+                WebDriverWait(driver, TIMEOUT).until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, "div[class^='viewDetail_container']")
+                    )
+                )
+            except TimeoutException:
+                logger.warning(f"→ ID {cid} failed to load detail container, skipping")
                 continue
 
-            # scrape fields
+            # ─── scrape fields now that we know it’s valid ─────────────────────
             name = location = ""
             try:
                 name = driver.find_element(
@@ -93,7 +96,6 @@ def main():
             except NoSuchElementException:
                 pass
 
-            # overview blocks
             overview = {}
             blocks = driver.find_elements(
                 By.CSS_SELECTOR, "div[class^='OverviewDetails_container']"
@@ -111,9 +113,8 @@ def main():
                 except NoSuchElementException:
                     continue
 
-            # increment our scraped‐items counter
+            # ─── only now count & append ───────────────────────────────────────
             counter += 1
-
             overviews.append(
                 {
                     "counter": counter,
