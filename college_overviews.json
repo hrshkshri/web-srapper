@@ -1,99 +1,37 @@
 {
-  "count": 6,
+  "count": 4,
   "colleges": [
     {
       "counter": 1,
-      "id": 1000,
-      "url": "https://assessment.jitinchawla.com/colleges/1000/overview",
+      "id": 20000,
+      "url": "https://assessment.jitinchawla.com/colleges/20000/overview",
       "name": "",
       "location": "",
       "overview": {}
     },
     {
       "counter": 2,
-      "id": 1001,
-      "url": "https://assessment.jitinchawla.com/colleges/1001/overview",
-      "name": "St. Paul's College of Pharmacy",
-      "location": "Hyderabad, Telangana, India",
-      "overview": {
-        "College Type": [
-          "College Type",
-          "Private"
-        ],
-        "Number of Courses": [
-          "Number of Courses",
-          "5",
-          "View Course"
-        ],
-        "Affiliations": [
-          "Affiliations",
-          "Osmania University"
-        ],
-        "Approved by": [
-          "Approved by",
-          "UGC"
-        ]
-      }
+      "id": 20002,
+      "url": "https://assessment.jitinchawla.com/colleges/20002/overview",
+      "name": "",
+      "location": "",
+      "overview": {}
     },
     {
       "counter": 3,
-      "id": 1002,
-      "url": "https://assessment.jitinchawla.com/colleges/1002/overview",
+      "id": 20003,
+      "url": "https://assessment.jitinchawla.com/colleges/20003/overview",
       "name": "",
       "location": "",
       "overview": {}
     },
     {
       "counter": 4,
-      "id": 1003,
-      "url": "https://assessment.jitinchawla.com/colleges/1003/overview",
-      "name": "St. Wilfreds College of Law",
-      "location": "Jaipur, Rajasthan, India",
-      "overview": {
-        "College Type": [
-          "College Type",
-          "Private"
-        ],
-        "Number of Courses": [
-          "Number of Courses",
-          "3",
-          "View Course"
-        ]
-      }
-    },
-    {
-      "counter": 5,
-      "id": 1004,
-      "url": "https://assessment.jitinchawla.com/colleges/1004/overview",
+      "id": 20004,
+      "url": "https://assessment.jitinchawla.com/colleges/20004/overview",
       "name": "",
       "location": "",
       "overview": {}
-    },
-    {
-      "counter": 6,
-      "id": 1005,
-      "url": "https://assessment.jitinchawla.com/colleges/1005/overview",
-      "name": "SJ Mahavidyalaya",
-      "location": "Kanpur, Uttar Pradesh, India",
-      "overview": {
-        "College Type": [
-          "College Type",
-          "Private"
-        ],
-        "Number of Courses": [
-          "Number of Courses",
-          "22",
-          "View Course"
-        ],
-        "Affiliations": [
-          "Affiliations",
-          "CSJM University"
-        ],
-        "Approved by": [
-          "Approved by",
-          "UGC"
-        ]
-      }
     }
   ]
 }
