@@ -33,8 +33,8 @@ def main():
     OUTPUT_FILE = "college_overviews.json"
 
     # ─── RANGE TO TRY ─────────────────────────────────────────────────────
-    START_ID = 1000
-    END_ID = 1005
+    START_ID = 20000
+    END_ID = 20005
 
     # ─── START DRIVER ────────────────────────────────────────────────────
     options = Options()
