@@ -1,34 +1,18 @@
 {
-  "count": 4,
+  "count": 2,
   "colleges": [
     {
       "counter": 1,
-      "id": 20000,
-      "url": "https://assessment.jitinchawla.com/colleges/20000/overview",
+      "id": 20001,
+      "url": "https://assessment.jitinchawla.com/colleges/20001/overview",
       "name": "",
       "location": "",
       "overview": {}
     },
     {
       "counter": 2,
-      "id": 20002,
-      "url": "https://assessment.jitinchawla.com/colleges/20002/overview",
-      "name": "",
-      "location": "",
-      "overview": {}
-    },
-    {
-      "counter": 3,
       "id": 20003,
       "url": "https://assessment.jitinchawla.com/colleges/20003/overview",
-      "name": "",
-      "location": "",
-      "overview": {}
-    },
-    {
-      "counter": 4,
-      "id": 20004,
-      "url": "https://assessment.jitinchawla.com/colleges/20004/overview",
       "name": "",
       "location": "",
       "overview": {}
