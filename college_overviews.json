@@ -1,21 +1,4 @@
 {
-  "count": 2,
-  "colleges": [
-    {
-      "counter": 1,
-      "id": 20001,
-      "url": "https://assessment.jitinchawla.com/colleges/20001/overview",
-      "name": "",
-      "location": "",
-      "overview": {}
-    },
-    {
-      "counter": 2,
-      "id": 20003,
-      "url": "https://assessment.jitinchawla.com/colleges/20003/overview",
-      "name": "",
-      "location": "",
-      "overview": {}
-    }
-  ]
+  "count": 0,
+  "colleges": []
 }
