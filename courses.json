@@ -186,5 +186,67 @@
         }
       }
     ]
+  },
+  {
+    "id": 5,
+    "url": "https://assessment.jitinchawla.com/colleges/5/overview",
+    "name": "A.K.K. New Law Academy",
+    "location": "Pune, Maharashtra, India",
+    "courses": [
+      {
+        "title": "B.A. LL.B. in Law",
+        "program": {},
+        "fees": {},
+        "extras": {}
+      },
+      {
+        "title": "LL.M. in Law",
+        "program": {
+          "Level": "Post Graduate",
+          "Mode": "Full Time",
+          "Duration": "2 years",
+          "Tuition Fee (Full Course)": "INR 34500/-"
+        },
+        "fees": {
+          "Choose Category": null,
+          "Fee Total": "undefined null/-"
+        },
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "LL.B. in Law",
+        "program": {
+          "Level": "Post Graduate",
+          "Mode": "Full Time",
+          "Duration": "3 years",
+          "Tuition Fee (Full Course)": "INR 66000/-"
+        },
+        "fees": {
+          "Choose Category": null,
+          "Fee Total": "undefined null/-"
+        },
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "B.A. LL.B. in Arts",
+        "program": {
+          "Level": "Under Graduate",
+          "Mode": "Full Time",
+          "Duration": "5 years",
+          "Tuition Fee (Full Course)": "INR 52500/-"
+        },
+        "fees": {
+          "Choose Category": null,
+          "Fee Total": "undefined null/-"
+        },
+        "extras": {
+          "Course Detail": null
+        }
+      }
+    ]
   }
 ]
