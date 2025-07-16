@@ -1,48 +1,267 @@
 [
   {
+    "id": 2,
+    "url": "https://assessment.jitinchawla.com/colleges/5954/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "B.Voc. in Software Development",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.Sc. in Chemistry",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.C.A. in Computer Application",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "M.C.A. in Computer Application",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.B.A. in Business Administration",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.Sc. in Mathematics",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.Tech. in Electronics & Communication Engineering",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.A. in Arts",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.Com. in Commerce",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "url": "https://assessment.jitinchawla.com/colleges/5955/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "M.D.S. in Pedodontia",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "M.D.S. in Periodontics",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "M.D.S. in Conservative Dentistry",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.D.S. in Dental Surgery",
+        "Eligibility": {
+          "Category": "General",
+          "Aggregate Marks": {
+            "Class": null,
+            "Marks required": null
+          },
+          "Mandatory Subjects": {
+            "headings": [
+              "Class",
+              "Subjects",
+              "Marks required"
+            ],
+            "rows": [
+              [
+                "12th",
+                "Physics",
+                "-"
+              ],
+              [
+                "12th",
+                "Biology",
+                "-"
+              ],
+              [
+                "12th",
+                "Chemistry",
+                "-"
+              ],
+              [
+                "12th",
+                "English",
+                "-"
+              ]
+            ]
+          }
+        },
+        "Exam": {
+          "Exam Name": "NEET-UG",
+          "Cut Off Scores": {}
+        },
+        "Intake": null
+      }
+    ]
+  },
+  {
     "id": 4,
     "url": "https://assessment.jitinchawla.com/colleges/5954/overview",
     "name": null,
     "admissions": [
       {
         "title": "B.Voc. in Software Development",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.Sc. in Chemistry",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.C.A. in Computer Application",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "M.C.A. in Computer Application",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.B.A. in Business Administration",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.Sc. in Mathematics",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.Tech. in Electronics & Communication Engineering",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.A. in Arts",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.Com. in Commerce",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
       },
       {
         "title": "B.Sc. in Physics",
-        "admission": {}
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "url": "https://assessment.jitinchawla.com/colleges/5955/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "M.D.S. in Pedodontia",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "M.D.S. in Periodontics",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "M.D.S. in Conservative Dentistry",
+        "Eligibility": null,
+        "Exam": null,
+        "Intake": null
+      },
+      {
+        "title": "B.D.S. in Dental Surgery",
+        "Eligibility": {
+          "Category": "General",
+          "Aggregate Marks": {
+            "Class": null,
+            "Marks required": null
+          },
+          "Mandatory Subjects": {
+            "headings": [
+              "Class",
+              "Subjects",
+              "Marks required"
+            ],
+            "rows": [
+              [
+                "12th",
+                "Physics",
+                "-"
+              ],
+              [
+                "12th",
+                "Biology",
+                "-"
+              ],
+              [
+                "12th",
+                "Chemistry",
+                "-"
+              ],
+              [
+                "12th",
+                "English",
+                "-"
+              ]
+            ]
+          }
+        },
+        "Exam": {
+          "Exam Name": "NEET-UG",
+          "Cut Off Scores": {}
+        },
+        "Intake": null
       }
     ]
   }
