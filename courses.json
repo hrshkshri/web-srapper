@@ -1,1 +1,190 @@
-[]
+[
+  {
+    "id": 1,
+    "url": "https://assessment.jitinchawla.com/colleges/1/overview",
+    "name": "7Chords Music Academy",
+    "location": "Pune, Maharashtra, India",
+    "courses": [
+      {
+        "title": "Diploma in Music",
+        "program": {},
+        "fees": {},
+        "extras": {}
+      },
+      {
+        "title": "Certificate in Keyboards Program",
+        "program": {
+          "Level": "Certificate",
+          "Mode": "Full Time",
+          "Duration": "1 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "Certificate in Guitar Program",
+        "program": {
+          "Level": "Certificate",
+          "Mode": "Full Time",
+          "Duration": "1 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "Certificate in Piano",
+        "program": {
+          "Level": "Certificate",
+          "Mode": "Full Time",
+          "Duration": "1 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "Certificate in Drums Program",
+        "program": {
+          "Level": "Certificate",
+          "Mode": "Full Time",
+          "Duration": "1 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "Certificate in Violin",
+        "program": {
+          "Level": "Certificate",
+          "Mode": "Full Time",
+          "Duration": "1 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "Certificate in Singing Vocal",
+        "program": {
+          "Level": "Certificate",
+          "Mode": "Full Time",
+          "Duration": "1 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "url": "https://assessment.jitinchawla.com/colleges/2/overview",
+    "name": "A.K. Chanda Law College Silchar",
+    "location": "Silchar, Assam, India",
+    "courses": [
+      {
+        "title": "LL.B. in Law",
+        "program": {},
+        "fees": {},
+        "extras": {}
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "url": "https://assessment.jitinchawla.com/colleges/3/overview",
+    "name": "Acharya College of Education",
+    "location": "Bengaluru, Karnataka, India",
+    "courses": [
+      {
+        "title": "Diploma in Elementary Education",
+        "program": {},
+        "fees": {},
+        "extras": {}
+      },
+      {
+        "title": "B.Ed. in Education",
+        "program": {
+          "Level": "Post Graduate",
+          "Mode": "Full Time",
+          "Duration": "2 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "url": "https://assessment.jitinchawla.com/colleges/4/overview",
+    "name": "Acharya School of Design",
+    "location": "Bengaluru, Karnataka, India",
+    "courses": [
+      {
+        "title": "B.Des. in Graphic Design",
+        "program": {},
+        "fees": {},
+        "extras": {}
+      },
+      {
+        "title": "B.Des. in Interior & Spatial Design",
+        "program": {
+          "Level": "Under Graduate",
+          "Mode": "Full Time",
+          "Duration": "4 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "B.Des. in Product Design",
+        "program": {
+          "Level": "Under Graduate",
+          "Mode": "Full Time",
+          "Duration": "4 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "B.Des. in Painting",
+        "program": {
+          "Level": "Under Graduate",
+          "Mode": "Full Time",
+          "Duration": "4 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      },
+      {
+        "title": "B.Des. in Animation & Multimedia Design",
+        "program": {
+          "Level": "Under Graduate",
+          "Mode": "Full Time",
+          "Duration": "4 years"
+        },
+        "fees": {},
+        "extras": {
+          "Course Detail": null
+        }
+      }
+    ]
+  }
+]
