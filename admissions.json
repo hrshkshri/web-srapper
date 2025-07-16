@@ -1,100 +1,435 @@
 [
   {
     "id": 1,
-    "url": "https://assessment.jitinchawla.com/colleges/1/overview",
+    "url": "https://assessment.jitinchawla.com/colleges/5953/overview",
     "name": null,
     "admissions": [
       {
-        "title": "Certificate in Keyboards Program",
-        "admission": {}
+        "title": "M.Tech. (Integrated) in Robotics",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
       },
       {
-        "title": "Certificate in Guitar Program",
-        "admission": {}
+        "title": "B.Tech. in Engineering Physics",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
       },
       {
-        "title": "Certificate in Piano",
-        "admission": {}
+        "title": "M.Tech. (Integrated) in Automative Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
       },
       {
-        "title": "Certificate in Drums Program",
-        "admission": {}
+        "title": "M.Tech. (Integrated) in Biological Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
       },
       {
-        "title": "Certificate in Violin",
-        "admission": {}
+        "title": "B.Tech. in Metallurgical & Materials Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
       },
       {
-        "title": "Certificate in Singing Vocal",
-        "admission": {}
+        "title": "B.Tech. in Computer Science & Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
+      },
+      {
+        "title": "B.Tech. in Chemical Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
+      },
+      {
+        "title": "B.Tech. in Aerospace Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
+      },
+      {
+        "title": "B.Tech. in Mechanical Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
+      },
+      {
+        "title": "M.Tech. (Integrated) in Mechanical (Mechanical Design)",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
+      },
+      {
+        "title": "B.Tech. in Naval Architecture & Ocean Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
+      },
+      {
+        "title": "M.Tech. (Integrated) in Aerospace Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
+      },
+      {
+        "title": "B.Tech. in Civil Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
+      },
+      {
+        "title": "M.Tech. (Integrated) in Mechanical (Thermal Engineering)",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
+      },
+      {
+        "title": "M.Tech. (Integrated) in Chemical Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
+      },
+      {
+        "title": "M.Tech. (Integrated) in Mechanical (Intelligent Manufacturing)",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
+      },
+      {
+        "title": "M.Tech. (Integrated) in Naval Architecture & Ocean Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          }
+        }
+      },
+      {
+        "title": "B.Tech. in Electrical Engineering",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
+      },
+      {
+        "title": "M.Tech. (Integrated) in Engineering Design",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "JEE-Advanced",
+            "Cut Off Scores": {
+              "Physics": "-",
+              "Chemistry": "-",
+              "Mathematics": "-"
+            }
+          },
+          "Intake": null
+        }
       }
     ]
   },
   {
     "id": 2,
-    "url": "https://assessment.jitinchawla.com/colleges/2/overview",
-    "name": null,
-    "admissions": []
-  },
-  {
-    "id": 3,
-    "url": "https://assessment.jitinchawla.com/colleges/3/overview",
+    "url": "https://assessment.jitinchawla.com/colleges/5954/overview",
     "name": null,
     "admissions": [
       {
-        "title": "B.Ed. in Education",
+        "title": "B.Voc. in Software Development",
         "admission": {}
+      },
+      {
+        "title": "B.Sc. in Chemistry",
+        "admission": {}
+      },
+      {
+        "title": "B.C.A. in Computer Application",
+        "admission": {}
+      },
+      {
+        "title": "M.C.A. in Computer Application",
+        "admission": {}
+      },
+      {
+        "title": "B.B.A. in Business Administration",
+        "admission": {}
+      },
+      {
+        "title": "B.Sc. in Mathematics",
+        "admission": {}
+      },
+      {
+        "title": "B.Tech. in Electronics & Communication Engineering",
+        "admission": {}
+      },
+      {
+        "title": "B.A. in Arts",
+        "admission": {}
+      },
+      {
+        "title": "B.Com. in Commerce",
+        "admission": {}
+      },
+      {
+        "title": "B.Sc. in Physics",
+        "admission": {}
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "url": "https://assessment.jitinchawla.com/colleges/5955/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "M.D.S. in Pedodontia",
+        "admission": {}
+      },
+      {
+        "title": "M.D.S. in Periodontics",
+        "admission": {}
+      },
+      {
+        "title": "M.D.S. in Conservative Dentistry",
+        "admission": {}
+      },
+      {
+        "title": "B.D.S. in Dental Surgery",
+        "admission": {
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "NEET-UG",
+            "Cut Off Scores": {}
+          }
+        }
       }
     ]
   },
   {
     "id": 4,
-    "url": "https://assessment.jitinchawla.com/colleges/4/overview",
+    "url": "https://assessment.jitinchawla.com/colleges/5954/overview",
     "name": null,
     "admissions": [
       {
-        "title": "B.Des. in Interior & Spatial Design",
-        "admission": {
-          "Eligibility": null
-        }
+        "title": "B.Voc. in Software Development",
+        "admission": {}
       },
       {
-        "title": "B.Des. in Product Design",
-        "admission": {
-          "Eligibility": null
-        }
+        "title": "B.Sc. in Chemistry",
+        "admission": {}
       },
       {
-        "title": "B.Des. in Painting",
-        "admission": {
-          "Eligibility": null
-        }
+        "title": "B.C.A. in Computer Application",
+        "admission": {}
       },
       {
-        "title": "B.Des. in Animation & Multimedia Design",
-        "admission": {
-          "Eligibility": null
-        }
+        "title": "M.C.A. in Computer Application",
+        "admission": {}
+      },
+      {
+        "title": "B.B.A. in Business Administration",
+        "admission": {}
+      },
+      {
+        "title": "B.Sc. in Mathematics",
+        "admission": {}
+      },
+      {
+        "title": "B.Tech. in Electronics & Communication Engineering",
+        "admission": {}
+      },
+      {
+        "title": "B.A. in Arts",
+        "admission": {}
+      },
+      {
+        "title": "B.Com. in Commerce",
+        "admission": {}
+      },
+      {
+        "title": "B.Sc. in Physics",
+        "admission": {}
       }
     ]
   },
   {
     "id": 5,
-    "url": "https://assessment.jitinchawla.com/colleges/5/overview",
+    "url": "https://assessment.jitinchawla.com/colleges/5955/overview",
     "name": null,
     "admissions": [
       {
-        "title": "LL.M. in Law",
+        "title": "M.D.S. in Pedodontia",
         "admission": {}
       },
       {
-        "title": "LL.B. in Law",
+        "title": "M.D.S. in Periodontics",
         "admission": {}
       },
       {
-        "title": "B.A. LL.B. in Arts",
+        "title": "M.D.S. in Conservative Dentistry",
+        "admission": {}
+      },
+      {
+        "title": "B.D.S. in Dental Surgery",
         "admission": {
-          "Eligibility": null
+          "Eligibility": null,
+          "Exam": {
+            "Exam Name": "NEET-UG",
+            "Cut Off Scores": {}
+          }
         }
       }
     ]
