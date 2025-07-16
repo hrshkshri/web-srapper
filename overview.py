@@ -46,7 +46,7 @@ def main():
                 START_ID = overviews[-1]["id"] + 1
                 logger.info(f"🔁 Resuming from ID {START_ID}")
 
-    END_ID = 10000
+    END_ID = 1000
 
     # ─── START DRIVER ────────────────────────────────────────────────────
     options = Options()
