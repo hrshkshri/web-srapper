@@ -179,9 +179,16 @@ def main():
 
     # 2) start driver & login
     opts = Options()
-    opts.add_argument("--headless")
+    # use the newer headless mode (optional, but recommended)
+    opts.add_argument("--headless=new")
+    # already had these two…
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
+    # add this flag to avoid /dev/shm crashes
+    opts.add_argument("--disable-dev-shm-usage")
+    # (optional) extra sandbox bypass for some containers
+    opts.add_argument("--disable-setuid-sandbox")
+
     driver = webdriver.Chrome(
         service=ChromeService(ChromeDriverManager().install()), options=opts
     )
