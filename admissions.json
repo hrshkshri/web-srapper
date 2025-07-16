@@ -48,6 +48,37 @@
     ]
   },
   {
+    "id": 4,
+    "url": "https://assessment.jitinchawla.com/colleges/4/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "B.Des. in Interior & Spatial Design",
+        "admission": {
+          "Eligibility": null
+        }
+      },
+      {
+        "title": "B.Des. in Product Design",
+        "admission": {
+          "Eligibility": null
+        }
+      },
+      {
+        "title": "B.Des. in Painting",
+        "admission": {
+          "Eligibility": null
+        }
+      },
+      {
+        "title": "B.Des. in Animation & Multimedia Design",
+        "admission": {
+          "Eligibility": null
+        }
+      }
+    ]
+  },
+  {
     "id": 5,
     "url": "https://assessment.jitinchawla.com/colleges/5/overview",
     "name": null,
