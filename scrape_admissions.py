@@ -24,7 +24,7 @@ URL_FILE = Path("url.json")
 OUTPUT_FILE = Path("admissions.json")
 EMAIL = os.getenv("SCRAPER_EMAIL", "ribhu.chadha@gmail.com")
 PASSWORD = os.getenv("SCRAPER_PASSWORD", "123456")
-TIMEOUT = 20  # seconds
+TIMEOUT = 20
 
 # ─── LOGGING ────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -36,9 +36,6 @@ logger = logging.getLogger(__name__)
 
 
 def safe_click(driver, element):
-    """
-    Try element.click(); if it's intercepted, scroll into view and JS-click.
-    """
     try:
         element.click()
     except ElementClickInterceptedException:
@@ -61,207 +58,204 @@ def login(driver):
 
 
 def scrape_admission(driver, entry):
-    detail_url = entry["url"]
-    logger.info(f"→ Visiting {detail_url} (Admission)")
-    driver.get(detail_url)
+    driver.get(entry["url"])
+    logger.info(f"→ Visiting {entry['url']} (Admission)")
 
-    # 1) Click the Admission tab
+    # click Admission tab
     WebDriverWait(driver, TIMEOUT).until(
         EC.presence_of_element_located(
             (By.CSS_SELECTOR, "[class*='viewDetail_tabContainer']")
         )
     )
-    tab3 = driver.find_element(By.CSS_SELECTOR, "#tab-3")
-    safe_click(driver, tab3)
+    tab = driver.find_element(By.CSS_SELECTOR, "#tab-3")
+    safe_click(driver, tab)
     WebDriverWait(driver, TIMEOUT).until(
         EC.presence_of_element_located(
-            (By.CSS_SELECTOR, "div[class*='Admission_mainDiv']")
+            (By.CSS_SELECTOR, "[class*='Admission_mainDiv']")
         )
     )
 
-    # 2) Load more
+    # load more
     while True:
         try:
-            lm = driver.find_element(
-                By.CSS_SELECTOR, "div[class*='Admission_load_more']"
-            )
+            lm = driver.find_element(By.CSS_SELECTOR, "[class*='Admission_load_more']")
             logger.info("   Clicking “Load More”")
             safe_click(driver, lm)
             time.sleep(1.2)
         except NoSuchElementException:
             break
 
-    # 3) Scrape each card
-    admissions = []
-    cards = driver.find_elements(
-        By.CSS_SELECTOR, "div[class*='ExpandableCard_container']"
-    )
+    cards = driver.find_elements(By.CSS_SELECTOR, "[class*='ExpandableCard_container']")
+    result = {
+        "id": entry["id"],
+        "url": entry["url"],
+        "name": entry.get("name"),
+        "admissions": [],
+    }
+
     for card in cards:
         title = card.find_element(
-            By.CSS_SELECTOR, "div[class*='ExpandableCard_titleText']"
+            By.CSS_SELECTOR, "[class*='ExpandableCard_titleText']"
         ).text.strip()
-
-        # expand the card
-        toggle = card.find_element(
-            By.CSS_SELECTOR, "div[class*='ExpandableCard_titleDiv']"
+        safe_click(
+            driver,
+            card.find_element(By.CSS_SELECTOR, "[class*='ExpandableCard_titleDiv']"),
         )
-        safe_click(driver, toggle)
-        time.sleep(0.5)
+        time.sleep(0.3)
 
-        # find the dropdown container
-        dropdowns = card.find_elements(
-            By.CSS_SELECTOR, "div[class*='ExpandableCard_dropDownContainer']"
+        # find dropdown container
+        dd = card.find_elements(
+            By.CSS_SELECTOR, "[class*='ExpandableCard_dropDownContainer']"
         )
-        if not dropdowns:
-            logger.warning(f"No Admission tabs for “{title}” — skipping")
+        if not dd:
+            logger.warning(f"No Admission tabs for “{title}” – skipping")
             continue
-        dropdown = dropdowns[0]
+        container = dd[0]
 
-        data = {"title": title, "admission": {}}
+        data = {"title": title, "Eligibility": None, "Exam": None, "Intake": None}
 
-        # map tab-names → the CSS-selector for that panel
-        tab_to_panel = {
-            "eligibility": "div[class*='Eligibility_container']",
-            "exam": "div[class*='ExamCourseTab_mainContainer']",
-            "intake": "div[class*='Intake_container']",
+        # map tab name to panel selector
+        panels = {
+            "eligibility": "[class*='Eligibility_container']",
+            "exam": "[class*='ExamCourseTab_mainContainer']",
+            "intake": "[class*='Intake_container']",
         }
 
-        tabs = dropdown.find_elements(
-            By.CSS_SELECTOR, "div[class*='ChipTabs_tabTitle']"
-        )
+        tabs = container.find_elements(By.CSS_SELECTOR, "[class*='ChipTabs_tabTitle']")
         for tab in tabs:
             name = tab.text.strip().lower()
-            if name not in tab_to_panel:
+            if name not in panels:
                 continue
-
-            # click + wait for panel
             safe_click(driver, tab)
-            panel_sel = tab_to_panel[name]
+            sel = panels[name]
             WebDriverWait(driver, TIMEOUT).until(
-                EC.visibility_of_element_located((By.CSS_SELECTOR, panel_sel))
+                EC.visibility_of_element_located((By.CSS_SELECTOR, sel))
             )
-            cont = dropdown.find_element(By.CSS_SELECTOR, panel_sel)
+            cont = container.find_element(By.CSS_SELECTOR, sel)
 
-            # ─ Eligibility ─────────────────────────────────────────
             if name == "eligibility":
                 elig = {}
                 # Category
                 try:
                     elig["Category"] = cont.find_element(
                         By.CSS_SELECTOR,
-                        "div[class*='Common_categoryDiv'] div[class*='Common_dropDownDiv'] > div",
+                        "[class*='Common_categoryDiv'] [class*='Common_dropDownDiv'] > div",
                     ).text.strip()
                 except NoSuchElementException:
                     elig["Category"] = None
-
                 # Aggregate Marks
                 agg = {}
-                for blk in cont.find_elements(
-                    By.CSS_SELECTOR,
-                    "div[class*='Eligibility_aggregate_marks_children'] "
-                    "div[class*='Common_vertical_inner_container']",
-                ):
-                    k = blk.find_element(
+                try:
+                    agg_container = cont.find_element(
                         By.CSS_SELECTOR,
-                        "div[class*='Common_vertical_inner_container_heading'] div[class*='Common_title']",
-                    ).text.strip()
-                    v = blk.find_element(
-                        By.CSS_SELECTOR, "div[class*='Eligibility_value_class']"
-                    ).text.strip()
-                    agg[k] = v
+                        "[class*='Eligibility_aggregate_marks_children']",
+                    )
+                    blocks = agg_container.find_elements(
+                        By.CSS_SELECTOR, "[class*='Common_vertical_inner_container']"
+                    )
+                    for blk in blocks:
+                        key = blk.find_element(
+                            By.CSS_SELECTOR,
+                            "[class*='Common_vertical_inner_container_heading'] [class*='Common_title']",
+                        ).text.strip()
+                        try:
+                            val = blk.find_element(
+                                By.CSS_SELECTOR, "[class*='Eligibility_value']"
+                            ).text.strip()
+                        except NoSuchElementException:
+                            val = None
+                        agg[key] = val
+                except NoSuchElementException:
+                    agg = {}
                 elig["Aggregate Marks"] = agg
-
                 # Mandatory Subjects
-                grid = cont.find_element(
-                    By.CSS_SELECTOR, "div[class*='Common_eligibility_grid_container']"
-                )
-                heads = [
-                    h.text.strip()
-                    for h in grid.find_elements(
-                        By.CSS_SELECTOR,
-                        "div[class*='Common_eligibility_grid_container_heading']",
+                try:
+                    grid = cont.find_element(
+                        By.CSS_SELECTOR, "[class*='Common_eligibility_grid_container']"
                     )
-                ]
-                cells = [
-                    c.text.strip()
-                    for c in grid.find_elements(
-                        By.CSS_SELECTOR,
-                        "div[class*='Common_eligibility_grid_container_cell']",
-                    )
-                ]
-                rows = [
-                    cells[i : i + len(heads)] for i in range(0, len(cells), len(heads))
-                ]
-                elig["Mandatory Subjects"] = {"headings": heads, "rows": rows}
+                    headers = [
+                        h.text.strip()
+                        for h in grid.find_elements(
+                            By.CSS_SELECTOR,
+                            "[class*='Common_eligibility_grid_container_heading']",
+                        )
+                    ]
+                    cells = [
+                        c.text.strip()
+                        for c in grid.find_elements(
+                            By.CSS_SELECTOR,
+                            "[class*='Common_eligibility_grid_container_cell']",
+                        )
+                    ]
+                    rows = [
+                        cells[i : i + len(headers)]
+                        for i in range(0, len(cells), len(headers))
+                    ]
+                    elig["Mandatory Subjects"] = {"headings": headers, "rows": rows}
+                except NoSuchElementException:
+                    elig["Mandatory Subjects"] = {"headings": [], "rows": []}
 
-                data["admission"]["Eligibility"] = elig
+                data["Eligibility"] = elig
 
-            # ─ Exam ────────────────────────────────────────────────
             elif name == "exam":
                 exam = {}
-                exam["Exam Name"] = cont.find_element(
-                    By.CSS_SELECTOR, "span[class*='ExamCourseTab_name']"
-                ).text.strip()
-                table = {}
-                for sec in cont.find_elements(
-                    By.CSS_SELECTOR, "div[class*='ExamCourseTab_subjectSubContainer']"
-                ):
-                    subj = sec.find_element(
-                        By.CSS_SELECTOR, "p[class*='ExamCourseTab_subject']"
+                try:
+                    exam["Exam Name"] = cont.find_element(
+                        By.CSS_SELECTOR, "[class*='ExamCourseTab_name']"
                     ).text.strip()
-                    score = sec.find_element(
-                        By.CSS_SELECTOR, "p[class*='ExamCourseTab_score']"
-                    ).text.strip()
-                    table[subj] = score
-                exam["Cut Off Scores"] = table
+                    table = {}
+                    for sec in cont.find_elements(
+                        By.CSS_SELECTOR, "[class*='ExamCourseTab_subjectSubContainer']"
+                    ):
+                        subj = sec.find_element(
+                            By.CSS_SELECTOR, "[class*='ExamCourseTab_subject']"
+                        ).text.strip()
+                        score = sec.find_element(
+                            By.CSS_SELECTOR, "[class*='ExamCourseTab_score']"
+                        ).text.strip()
+                        table[subj] = score
+                    exam["Cut Off Scores"] = table
+                except NoSuchElementException:
+                    pass
+                data["Exam"] = exam
 
-                data["admission"]["Exam"] = exam
-
-            # ─ Intake ──────────────────────────────────────────────
             elif name == "intake":
                 intake = {}
                 # Summary
-                summary = {}
+                summ = {}
                 for pair in cont.find_elements(
-                    By.CSS_SELECTOR, "div[class*='Intake_first'] > div"
+                    By.CSS_SELECTOR, "[class*='Intake_first'] > div"
                 ):
                     h = pair.find_element(
-                        By.CSS_SELECTOR, "p[class*='Intake_headtext']"
+                        By.CSS_SELECTOR, "[class*='Intake_headtext']"
                     ).text.strip()
                     s = pair.find_element(
-                        By.CSS_SELECTOR, "p[class*='Intake_subText']"
+                        By.CSS_SELECTOR, "[class*='Intake_subText']"
                     ).text.strip()
-                    summary[h] = s
-                intake["Summary"] = summary
-
+                    summ[h] = s
+                intake["Summary"] = summ
                 # Category
                 try:
                     intake["Category"] = cont.find_element(
-                        By.CSS_SELECTOR, "div[class*='Intake_dropDownDiv'] p"
+                        By.CSS_SELECTOR, "[class*='Intake_dropDownDiv'] p"
                     ).text.strip()
                 except NoSuchElementException:
                     intake["Category"] = None
-
                 # Quota
                 try:
                     intake["Quota"] = cont.find_element(
                         By.CSS_SELECTOR,
-                        "div[class*='Intake_fourth'] p[class*='Intake_subText']",
+                        "[class*='Intake_fourth'] [class*='Intake_subText']",
                     ).text.strip()
                 except NoSuchElementException:
                     intake["Quota"] = None
 
-                data["admission"]["Intake"] = intake
+                data["Intake"] = intake
 
-        admissions.append(data)
+        result["admissions"].append(data)
         logger.info(f"   • Scraped admission for: {title}")
 
-    return {
-        "id": entry["id"],
-        "url": detail_url,
-        "name": entry.get("name"),
-        "admissions": admissions,
-    }
+    return result
 
 
 def main():
@@ -285,16 +279,16 @@ def main():
 
     try:
         login(driver)
-        results = []
+        all_results = []
         for entry in url_list:
             try:
-                results.append(scrape_admission(driver, entry))
+                all_results.append(scrape_admission(driver, entry))
             except Exception:
                 logger.exception(f"Error scraping admission for ID {entry['id']}")
         OUTPUT_FILE.write_text(
-            json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8"
+            json.dumps(all_results, indent=2, ensure_ascii=False), encoding="utf-8"
         )
-        logger.info(f"Wrote {len(results)} admission records to {OUTPUT_FILE}")
+        logger.info(f"Wrote {len(all_results)} admission records to {OUTPUT_FILE}")
     finally:
         driver.quit()
 
