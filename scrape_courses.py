@@ -3,12 +3,15 @@ import time
 import logging
 import os
 from pathlib import Path
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
+
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────
@@ -46,36 +49,37 @@ def login(driver):
 
 
 def scrape_one(driver, entry):
-    """
-    Given driver on an overview URL, click the Courses tab,
-    load all courses, and scrape each one.
-    Returns a dict with id, detail_url, name, location, courses:list.
-    """
     detail_url = entry["url"]
     logger.info(f"→ Visiting {detail_url}")
     driver.get(detail_url)
 
-    # wait for the overview container
+    # wait for the overview container (matches viewDetail_container__hash)
     WebDriverWait(driver, TIMEOUT).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "div.viewDetail_container"))
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, "div[class*='viewDetail_container']")
+        )
     )
 
     # grab name + location
-    name_el = driver.find_element(By.CSS_SELECTOR, "div.viewDetail_headingSection p")
-    loc_el = driver.find_element(By.CSS_SELECTOR, "div.viewDetail_subHeading p")
+    name_el = driver.find_element(
+        By.CSS_SELECTOR, "[class*='viewDetail_headingSection'] p"
+    )
+    loc_el = driver.find_element(By.CSS_SELECTOR, "[class*='viewDetail_subHeading'] p")
     name = name_el.text.strip()
     location = loc_el.text.strip()
 
     # switch to Courses tab
-    driver.find_element(By.CSS_SELECTOR, "div#tab-2").click()
+    driver.find_element(By.CSS_SELECTOR, "#tab-2").click()
     WebDriverWait(driver, TIMEOUT).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "div.Course_mainDiv"))
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, "div[class*='Course_mainDiv']")
+        )
     )
 
     # load everything
     while True:
         try:
-            lm = driver.find_element(By.CSS_SELECTOR, "div.Course_load_more__rAo4S")
+            lm = driver.find_element(By.CSS_SELECTOR, "div[class*='Course_load_more']")
             logger.info("   Clicking “Load More”")
             lm.click()
             time.sleep(1.2)
@@ -84,15 +88,17 @@ def scrape_one(driver, entry):
 
     # collect courses
     courses = []
-    cards = driver.find_elements(By.CSS_SELECTOR, "div.ExpandableCard_container__oeYs4")
+    cards = driver.find_elements(
+        By.CSS_SELECTOR, "div[class*='ExpandableCard_container']"
+    )
     for card in cards:
         title = card.find_element(
-            By.CSS_SELECTOR, "div.ExpandableCard_titleText__1GsYJ"
+            By.CSS_SELECTOR, "div[class*='ExpandableCard_titleText']"
         ).text.strip()
 
         # expand
         toggle = card.find_element(
-            By.CSS_SELECTOR, "div.ExpandableCard_titleDiv__2U2p-"
+            By.CSS_SELECTOR, "div[class*='ExpandableCard_titleDiv']"
         )
         driver.execute_script("arguments[0].scrollIntoView({block:'center'});", toggle)
         time.sleep(0.2)
@@ -101,49 +107,50 @@ def scrape_one(driver, entry):
 
         # program & fees
         prog, fees = {}, {}
-        panel = card.find_elements(
-            By.CSS_SELECTOR, "div.ProgramDetails_program_details__EaJJ1"
+        panels = card.find_elements(
+            By.CSS_SELECTOR, "div[class*='ProgramDetails_program_details']"
         )
-        if panel:
-            panel = panel[0]
+        if panels:
+            panel = panels[0]
             # program chips
             for chip in panel.find_elements(
-                By.CSS_SELECTOR, "div.Common_data_chip__E1xJv"
+                By.CSS_SELECTOR, "div[class*='Common_data_chip']"
             ):
                 k, v = [t.strip() for t in chip.text.split(":", 1)]
                 prog[k] = v
             # fees sections
             for sec in panel.find_elements(
-                By.CSS_SELECTOR, "div.Common_vertical_inner_container__2DfYa"
+                By.CSS_SELECTOR, "div[class*='Common_vertical_inner_container']"
             ):
                 head = sec.find_element(
                     By.CSS_SELECTOR,
-                    "div.Common_vertical_inner_container_heading__2KRGj div.Common_title__2y6cO",
+                    "div[class*='Common_vertical_inner_container_heading'] div[class*='Common_title']",
                 ).text
                 if "Fee Total" in head:
                     fees["Fee Total"] = sec.find_element(
-                        By.CSS_SELECTOR, "div.ProgramDetails_fees_wrap__rpDQ7"
+                        By.CSS_SELECTOR, "div[class*='ProgramDetails_fees_wrap']"
                     ).text
                 else:
                     cat = sec.find_element(
                         By.CSS_SELECTOR,
-                        "div.Common_categoryDiv__29Zg6 div.Common_dropDownDiv__AEzq4 > div",
-                    ).text
+                        "div[class*='Common_categoryDiv'] div[class*='Common_dropDownDiv'] > div",
+                    ).text.strip()
                     fees[head] = cat
 
         # extras tabs
         extras = {}
         for tab_el in card.find_elements(
-            By.CSS_SELECTOR, "div.ChipTabs_tabTitle__18rFQ"
+            By.CSS_SELECTOR, "div[class*='ChipTabs_tabTitle']"
         ):
-            name_tab = tab_el.text.strip()
+            tab_name = tab_el.text.strip()
             driver.execute_script(
                 "arguments[0].scrollIntoView({block:'center'});", tab_el
             )
             tab_el.click()
             time.sleep(0.4)
+
             cont = card.find_elements(
-                By.CSS_SELECTOR, f"div[class*='{name_tab}_container']"
+                By.CSS_SELECTOR, f"div[class*='{tab_name}_container']"
             )
             texts = []
             if cont:
@@ -152,7 +159,7 @@ def scrape_one(driver, entry):
                     for p in cont[0].find_elements(By.TAG_NAME, "p")
                     if p.text.strip()
                 ]
-            extras[name_tab] = texts or None
+            extras[tab_name] = texts or None
 
         courses.append(
             {"title": title, "program": prog, "fees": fees, "extras": extras}
@@ -171,9 +178,7 @@ def scrape_one(driver, entry):
 def main():
     # 1) load URL list
     if not URL_FILE.exists():
-        logger.error(
-            f"{URL_FILE} not found—make sure you’ve run extract_urls.py first."
-        )
+        logger.error(f"{URL_FILE} not found—run extract_urls.py first.")
         return
 
     with open(URL_FILE, encoding="utf-8") as f:
@@ -181,17 +186,15 @@ def main():
 
     # 2) start driver & login
     opts = Options()
-    opts.add_argument("--headless=new")  # newer headless mode
+    opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
-    opts.add_argument("--disable-dev-shm-usage")  # avoid /dev/shm crashes
-    opts.add_argument("--disable-setuid-sandbox")  # broader sandbox bypass
+    opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--disable-setuid-sandbox")
 
-    # Optional: capture chromedriver logs for deeper debugging
     service = ChromeService(
         ChromeDriverManager().install(), log_path="chromedriver.log"
     )
-
     driver = webdriver.Chrome(service=service, options=opts)
 
     try:
@@ -204,7 +207,6 @@ def main():
                 item = scrape_one(driver, entry)
                 results.append(item)
             except Exception:
-                # full stacktrace in your logs now
                 logger.exception(f"⚠️ Error on ID {entry['id']}")
 
         # 4) write out
@@ -213,7 +215,6 @@ def main():
             json.dump(results, out, indent=2, ensure_ascii=False)
 
         logger.info("✅ All done")
-
     finally:
         driver.quit()
 
