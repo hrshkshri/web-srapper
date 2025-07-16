@@ -99,12 +99,16 @@ def scrape_admission(driver, entry):
         toggle.click()
         time.sleep(0.5)
 
-        data = {"title": title, "admission": {}}
-
-        # find the dropdown container
-        dropdown_container = card.find_element(
+        # SKIP if there's no Admission dropdowns
+        dropdowns = card.find_elements(
             By.CSS_SELECTOR, "div[class*='ExpandableCard_dropDownContainer']"
         )
+        if not dropdowns:
+            logger.warning(f"No Admission tabs for “{title}” — skipping")
+            continue
+        dropdown_container = dropdowns[0]
+
+        data = {"title": title, "admission": {}}
 
         # iterate each tab (Eligibility, Exam, Intake)
         tabs = dropdown_container.find_elements(
@@ -112,18 +116,17 @@ def scrape_admission(driver, entry):
         )
         for tab in tabs:
             tab_name = tab.text.strip()
-            # click the tab
             tab.click()
             time.sleep(0.3)
 
-            # parse Eligibility
+            # Eligibility
             if tab_name.lower() == "eligibility":
                 try:
                     elig = {}
                     cont = card.find_element(
                         By.CSS_SELECTOR, "div[class*='Eligibility_container']"
                     )
-                    # Choose Category
+                    # Category
                     try:
                         cat = cont.find_element(
                             By.CSS_SELECTOR,
@@ -135,13 +138,16 @@ def scrape_admission(driver, entry):
 
                     # Aggregate Marks
                     agg = {}
-                    for block in cont.find_elements(
+                    blocks = cont.find_elements(
                         By.CSS_SELECTOR,
-                        "div[class*='Eligibility_aggregate_marks_children'] div[class*='Common_vertical_inner_container']",
-                    ):
+                        "div[class*='Eligibility_aggregate_marks_children'] "
+                        "div[class*='Common_vertical_inner_container']",
+                    )
+                    for block in blocks:
                         key = block.find_element(
                             By.CSS_SELECTOR,
-                            "div[class*='Common_vertical_inner_container_heading'] div[class*='Common_title']",
+                            "div[class*='Common_vertical_inner_container_heading'] "
+                            "div[class*='Common_title']",
                         ).text.strip()
                         val = block.find_element(
                             By.CSS_SELECTOR, "div[class*='Eligibility_value_class']"
@@ -168,7 +174,6 @@ def scrape_admission(driver, entry):
                             "div[class*='Common_eligibility_grid_container_cell']",
                         )
                     ]
-                    # group the cells into rows of len(headings)
                     rows = [
                         cells[i : i + len(headings)]
                         for i in range(0, len(cells), len(headings))
@@ -177,28 +182,25 @@ def scrape_admission(driver, entry):
 
                     data["admission"]["Eligibility"] = elig
                 except NoSuchElementException:
-                    logger.warning(f"No Eligibility section for {title}")
+                    logger.warning(f"No Eligibility section for “{title}”")
                     data["admission"]["Eligibility"] = None
 
-            # parse Exam
+            # Exam
             elif tab_name.lower() == "exam":
                 try:
                     exam = {}
                     cont = card.find_element(
                         By.CSS_SELECTOR, "div[class*='ExamCourseTab_mainContainer']"
                     )
-                    # exam name (header)
-                    exam_name = cont.find_element(
+                    exam["Exam Name"] = cont.find_element(
                         By.CSS_SELECTOR, "span[class*='ExamCourseTab_name']"
                     ).text.strip()
-                    exam["Exam Name"] = exam_name
 
-                    # table of sections and cut off
+                    table = {}
                     sections = cont.find_elements(
                         By.CSS_SELECTOR,
                         "div[class*='ExamCourseTab_subjectSubContainer']",
                     )
-                    table = {}
                     for sec in sections:
                         subj = sec.find_element(
                             By.CSS_SELECTOR, "p[class*='ExamCourseTab_subject']"
@@ -211,17 +213,17 @@ def scrape_admission(driver, entry):
 
                     data["admission"]["Exam"] = exam
                 except NoSuchElementException:
-                    logger.warning(f"No Exam section for {title}")
+                    logger.warning(f"No Exam section for “{title}”")
                     data["admission"]["Exam"] = None
 
-            # parse Intake
+            # Intake
             elif tab_name.lower() == "intake":
                 try:
                     intake = {}
                     cont = card.find_element(
                         By.CSS_SELECTOR, "div[class*='Intake_container']"
                     )
-                    # summary at top
+                    # Summary
                     top = {}
                     for pair in cont.find_elements(
                         By.CSS_SELECTOR, "div[class*='Intake_first'] > div"
@@ -235,7 +237,7 @@ def scrape_admission(driver, entry):
                         top[head] = sub
                     intake["Summary"] = top
 
-                    # dropdown category
+                    # Category
                     try:
                         cat = cont.find_element(
                             By.CSS_SELECTOR, "div[class*='Intake_dropDownDiv'] p"
@@ -244,10 +246,11 @@ def scrape_admission(driver, entry):
                         cat = None
                     intake["Category"] = cat
 
-                    # any other subitems (e.g. Quota)
+                    # Quota (if present)
                     try:
                         quota = cont.find_element(
-                            By.CSS_SELECTOR, "p[class*='Intake_subText']"
+                            By.CSS_SELECTOR,
+                            "div[class*='Intake_fourth'] p[class*='Intake_subText']",
                         ).text.strip()
                     except NoSuchElementException:
                         quota = None
@@ -255,13 +258,11 @@ def scrape_admission(driver, entry):
 
                     data["admission"]["Intake"] = intake
                 except NoSuchElementException:
-                    logger.warning(f"No Intake section for {title}")
+                    logger.warning(f"No Intake section for “{title}”")
                     data["admission"]["Intake"] = None
 
             else:
-                # unknown tab
                 logger.debug(f"Skipping unknown tab “{tab_name}”")
-                continue
 
         admissions.append(data)
         logger.info(f"   • Scraped admission for: {title}")
@@ -282,7 +283,6 @@ def main():
     with open(URL_FILE, encoding="utf-8") as f:
         url_list = json.load(f)
 
-    # set up Chrome
     opts = Options()
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
@@ -300,11 +300,9 @@ def main():
         results = []
         for entry in url_list:
             try:
-                res = scrape_admission(driver, entry)
-                results.append(res)
+                results.append(scrape_admission(driver, entry))
             except Exception:
                 logger.exception(f"Error scraping admission for ID {entry['id']}")
-        # write out
         with open(OUTPUT_FILE, "w", encoding="utf-8") as out:
             json.dump(results, out, indent=2, ensure_ascii=False)
         logger.info(f"Wrote {len(results)} admission records to {OUTPUT_FILE}")
