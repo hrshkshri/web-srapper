@@ -118,24 +118,40 @@ def scrape_one(driver, entry):
             ):
                 k, v = [t.strip() for t in chip.text.split(":", 1)]
                 prog[k] = v
+
             # fees sections
             for sec in panel.find_elements(
                 By.CSS_SELECTOR, "div[class*='Common_vertical_inner_container']"
             ):
                 head = sec.find_element(
                     By.CSS_SELECTOR,
-                    "div[class*='Common_vertical_inner_container_heading'] div[class*='Common_title']",
-                ).text
+                    "div[class*='Common_vertical_inner_container_heading'] "
+                    "div[class*='Common_title']",
+                ).text.strip()
+
                 if "Fee Total" in head:
-                    fees["Fee Total"] = sec.find_element(
-                        By.CSS_SELECTOR, "div[class*='ProgramDetails_fees_wrap']"
-                    ).text
-                else:
-                    cat = sec.find_element(
+                    # Fee Total text is the second <div> under the heading container
+                    heading_divs = sec.find_elements(
                         By.CSS_SELECTOR,
-                        "div[class*='Common_categoryDiv'] div[class*='Common_dropDownDiv'] > div",
-                    ).text.strip()
-                    fees[head] = cat
+                        "div[class*='Common_vertical_inner_container_heading'] > div",
+                    )
+                    fees["Fee Total"] = (
+                        heading_divs[1].text.strip() if len(heading_divs) > 1 else None
+                    )
+                else:
+                    # try to grab category; if missing, set to None
+                    dropdowns = sec.find_elements(
+                        By.CSS_SELECTOR,
+                        "div[class*='Common_categoryDiv'] "
+                        "div[class*='Common_dropDownDiv'] > div",
+                    )
+                    if dropdowns:
+                        fees[head] = dropdowns[0].text.strip()
+                    else:
+                        logger.warning(
+                            f"No dropdown found for fee category “{head}” in course “{title}”"
+                        )
+                        fees[head] = None
 
         # extras tabs
         extras = {}
