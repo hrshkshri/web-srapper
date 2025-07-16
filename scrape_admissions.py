@@ -13,6 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import (
     TimeoutException,
     NoSuchElementException,
+    ElementClickInterceptedException,
 )
 
 from webdriver_manager.chrome import ChromeDriverManager
@@ -32,6 +33,19 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
 )
 logger = logging.getLogger(__name__)
+
+
+def safe_click(driver, element):
+    """
+    Try a normal .click(); if intercepted, scroll into view and JS-click.
+    """
+    try:
+        element.click()
+    except ElementClickInterceptedException:
+        logger.debug("Click intercepted, retrying with JS click")
+        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", element)
+        time.sleep(0.2)
+        driver.execute_script("arguments[0].click();", element)
 
 
 def login(driver):
@@ -60,7 +74,8 @@ def scrape_admission(driver, entry):
     )
 
     # click the "Admission" tab (#tab-3)
-    driver.find_element(By.CSS_SELECTOR, "#tab-3").click()
+    tab3 = driver.find_element(By.CSS_SELECTOR, "#tab-3")
+    safe_click(driver, tab3)
     WebDriverWait(driver, TIMEOUT).until(
         EC.presence_of_element_located(
             (By.CSS_SELECTOR, "div[class*='Admission_mainDiv']")
@@ -70,11 +85,11 @@ def scrape_admission(driver, entry):
     # load all admission cards
     while True:
         try:
-            load_more = driver.find_element(
+            lm = driver.find_element(
                 By.CSS_SELECTOR, "div[class*='Admission_load_more']"
             )
             logger.info("   Clicking “Load More”")
-            load_more.click()
+            safe_click(driver, lm)
             time.sleep(1.2)
         except NoSuchElementException:
             break
@@ -85,7 +100,6 @@ def scrape_admission(driver, entry):
         By.CSS_SELECTOR, "div[class*='ExpandableCard_container']"
     )
     for card in cards:
-        # card title
         title = card.find_element(
             By.CSS_SELECTOR, "div[class*='ExpandableCard_titleText']"
         ).text.strip()
@@ -94,38 +108,37 @@ def scrape_admission(driver, entry):
         toggle = card.find_element(
             By.CSS_SELECTOR, "div[class*='ExpandableCard_titleDiv']"
         )
-        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", toggle)
-        time.sleep(0.2)
-        toggle.click()
+        safe_click(driver, toggle)
         time.sleep(0.5)
 
-        # SKIP if there's no Admission dropdowns
+        # skip cards without any Admission tabs
         dropdowns = card.find_elements(
             By.CSS_SELECTOR, "div[class*='ExpandableCard_dropDownContainer']"
         )
         if not dropdowns:
             logger.warning(f"No Admission tabs for “{title}” — skipping")
             continue
-        dropdown_container = dropdowns[0]
+        dropdown = dropdowns[0]
 
         data = {"title": title, "admission": {}}
 
         # iterate each tab (Eligibility, Exam, Intake)
-        tabs = dropdown_container.find_elements(
+        tabs = dropdown.find_elements(
             By.CSS_SELECTOR, "div[class*='ChipTabs_tabTitle']"
         )
         for tab in tabs:
             tab_name = tab.text.strip()
-            tab.click()
+            safe_click(driver, tab)
             time.sleep(0.3)
 
-            # Eligibility
+            # ─ Eligibility ───────────────────────────────────────────────
             if tab_name.lower() == "eligibility":
                 try:
-                    elig = {}
                     cont = card.find_element(
                         By.CSS_SELECTOR, "div[class*='Eligibility_container']"
                     )
+                    elig = {}
+
                     # Category
                     try:
                         cat = cont.find_element(
@@ -185,23 +198,23 @@ def scrape_admission(driver, entry):
                     logger.warning(f"No Eligibility section for “{title}”")
                     data["admission"]["Eligibility"] = None
 
-            # Exam
+            # ─ Exam ────────────────────────────────────────────────────
             elif tab_name.lower() == "exam":
                 try:
-                    exam = {}
                     cont = card.find_element(
                         By.CSS_SELECTOR, "div[class*='ExamCourseTab_mainContainer']"
                     )
-                    exam["Exam Name"] = cont.find_element(
-                        By.CSS_SELECTOR, "span[class*='ExamCourseTab_name']"
-                    ).text.strip()
-
+                    exam = {
+                        "Exam Name": cont.find_element(
+                            By.CSS_SELECTOR, "span[class*='ExamCourseTab_name']"
+                        ).text.strip()
+                    }
                     table = {}
-                    sections = cont.find_elements(
+                    secs = cont.find_elements(
                         By.CSS_SELECTOR,
                         "div[class*='ExamCourseTab_subjectSubContainer']",
                     )
-                    for sec in sections:
+                    for sec in secs:
                         subj = sec.find_element(
                             By.CSS_SELECTOR, "p[class*='ExamCourseTab_subject']"
                         ).text.strip()
@@ -216,13 +229,14 @@ def scrape_admission(driver, entry):
                     logger.warning(f"No Exam section for “{title}”")
                     data["admission"]["Exam"] = None
 
-            # Intake
+            # ─ Intake ──────────────────────────────────────────────────
             elif tab_name.lower() == "intake":
                 try:
-                    intake = {}
                     cont = card.find_element(
                         By.CSS_SELECTOR, "div[class*='Intake_container']"
                     )
+                    intake = {}
+
                     # Summary
                     top = {}
                     for pair in cont.find_elements(
@@ -246,7 +260,7 @@ def scrape_admission(driver, entry):
                         cat = None
                     intake["Category"] = cat
 
-                    # Quota (if present)
+                    # Quota
                     try:
                         quota = cont.find_element(
                             By.CSS_SELECTOR,
