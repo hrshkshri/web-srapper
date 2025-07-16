@@ -1,4 +1,7 @@
-import json, time, logging, os
+import json
+import time
+import logging
+import os
 from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -154,7 +157,6 @@ def scrape_one(driver, entry):
         courses.append(
             {"title": title, "program": prog, "fees": fees, "extras": extras}
         )
-
         logger.info(f"   • Scraped course: {title}")
 
     return {
@@ -179,19 +181,18 @@ def main():
 
     # 2) start driver & login
     opts = Options()
-    # use the newer headless mode (optional, but recommended)
-    opts.add_argument("--headless=new")
-    # already had these two…
+    opts.add_argument("--headless=new")  # newer headless mode
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
-    # add this flag to avoid /dev/shm crashes
-    opts.add_argument("--disable-dev-shm-usage")
-    # (optional) extra sandbox bypass for some containers
-    opts.add_argument("--disable-setuid-sandbox")
+    opts.add_argument("--disable-dev-shm-usage")  # avoid /dev/shm crashes
+    opts.add_argument("--disable-setuid-sandbox")  # broader sandbox bypass
 
-    driver = webdriver.Chrome(
-        service=ChromeService(ChromeDriverManager().install()), options=opts
+    # Optional: capture chromedriver logs for deeper debugging
+    service = ChromeService(
+        ChromeDriverManager().install(), log_path="chromedriver.log"
     )
+
+    driver = webdriver.Chrome(service=service, options=opts)
 
     try:
         login(driver)
@@ -202,8 +203,9 @@ def main():
             try:
                 item = scrape_one(driver, entry)
                 results.append(item)
-            except Exception as e:
-                logger.error(f"⚠️ Error on ID {entry['id']}: {e}")
+            except Exception:
+                # full stacktrace in your logs now
+                logger.exception(f"⚠️ Error on ID {entry['id']}")
 
         # 4) write out
         logger.info(f"Writing {len(results)} records to {OUTPUT_FILE}")
