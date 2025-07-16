@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": 1,
+    "url": "https://assessment.jitinchawla.com/colleges/1/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "Certificate in Keyboards Program",
+        "admission": {}
+      },
+      {
+        "title": "Certificate in Guitar Program",
+        "admission": {}
+      },
+      {
+        "title": "Certificate in Piano",
+        "admission": {}
+      },
+      {
+        "title": "Certificate in Drums Program",
+        "admission": {}
+      },
+      {
+        "title": "Certificate in Violin",
+        "admission": {}
+      },
+      {
+        "title": "Certificate in Singing Vocal",
+        "admission": {}
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "url": "https://assessment.jitinchawla.com/colleges/2/overview",
+    "name": null,
+    "admissions": []
+  },
+  {
+    "id": 3,
+    "url": "https://assessment.jitinchawla.com/colleges/3/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "B.Ed. in Education",
+        "admission": {}
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "url": "https://assessment.jitinchawla.com/colleges/5/overview",
+    "name": null,
+    "admissions": [
+      {
+        "title": "LL.M. in Law",
+        "admission": {}
+      },
+      {
+        "title": "LL.B. in Law",
+        "admission": {}
+      },
+      {
+        "title": "B.A. LL.B. in Arts",
+        "admission": {
+          "Eligibility": null
+        }
+      }
+    ]
+  }
+]
