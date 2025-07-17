@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 60
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -17,27 +17,47 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Install Chrome & dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable fonts-liberation \
-                                  libappindicator3-1 xdg-utils
+          sudo apt-get install -y \
+            google-chrome-stable \
+            fonts-liberation \
+            libappindicator3-1 \
+            libnss3 \
+            xdg-utils
 
       - name: Install Python dependencies
         run: |
           pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install selenium webdriver-manager
+          pip install -r requirements.txt selenium webdriver-manager
 
       - name: Run scholarship scraper
         run: python scrape_scholarship.py
 
+      - name: Upload scraped data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scholarships-json
+          path: scholarships.json
+          retention-days: 7
+
       - name: Commit & push scholarships.json
+        if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add scholarships.json
-          if ! git diff --cached --quiet; then
+          if ! git diff --quiet --cached; then
             git commit -m "ci: update scholarships.json"
             git push
           else

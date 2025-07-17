@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
@@ -36,13 +37,16 @@ logger = logging.getLogger(__name__)
 
 
 def safe_click(driver, element):
-    """Try normal click; on interception, scroll into view and JS-click."""
+    """Try normal click; on interception scroll into view and JS-click."""
     try:
         element.click()
-    except ElementClickInterceptedException:
+    except (ElementClickInterceptedException, Exception):
         driver.execute_script("arguments[0].scrollIntoView({block:'center'});", element)
-        time.sleep(0.2)
-        driver.execute_script("arguments[0].click();", element)
+        time.sleep(0.3)
+        try:
+            element.click()
+        except Exception:
+            driver.execute_script("arguments[0].click();", element)
 
 
 def login(driver):
@@ -56,9 +60,9 @@ def login(driver):
     driver.find_element(By.ID, "emailUid").send_keys(EMAIL)
     driver.find_element(By.ID, "password").send_keys(PASSWORD)
 
-    # click and wait for the form to disappear
     signin_btn = driver.find_element(By.CLASS_NAME, "SignIn_signUpBtnEnable__3VCty")
     signin_btn.click()
+
     logger.info("3) Waiting for login form to go away…")
     WebDriverWait(driver, TIMEOUT).until(EC.staleness_of(signin_btn))
     WebDriverWait(driver, TIMEOUT).until(
@@ -72,7 +76,7 @@ def scrape_scholarships(driver, entry):
     logger.info(f"→ Visiting {url}")
     driver.get(url)
 
-    # 1) overview
+    # 1) wait for overview
     WebDriverWait(driver, TIMEOUT).until(
         EC.presence_of_element_located(
             (By.CSS_SELECTOR, "div[class*='viewDetail_container']")
@@ -85,7 +89,7 @@ def scrape_scholarships(driver, entry):
         By.CSS_SELECTOR, "[class*='viewDetail_subHeading'] p"
     ).text.strip()
 
-    # 2) Scholarships tab
+    # 2) switch to Scholarships tab
     WebDriverWait(driver, TIMEOUT).until(
         EC.element_to_be_clickable((By.CSS_SELECTOR, "#tab-4"))
     )
@@ -116,39 +120,47 @@ def scrape_scholarships(driver, entry):
         "scholarships": [],
     }
 
-    # 4) for each course tile:
-    tiles = driver.find_elements(
-        By.CSS_SELECTOR, "div[class*='ExpandableCard_titleDiv']"
+    # 4) for each course card container:
+    cards = driver.find_elements(
+        By.CSS_SELECTOR, "div[class*='ExpandableCard_container']"
     )
-    for tile in tiles:
-        course = tile.find_element(
+    for card in cards:
+        # click the title div inside this card
+        title_div = card.find_element(
+            By.CSS_SELECTOR, "div[class*='ExpandableCard_titleDiv']"
+        )
+        course = title_div.find_element(
             By.CSS_SELECTOR, "div[class*='ExpandableCard_titleText']"
         ).text.strip()
         logger.info(f"🔽 Opening course: {course}")
 
-        # open
-        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", tile)
-        safe_click(driver, tile)
+        # ensure visibility + click with ActionChains then fallback
+        WebDriverWait(driver, TIMEOUT).until(
+            lambda d: title_div.is_displayed() and title_div.is_enabled()
+        )
+        try:
+            ActionChains(driver).move_to_element(title_div).pause(0.2).click().perform()
+        except Exception:
+            safe_click(driver, title_div)
 
-        # wait for scholarship container
+        # wait for this card’s scholarship container
         try:
             cont = WebDriverWait(driver, TIMEOUT).until(
-                EC.presence_of_element_located(
-                    (By.CSS_SELECTOR, "div[class*='Common_scholarship_container']")
+                lambda d: card.find_element(
+                    By.CSS_SELECTOR, "div[class*='Common_scholarship_container']"
                 )
             )
         except TimeoutException:
             logger.info(f"No scholarships for {course}")
             continue
 
-        # load-only-while-text-is-“Load”
+        # click only while it's a "Load" button
         while True:
             try:
                 vm = cont.find_element(
                     By.CSS_SELECTOR, "div[class*='Common_view_more']"
                 )
-                txt = vm.text.strip().lower()
-                if not txt.startswith("load"):
+                if not vm.text.strip().lower().startswith("load"):
                     break
                 logger.info(f"      Clicking “{vm.text.strip()}” for {course}")
                 safe_click(driver, vm)
@@ -156,7 +168,7 @@ def scrape_scholarships(driver, entry):
             except NoSuchElementException:
                 break
 
-        # scrape links
+        # scrape scholarship links in this card
         items = []
         for a in cont.find_elements(
             By.CSS_SELECTOR, "a[class*='Common_scholarship_body_container']"
@@ -173,9 +185,9 @@ def scrape_scholarships(driver, entry):
         logger.info(f"   • {len(items)} scholarships for {course}")
         result["scholarships"].append({"course": course, "scholarships": items})
 
-        # collapse before next
+        # collapse this card for the next iteration
         logger.info(f"🔒 Collapsing {course}")
-        safe_click(driver, tile)
+        safe_click(driver, title_div)
         time.sleep(0.3)
 
     return result
@@ -189,8 +201,8 @@ def main():
     entries = json.loads(URL_FILE.read_text(encoding="utf-8"))
 
     opts = Options()
-    # opts.add_argument("--headless=new")  # watch live until rock-solid
-    opts.add_argument("--start-maximized")
+    opts.add_argument("--headless=new")
+    # opts.add_argument("--start-maximized")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--disable-dev-shm-usage")
