@@ -1,24 +1,42 @@
 import json
+from pathlib import Path
 
-# Load the data from the three JSON files
-with open("college_overviews.json") as f:
+# ─── CONFIG ─────────────────────────────────────────────────────────────
+OVERVIEW_FILE = Path("college_overviews.json")
+ADMISSIONS_FILE = Path("admissions.json")
+COURSES_FILE = Path("courses.json")
+SCHOLARSHIPS_FILE = Path("scholarships.json")
+OUTPUT_FILE = Path("merged_colleges.json")
+
+# ─── LOAD ALL DATA ──────────────────────────────────────────────────────
+with open(OVERVIEW_FILE, encoding="utf-8") as f:
     overview_data = json.load(f)
 
-with open("admissions.json") as f:
+with open(ADMISSIONS_FILE, encoding="utf-8") as f:
     admissions_data = json.load(f)
 
-with open("courses.json") as f:
+with open(COURSES_FILE, encoding="utf-8") as f:
     courses_data = json.load(f)
 
-# Create dictionaries for faster lookup by URL
-admissions_dict = {college["url"]: college for college in admissions_data}
-courses_dict = {college["url"]: college for college in courses_data}
+with open(SCHOLARSHIPS_FILE, encoding="utf-8") as f:
+    scholarships_data = json.load(f)
 
-# Merge data based on URL
-merged_colleges = []
+# ─── INDEX BY URL FOR FAST LOOKUP ───────────────────────────────────────
+admissions_dict = {
+    entry["url"]: entry.get("admissions", []) for entry in admissions_data
+}
 
-for college in overview_data["colleges"]:
-    url = college["url"]
+courses_dict = {entry["url"]: entry.get("courses", []) for entry in courses_data}
+
+scholarships_dict = {
+    entry["url"]: entry.get("scholarships", []) for entry in scholarships_data
+}
+
+# ─── MERGE ──────────────────────────────────────────────────────────────
+merged = []
+
+for college in overview_data.get("colleges", []):
+    url = college.get("url")
     merged_entry = {
         "id": college.get("id"),
         "url": url,
@@ -27,18 +45,22 @@ for college in overview_data["colleges"]:
         "overview": college.get("overview", {}),
     }
 
-    # Add admissions data if available
+    # attach admissions if we have them
     if url in admissions_dict:
-        merged_entry["admissions"] = admissions_dict[url].get("admissions", [])
+        merged_entry["admissions"] = admissions_dict[url]
 
-    # Add courses data if available
+    # attach courses if we have them
     if url in courses_dict:
-        merged_entry["courses"] = courses_dict[url].get("courses", [])
+        merged_entry["courses"] = courses_dict[url]
 
-    merged_colleges.append(merged_entry)
+    # attach scholarships if we have them
+    if url in scholarships_dict:
+        merged_entry["scholarships"] = scholarships_dict[url]
 
-# Save the merged output
-with open("merged_colleges.json", "w") as f:
-    json.dump(merged_colleges, f, indent=2)
+    merged.append(merged_entry)
 
-print("✅ Merged data saved to 'merged_colleges.json'")
+# ─── WRITE OUT ──────────────────────────────────────────────────────────
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    json.dump(merged, f, indent=2, ensure_ascii=False)
+
+print(f"✅ Merged data written to {OUTPUT_FILE}")
