@@ -88,44 +88,104 @@ def scrape_one(driver, entry):
             By.CSS_SELECTOR, "div[class*='ExpandableCard_titleText']"
         ).text.strip()
         toggle = card.find_element(
-            By.CSS_SELECTOR, "div[class*='ExpandableCard_titleDiv']"
+            By.CSS_SELECTOR, "div[class*='ExpandableCard_leftDiv']"
         )
+
+        # Wait for toggle to be clickable (fixes blank first course)
+        WebDriverWait(driver, TIMEOUT).until(
+            EC.element_to_be_clickable(
+                (By.CSS_SELECTOR, "div[class*='ExpandableCard_leftDiv']")
+            )
+        )
+
         driver.execute_script("arguments[0].scrollIntoView({block:'center'});", toggle)
         time.sleep(0.2)
-        toggle.click()
-        time.sleep(0.5)
+
+        for attempt in range(2):
+            try:
+                logger.info(f"Attempt {attempt+1}: Clicking toggle for: {title}")
+                driver.execute_script("arguments[0].click();", toggle)
+                WebDriverWait(card, 5).until(
+                    EC.presence_of_element_located(
+                        (
+                            By.CSS_SELECTOR,
+                            "div[class*='ProgramDetails_program_details']",
+                        )
+                    )
+                )
+                break
+            except Exception as e:
+                if attempt == 0:
+                    logger.info("🔁 Retrying after short wait...")
+                    time.sleep(1.5)
+                else:
+                    logger.error(f"❌ Failed to open panel for: {title}")
+
+        try:
+            WebDriverWait(card, TIMEOUT).until(
+                EC.presence_of_element_located(
+                    (By.CSS_SELECTOR, "div[class*='ProgramDetails_program_details']")
+                )
+            )
+        except:
+            logger.warning(f"Program/fees panel may be missing for course: {title}")
 
         prog, fees = {}, {}
-        panels = card.find_elements(
-            By.CSS_SELECTOR, "div[class*='ProgramDetails_program_details']"
-        )
-        if panels:
-            panel = panels[0]
+        try:
+            panel = card.find_element(
+                By.CSS_SELECTOR, "div[class*='ProgramDetails_program_details']"
+            )
+
+            # --- Extract Program Info ---
             for chip in panel.find_elements(
                 By.CSS_SELECTOR, "div[class*='Common_data_chip']"
             ):
-                k, v = [t.strip() for t in chip.text.split(":", 1)]
-                prog[k] = v
+                try:
+                    full_text = chip.text.strip()
+                    value = chip.find_element(By.TAG_NAME, "span").text.strip()
+                    key = full_text.replace(value, "").strip().rstrip(":").strip()
+                    prog[key] = value
+                except Exception as e:
+                    logger.warning(f"Skipping program chip: {e}")
+
+            # --- Extract Fees Info ---
             for sec in panel.find_elements(
                 By.CSS_SELECTOR, "div[class*='Common_vertical_inner_container']"
             ):
-                head = sec.find_element(
-                    By.CSS_SELECTOR,
-                    "div[class*='Common_vertical_inner_container_heading'] div[class*='Common_title']",
-                ).text.strip()
-                if "Fee Total" in head:
-                    divs = sec.find_elements(
+                try:
+                    head_el = sec.find_element(
                         By.CSS_SELECTOR,
-                        "div[class*='Common_vertical_inner_container_heading'] > div",
+                        "div[class*='Common_vertical_inner_container_heading'] div[class*='Common_title']",
                     )
-                    fees["Fee Total"] = divs[1].text.strip() if len(divs) > 1 else None
-                else:
-                    dropdowns = sec.find_elements(
-                        By.CSS_SELECTOR,
-                        "div[class*='Common_categoryDiv'] div[class*='Common_dropDownDiv'] > div",
-                    )
-                    fees[head] = dropdowns[0].text.strip() if dropdowns else None
+                    head = head_el.text.strip()
 
+                    if "Fee Total" in head:
+                        divs = sec.find_elements(
+                            By.CSS_SELECTOR,
+                            "div[class*='Common_vertical_inner_container_heading'] > div",
+                        )
+                        fees["Fee Total"] = (
+                            divs[1].text.strip() if len(divs) > 1 else None
+                        )
+                    else:
+                        dropdowns = sec.find_elements(
+                            By.CSS_SELECTOR,
+                            "div[class*='Common_categoryDiv'] div[class*='Common_dropDownDiv'] > div",
+                        )
+                        fees[head] = dropdowns[0].text.strip() if dropdowns else None
+                except Exception as e:
+                    logger.warning(f"Error in fees section: {e}")
+
+        except Exception as e:
+            logger.warning(f"Could not find program/fees panel: {e}")
+
+        if not prog:
+            logger.info(f"Program info missing for: {title}")
+        if not fees:
+            logger.info(f"Fees info missing for: {title}")
+        logger.info(f"[CHECK] Program keys for '{title}': {list(prog.keys())}")
+
+        # Extract extras
         extras = {}
         for tab_el in card.find_elements(
             By.CSS_SELECTOR, "div[class*='ChipTabs_tabTitle']"
@@ -134,24 +194,28 @@ def scrape_one(driver, entry):
             driver.execute_script(
                 "arguments[0].scrollIntoView({block:'center'});", tab_el
             )
-            tab_el.click()
-            time.sleep(0.4)
-            cont = card.find_elements(
-                By.CSS_SELECTOR, f"div[class*='{tab_name}_container']"
-            )
-            texts = []
-            if cont:
-                texts = [
-                    p.text.strip()
-                    for p in cont[0].find_elements(By.TAG_NAME, "p")
-                    if p.text.strip()
-                ]
-            extras[tab_name] = texts or None
+            try:
+                tab_el.click()
+                time.sleep(0.4)
+                cont = card.find_elements(
+                    By.CSS_SELECTOR, f"div[class*='{tab_name}_container']"
+                )
+                texts = []
+                if cont:
+                    texts = [
+                        p.text.strip()
+                        for p in cont[0].find_elements(By.TAG_NAME, "p")
+                        if p.text.strip()
+                    ]
+                extras[tab_name] = texts or None
+            except Exception:
+                extras[tab_name] = None
 
         courses.append(
             {"title": title, "program": prog, "fees": fees, "extras": extras}
         )
 
+    logger.info(f"[SUMMARY] Parsed {len(courses)} courses for: {name}")
     return {
         "id": entry["id"],
         "url": detail_url,
@@ -174,7 +238,8 @@ def main():
     OUTPUT_FILE.touch()
 
     opts = Options()
-    opts.add_argument("--headless=new")
+    # opts.add_argument("--headless=new")  # uncomment for headless runs
+    opts.add_argument("--start-maximized")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--disable-dev-shm-usage")
@@ -190,7 +255,6 @@ def main():
         for entry in url_list:
             try:
                 item = scrape_one(driver, entry)
-                # **Append immediately** as a JSON line:
                 with open(OUTPUT_FILE, "a", encoding="utf-8") as out:
                     json.dump(item, out, ensure_ascii=False)
                     out.write("\n")

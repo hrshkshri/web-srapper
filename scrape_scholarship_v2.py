@@ -138,10 +138,37 @@ def scrape_scholarships(driver, entry):
         WebDriverWait(driver, TIMEOUT).until(
             lambda d: title_div.is_displayed() and title_div.is_enabled()
         )
-        try:
-            ActionChains(driver).move_to_element(title_div).pause(0.2).click().perform()
-        except Exception:
-            safe_click(driver, title_div)
+
+        # Try normal click, retry with JS if needed
+        for attempt in range(2):
+            try:
+                logger.info(
+                    f"Attempt {attempt+1}: Clicking scholarship toggle for: {course}"
+                )
+                driver.execute_script(
+                    "arguments[0].scrollIntoView({block:'center'});", title_div
+                )
+                time.sleep(0.3)
+                driver.execute_script("arguments[0].click();", title_div)
+
+                # Wait for scholarship panel to appear inside this card
+                WebDriverWait(card, 5).until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, "div[class*='Common_scholarship_container']")
+                    )
+                )
+                break
+            except Exception as e:
+                if attempt == 0:
+                    logger.info(
+                        "🔁 Retrying scholarship toggle click after short wait…"
+                    )
+                    time.sleep(1.5)
+                else:
+                    logger.warning(
+                        f"❌ Failed to open scholarship panel for {course}: {e}"
+                    )
+                    continue  # will result in no scholarships collected
 
         # wait for scholarship container
         try:
@@ -204,7 +231,8 @@ def main():
     OUTPUT_FILE.touch()
 
     opts = Options()
-    opts.add_argument("--headless=new")
+    # opts.add_argument("--headless=new")
+    opts.add_argument("--start-maximized")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--disable-dev-shm-usage")
