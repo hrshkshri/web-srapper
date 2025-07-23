@@ -1,0 +1,567 @@
+[
+  {
+    "id": 1,
+    "url": "https://assessment.jitinchawla.com/colleges/1/overview",
+    "name": "Indian Institute of Technology Chennai",
+    "location": "Chennai, Tamil Nadu, India",
+    "scholarships": [
+      {
+        "course": "M.Tech. (Integrated) in Robotics",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "B.Tech. in Engineering Physics",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "M.Tech. (Integrated) in Automative Engineering",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "M.Tech. (Integrated) in Biological Engineering",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "B.Tech. in Metallurgical & Materials Engineering",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "B.Tech. in Computer Science & Engineering",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "B.Tech. in Chemical Engineering",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "B.Tech. in Aerospace Engineering",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      },
+      {
+        "course": "B.Tech. in Mechanical Engineering",
+        "scholarships": [
+          {
+            "name": "Aditya Birla Group Scholarship",
+            "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship"
+          },
+          {
+            "name": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
+            "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS"
+          },
+          {
+            "name": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
+            "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS"
+          },
+          {
+            "name": "Tata Realty Scholarship for Girls - B.E./B.Tech",
+            "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech"
+          },
+          {
+            "name": "SBIF Asha Scholarship for UG Program",
+            "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha"
+          },
+          {
+            "name": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
+            "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she"
+          },
+          {
+            "name": "Samsung Star Scholar",
+            "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar"
+          },
+          {
+            "name": "Reliance Foundation Undergraduate Scholarships - UG",
+            "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students for Technical Education",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education"
+          },
+          {
+            "name": "AICTE Saksham Scholarship for differently abled students",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students"
+          },
+          {
+            "name": "AICTE - SWANATH SCHOLARSHIP SCHEME",
+            "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "url": "https://assessment.jitinchawla.com/colleges/5954/overview",
+    "name": "Guru Nanak Dev University, Fattu Dhingha",
+    "location": "Fattu Dhingha, Punjab, India",
+    "scholarships": [
+      {
+        "course": "B.Voc. in Software Development",
+        "scholarships": []
+      },
+      {
+        "course": "B.Sc. in Chemistry",
+        "scholarships": []
+      },
+      {
+        "course": "B.C.A. in Computer Application",
+        "scholarships": []
+      },
+      {
+        "course": "M.C.A. in Computer Application",
+        "scholarships": []
+      },
+      {
+        "course": "B.B.A. in Business Administration",
+        "scholarships": []
+      },
+      {
+        "course": "B.Sc. in Mathematics",
+        "scholarships": []
+      },
+      {
+        "course": "B.Tech. in Electronics & Communication Engineering",
+        "scholarships": []
+      },
+      {
+        "course": "B.A. in Arts",
+        "scholarships": []
+      },
+      {
+        "course": "B.Com. in Commerce",
+        "scholarships": []
+      },
+      {
+        "course": "B.Sc. in Physics",
+        "scholarships": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "url": "https://assessment.jitinchawla.com/colleges/5955/overview",
+    "name": "Government Dental College Patiala",
+    "location": "Patiala, Punjab, India",
+    "scholarships": [
+      {
+        "course": "M.D.S. in Pedodontia",
+        "scholarships": []
+      },
+      {
+        "course": "M.D.S. in Periodontics",
+        "scholarships": []
+      },
+      {
+        "course": "M.D.S. in Conservative Dentistry",
+        "scholarships": []
+      },
+      {
+        "course": "B.D.S. in Dental Surgery",
+        "scholarships": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "url": "https://assessment.jitinchawla.com/colleges/5954/overview",
+    "name": "Guru Nanak Dev University, Fattu Dhingha",
+    "location": "Fattu Dhingha, Punjab, India",
+    "scholarships": [
+      {
+        "course": "B.Voc. in Software Development",
+        "scholarships": []
+      },
+      {
+        "course": "B.Sc. in Chemistry",
+        "scholarships": []
+      },
+      {
+        "course": "B.C.A. in Computer Application",
+        "scholarships": []
+      },
+      {
+        "course": "M.C.A. in Computer Application",
+        "scholarships": []
+      },
+      {
+        "course": "B.B.A. in Business Administration",
+        "scholarships": []
+      },
+      {
+        "course": "B.Sc. in Mathematics",
+        "scholarships": []
+      },
+      {
+        "course": "B.Tech. in Electronics & Communication Engineering",
+        "scholarships": []
+      },
+      {
+        "course": "B.A. in Arts",
+        "scholarships": []
+      },
+      {
+        "course": "B.Com. in Commerce",
+        "scholarships": []
+      }
+    ]
+  }
+]
