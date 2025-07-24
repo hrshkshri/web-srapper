@@ -1,239 +1,1059 @@
 [
   {
     "title": "Aditya Birla Group Scholarship",
-    "general_information": "The Aditya Birla Scholarship Programme is the Group's way of pursuing Mr. Aditya Vikram Birla's ideals of spawning leaders with a passion to excel. Attained through fostering outstanding academic excellence and humane leadership values, in partnership with select IITs, BITS (Pilani), IIMs, XLRI and law campuses.\n\nInstituted in 1999, the Aditya Birla Scholarships provide an excellent opportunity for Scholars to learn through networking with the country's first truly global conglomerate. While there is no binding to join the Group after the completion of their course,\nscholars are welcome to work with us should they qualify to do so",
-    "awards": "The Aditya Birla Scholarships cover a large part of academic fees as well as the hostel fees for the IITs / BITS stream and some part of the tuition fee for the management and law streams.\nThe scholarship amount for\nIIMs / XLRI Rs. 1,75,000 per annum\nIIT / BITS (Pilani): Rs. 1,00,000 per annum\nLAW Rs. 1,80,000 per annum or fees at actuals, whichever is lower",
-    "eligibility": "ligibility: \nStudents from the following institutes can apply for the Scholarships:\nIIMs - Ahmedabad, Bangalore, Kolkata, Lucknow, Indore, Khozikode, Shillong\nXLRI - Jamshedpur\nIITs (B.Tech) - Mumbai, Delhi, Chennai, Kanpur, Kharagpur, Roorkee, Guwahati\nBITS (Pilani) Campuses\nLAW:\nNational Law School of India University - Bangalore,\nNALSAR University of Law - Hyderabad,\nThe WB National University of Juridical Sciences - Kolkata,\nNational Law University - Jodhpur\nGujarat National Law University\n\nThe top 20 students (in terms of their entrance exam ranking at the time of admission) are invited to apply through the Dean of the respective institutes",
-    "application_fees": "Application fee information is not available.",
-    "application_procedure": "Application Procedure:\nStudents who are eligible are required to fill in the application form appended alongside and submit to the Dean.\n  For further details, please check-\nhttp://www.adityabirlascholars.net/about/The_scholarship.aspx",
-    "selection_process": "Selection Procedure:\nThe Scholarships entail the following process:\nThe applicants: 180 students from the IIMs and XLRI, 160 students from the IITs and BITS (Pilani) and 100 students from law campuses will be evaluated on the basis of the information given in the application form.\n\nThe students' overall achievements spanning academic and co-curricular excellence will be assessed to select him/her for the next round.\nEssays written by these students will then be reviewed by a panel to shortlist candidates for the final round.\nShortlisted students will be invited for an interview which will determine the best 16 students each from - engineering and management and 8 from law who will be named Aditya Birla Scholars.\nThe interviews will be conducted by an eminent panel of luminaries and academicians. Shortlisted students should carry all supporting documents such as copies of certificates, mark sheets, etc.\n\nThe interviews will be held in Mumbai for which the shortlisted candidates will be provided accommodation, travel reimbursement and a token allowance.\nPlease be advised that:\nThe performance of the Scholars will be monitored closely for the renewal of the Scholarship every year.\nThe Deans / Directors of IIMs, XLRI, IITs, BITS (Pilani) and law campuses have agreed to administer the monies. The Scholarship amount will be sent through a cheque directly to their office.\nThe Scholarships are valid for the course, subject to ongoing performance. As the Scholarship is announced only in September and given that students would have already paid their fees, the Institute will refund the amount paid.\n\nThe performance assessment criteria for the renewal of the scholarship\nThe Aditya Birla Scholar will be assessed on qualitative and quantitative parameters to judge his / her excellence on the academic and leadership front. This assessment will help determine the continuation of the disbursement of the Scholarship amount and the honour of continuing as \"The Aditya Birla Scholar\".\n\nThe assessment will be done every year until the completion of the course. \n\nThe Assessment Criteria:\nAssessment of certain scholastic standards being met\nTo belong to the top 25% of the batch population\nAssessment of work done by the Scholar during the course of the programme\nAt least 60% of the assignments to have a rating of 7 on a 9 point scale\nAssessment of participation in a minimum of two forums of campus\nAssessment of learnings of the Scholar\nA 250-word write-up on 'Being an Aditya Birla Scholar - experience sharing'\nThis data for the performance measurement has to be submitted by the Scholar and certified by the academic Dean at the institute. The assessment will be done based on the overall performance in all areas. No single factor will be a major determinant.",
-    "other_information": "Contact\nFor any further queries, please connect with:\n  Dr. (Mrs.) Pragnya Ram\nGroup executive President - Corporate \nCommunications & CSR\npragnya.ram@adityabirla.com",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Notification released": "Mon Jul 15 2019"
+    "general_information": {
+      "raw_text": "The Aditya Birla Scholarship Programme is the Group's way of pursuing Mr. Aditya Vikram Birla's ideals of spawning leaders with a passion to excel. Attained through fostering outstanding academic excellence and humane leadership values, in partnership with select IITs, BITS (Pilani), IIMs, XLRI and law campuses.\n\nInstituted in 1999, the Aditya Birla Scholarships provide an excellent opportunity for Scholars to learn through networking with the country's first truly global conglomerate. While there is no binding to join the Group after the completion of their course,\nscholars are welcome to work with us should they qualify to do so",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "benefits_table": "The scholarship amount for\nIIMs / XLRI Rs. 1,75,000 per annum\nIIT / BITS (Pilani): Rs. 1,00,000 per annum\nLAW Rs. 1,80,000 per annum or fees at actuals, whichever is lower",
+    "awards": {
+      "raw_text": "The Aditya Birla Scholarships cover a large part of academic fees as well as the hostel fees for the IITs / BITS stream and some part of the tuition fee for the management and law streams.\nThe scholarship amount for\nIIMs / XLRI Rs. 1,75,000 per annum\nIIT / BITS (Pilani): Rs. 1,00,000 per annum\nLAW Rs. 1,80,000 per annum or fees at actuals, whichever is lower",
+      "structured_data": {
+        "description": "The Aditya Birla Scholarships cover a large part of academic fees as well as the hostel fees for the IITs / BITS stream and some part of the tuition fee for the management and law streams.",
+        "amounts": {
+          "IIMs / XLRI": "Rs. 1,75,000 per annum",
+          "IIT / BITS (Pilani):": "Rs. 1,00,000 per annum",
+          "LAW": "Rs. 1,80,000 per annum or fees at actuals, whichever is lower"
+        },
+        "benefits": []
+      },
+      "tables": [
+        {
+          "table_index": 0,
+          "data": {
+            "IIMs / XLRI": "Rs. 1,75,000 per annum",
+            "IIT / BITS (Pilani):": "Rs. 1,00,000 per annum",
+            "LAW": "Rs. 1,80,000 per annum or fees at actuals, whichever is lower"
+          }
+        }
+      ],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "ligibility: \nStudents from the following institutes can apply for the Scholarships:\nIIMs - Ahmedabad, Bangalore, Kolkata, Lucknow, Indore, Khozikode, Shillong\nXLRI - Jamshedpur\nIITs (B.Tech) - Mumbai, Delhi, Chennai, Kanpur, Kharagpur, Roorkee, Guwahati\nBITS (Pilani) Campuses\nLAW:\nNational Law School of India University - Bangalore,\nNALSAR University of Law - Hyderabad,\nThe WB National University of Juridical Sciences - Kolkata,\nNational Law University - Jodhpur\nGujarat National Law University\n\nThe top 20 students (in terms of their entrance exam ranking at the time of admission) are invited to apply through the Dean of the respective institutes",
+      "structured_data": {
+        "requirements": [
+          "National Law School of India University - Bangalore,",
+          "NALSAR University of Law - Hyderabad,",
+          "The WB National University of Juridical Sciences - Kolkata,",
+          "National Law University - Jodhpur",
+          "Gujarat National Law University"
+        ],
+        "categories": [
+          "ST",
+          "SC"
+        ],
+        "academic_criteria": {
+          "top_students": "20"
+        },
+        "institutes": [
+          "IIMs - Ahmedabad, Bangalore, Kolkata, Lucknow, Indore, Khozikode, Shillong",
+          "XLRI - Jamshedpur",
+          "IITs (B.Tech) - Mumbai, Delhi, Chennai, Kanpur, Kharagpur, Roorkee, Guwahati",
+          "BITS (Pilani) Campuses",
+          "LAW:\nNational Law School of India University - Bangalore,\nNALSAR University of Law - Hyderabad,\nThe WB National University of Juridical Sciences - Kolkata,\nNational Law University - Jodhpur\nGujarat National Law University"
+        ]
+      },
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "National Law School of India University - Bangalore,",
+            "NALSAR University of Law - Hyderabad,",
+            "The WB National University of Juridical Sciences - Kolkata,",
+            "National Law University - Jodhpur",
+            "Gujarat National Law University"
+          ]
+        }
+      ]
+    },
+    "application_fees": {
+      "raw_text": "Application fee information is not available.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "Application Procedure:\nStudents who are eligible are required to fill in the application form appended alongside and submit to the Dean.\n  For further details, please check-\nhttp://www.adityabirlascholars.net/about/The_scholarship.aspx",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "selection_process": {
+      "raw_text": "Selection Procedure:\nThe Scholarships entail the following process:\nThe applicants: 180 students from the IIMs and XLRI, 160 students from the IITs and BITS (Pilani) and 100 students from law campuses will be evaluated on the basis of the information given in the application form.\n\nThe students' overall achievements spanning academic and co-curricular excellence will be assessed to select him/her for the next round.\nEssays written by these students will then be reviewed by a panel to shortlist candidates for the final round.\nShortlisted students will be invited for an interview which will determine the best 16 students each from - engineering and management and 8 from law who will be named Aditya Birla Scholars.\nThe interviews will be conducted by an eminent panel of luminaries and academicians. Shortlisted students should carry all supporting documents such as copies of certificates, mark sheets, etc.\n\nThe interviews will be held in Mumbai for which the shortlisted candidates will be provided accommodation, travel reimbursement and a token allowance.\nPlease be advised that:\nThe performance of the Scholars will be monitored closely for the renewal of the Scholarship every year.\nThe Deans / Directors of IIMs, XLRI, IITs, BITS (Pilani) and law campuses have agreed to administer the monies. The Scholarship amount will be sent through a cheque directly to their office.\nThe Scholarships are valid for the course, subject to ongoing performance. As the Scholarship is announced only in September and given that students would have already paid their fees, the Institute will refund the amount paid.\n\nThe performance assessment criteria for the renewal of the scholarship\nThe Aditya Birla Scholar will be assessed on qualitative and quantitative parameters to judge his / her excellence on the academic and leadership front. This assessment will help determine the continuation of the disbursement of the Scholarship amount and the honour of continuing as \"The Aditya Birla Scholar\".\n\nThe assessment will be done every year until the completion of the course. \n\nThe Assessment Criteria:\nAssessment of certain scholastic standards being met\nTo belong to the top 25% of the batch population\nAssessment of work done by the Scholar during the course of the programme\nAt least 60% of the assignments to have a rating of 7 on a 9 point scale\nAssessment of participation in a minimum of two forums of campus\nAssessment of learnings of the Scholar\nA 250-word write-up on 'Being an Aditya Birla Scholar - experience sharing'\nThis data for the performance measurement has to be submitted by the Scholar and certified by the academic Dean at the institute. The assessment will be done based on the overall performance in all areas. No single factor will be a major determinant.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "Contact\nFor any further queries, please connect with:\n  Dr. (Mrs.) Pragnya Ram\nGroup executive President - Corporate \nCommunications & CSR\npragnya.ram@adityabirla.com",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Notification released": "Mon Jul 15 2019"
+      }
+    },
+    "additional_tables": [
+      {
+        "table_index": 0,
+        "data": {
+          "IIMs / XLRI": "Rs. 1,75,000 per annum",
+          "IIT / BITS (Pilani):": "Rs. 1,00,000 per annum",
+          "LAW": "Rs. 1,80,000 per annum or fees at actuals, whichever is lower"
+        },
+        "location": "page_level"
+      }
+    ],
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship",
     "original_title": "Unknown",
     "scrape_index": 1,
-    "scraped_at": "2025-07-24T17:39:33.197539",
+    "scraped_at": "2025-07-24T17:58:54.270057",
     "scrape_status": "success"
   },
   {
     "title": "O.P. Jindal Engineering and Management Scholarships (OPJEMS)",
-    "general_information": "In 2007, O. P. Jindal Group instituted the O.P. Jindal Engineering and Management Scholarships (OPJEMS). These scholarships are aimed at promoting academic and leadership excellence and are awarded to meritorious students who emulate the vision and values of Shri O. P. Jindal and have the potential to become leaders in entrepreneurial excellence and innovation. Every year, 100 students from 40 premier engineering and management institutions are awarded. In last 5 years, more than 500 students have been awarded with this coveted scholarship.\nApplications are invited for the academi year 2018-2019.",
-    "awards": "Award of Scholarship\nINR 1, 50, 000 for each Management Students\nINR 80, 000 for each Engineering Students",
-    "eligibility": "Engineering Institutes\nFirst three Toppers of 2nd, 3rd and 4th year based on the academic performance in the previous years (CGPA) of the following streams are eligible:\nCivil Engineering\nElectrical Engineering\nMechanical Engineering\nMetallurgical Engineering\nManagement Institutes\nFirst 10 toppers of 2nd year are eligible based on the academic performance in the first year of regular PGDM/ MBA.",
-    "application_fees": "Kindly contact the foundation for application fee details.",
-    "application_procedure": "Check the registration form here.\nINSTRUCTIONS:\nPlease fill in the desired information clearly for all the fields.\nPlease provide complete details for all mandatory fields.\nThe fields with * are mandatory.\nYou will need to attach a recent passport size photograph of yourself.r \nTo fill up the registration form you need to be nominated by your institution.\n  For further details please check :\nhttp://www.opjems.com/index-2.html",
-    "selection_process": "There is a three step process:\nStep A: Students will be shortlisted based on the eligibility criteria.\nStep B: Eligible students will take an online test.\nStep C: Shortlisted students from Step B shall appear for a personal interview.\nList of Participating Institutes\nEngineering Institutes\nIIT - Delhi\nIIT - Kanpur\nIIT - Roorkee\nIIT BHU - Varanasi\nNIT - Allahabad\nMNIT - Jaipur\nNIT - Kurukshetra\nBITS - Pilani\nIIT - Mumbai\nNIT - Nagpur\nSVNIT – Surat\nNIT - Durgapur\nIIT - Guwahati\nIIT - Kharagpur\nISM - Dhanbad\nNIT - Jamshedpur\nNIT - Rourkela\nOPJIT-Raigarh\nNIT - Raipur\nIIT - Chennai\nNIT - Suratkal\nNIT - Trichy\nNIT - Warangal\nDelhi College of Engineering\nManagement Institutes\nFMS - Delhi\nMDI - Gurgaon\nJindal Global Business School\nIIM - Lucknow\nIIM - Ahmedabad\nIIM - Indore\nXLRI - Jamshedpur\nSP Jain Institute of Management & Research\nIIM - Bangalore\nIIM - Calcutta\nIIM Kozhikode\nIIM - Ranchi\nIIM - Raipur\nIIM - Rohtak\nJBIMS - Mumbai\nIIFT- Delhi",
-    "other_information": "Contact:\nHelp Desk details:\nMobile No : +91 9971676289\nE-mail : opjems.helpdesk@jindalsaw.com",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Announcement of results": "Tue Oct 23 2018",
-      "Personal interview": "Wed Oct 10 2018",
-      "Announcement of shortlisted students for interview": "Sat Sep 15 2018",
-      "Administration of online test at campus": "Wed Sep 05 2018",
-      "Last date for Registration (submission of application form online)": "Fri Aug 31 2018",
-      "Announcement for OPJEMS-2018": "Tue Aug 07 2018"
+    "general_information": {
+      "raw_text": "In 2007, O. P. Jindal Group instituted the O.P. Jindal Engineering and Management Scholarships (OPJEMS). These scholarships are aimed at promoting academic and leadership excellence and are awarded to meritorious students who emulate the vision and values of Shri O. P. Jindal and have the potential to become leaders in entrepreneurial excellence and innovation. Every year, 100 students from 40 premier engineering and management institutions are awarded. In last 5 years, more than 500 students have been awarded with this coveted scholarship.\nApplications are invited for the academi year 2018-2019.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "benefits_table": "Announcement of results: Tue Oct 23 2018\nPersonal interview: Wed Oct 10 2018\nAnnouncement of shortlisted students for interview: Sat Sep 15 2018\nAdministration of online test at campus: Wed Sep 05 2018\nLast date for Registration (submission of application form online): Fri Aug 31 2018\nAnnouncement for OPJEMS-2018: Tue Aug 07 2018",
+    "awards": {
+      "raw_text": "Award of Scholarship\nINR 1, 50, 000 for each Management Students\nINR 80, 000 for each Engineering Students",
+      "structured_data": {
+        "description": "Award of Scholarship",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "INR 1, 50, 000 for each Management Students",
+            "INR 80, 000 for each Engineering Students"
+          ]
+        }
+      ]
+    },
+    "eligibility": {
+      "raw_text": "Engineering Institutes\nFirst three Toppers of 2nd, 3rd and 4th year based on the academic performance in the previous years (CGPA) of the following streams are eligible:\nCivil Engineering\nElectrical Engineering\nMechanical Engineering\nMetallurgical Engineering\nManagement Institutes\nFirst 10 toppers of 2nd year are eligible based on the academic performance in the first year of regular PGDM/ MBA.",
+      "structured_data": {
+        "requirements": [
+          "Civil Engineering",
+          "Electrical Engineering",
+          "Mechanical Engineering",
+          "Metallurgical Engineering",
+          "First 10 toppers of 2nd year are eligible based on the academic performance in the first year of regular PGDM/ MBA."
+        ],
+        "categories": [
+          "ST"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Metallurgical Engineering"
+          ]
+        },
+        {
+          "list_index": 1,
+          "type": "ul",
+          "items": [
+            "First 10 toppers of 2nd year are eligible based on the academic performance in the first year of regular PGDM/ MBA."
+          ]
+        }
+      ]
+    },
+    "application_fees": {
+      "raw_text": "Kindly contact the foundation for application fee details.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "Check the registration form here.\nINSTRUCTIONS:\nPlease fill in the desired information clearly for all the fields.\nPlease provide complete details for all mandatory fields.\nThe fields with * are mandatory.\nYou will need to attach a recent passport size photograph of yourself.r \nTo fill up the registration form you need to be nominated by your institution.\n  For further details please check :\nhttp://www.opjems.com/index-2.html",
+      "structured_data": {},
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ol",
+          "items": [
+            "Please fill in the desired information clearly for all the fields.",
+            "Please provide complete details for all mandatory fields.",
+            "The fields with * are mandatory.",
+            "You will need to attach a recent passport size photograph of yourself.r",
+            "To fill up the registration form you need to be nominated by your institution."
+          ]
+        }
+      ]
+    },
+    "selection_process": {
+      "raw_text": "There is a three step process:\nStep A: Students will be shortlisted based on the eligibility criteria.\nStep B: Eligible students will take an online test.\nStep C: Shortlisted students from Step B shall appear for a personal interview.\nList of Participating Institutes\nEngineering Institutes\nIIT - Delhi\nIIT - Kanpur\nIIT - Roorkee\nIIT BHU - Varanasi\nNIT - Allahabad\nMNIT - Jaipur\nNIT - Kurukshetra\nBITS - Pilani\nIIT - Mumbai\nNIT - Nagpur\nSVNIT – Surat\nNIT - Durgapur\nIIT - Guwahati\nIIT - Kharagpur\nISM - Dhanbad\nNIT - Jamshedpur\nNIT - Rourkela\nOPJIT-Raigarh\nNIT - Raipur\nIIT - Chennai\nNIT - Suratkal\nNIT - Trichy\nNIT - Warangal\nDelhi College of Engineering\nManagement Institutes\nFMS - Delhi\nMDI - Gurgaon\nJindal Global Business School\nIIM - Lucknow\nIIM - Ahmedabad\nIIM - Indore\nXLRI - Jamshedpur\nSP Jain Institute of Management & Research\nIIM - Bangalore\nIIM - Calcutta\nIIM Kozhikode\nIIM - Ranchi\nIIM - Raipur\nIIM - Rohtak\nJBIMS - Mumbai\nIIFT- Delhi",
+      "structured_data": {},
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Step A: Students will be shortlisted based on the eligibility criteria.",
+            "Step B: Eligible students will take an online test.",
+            "Step C: Shortlisted students from Step B shall appear for a personal interview."
+          ]
+        },
+        {
+          "list_index": 1,
+          "type": "ul",
+          "items": [
+            "IIT - Delhi",
+            "IIT - Kanpur",
+            "IIT - Roorkee",
+            "IIT BHU - Varanasi",
+            "NIT - Allahabad",
+            "MNIT - Jaipur",
+            "NIT - Kurukshetra",
+            "BITS - Pilani",
+            "IIT - Mumbai",
+            "NIT - Nagpur",
+            "SVNIT – Surat",
+            "NIT - Durgapur",
+            "IIT - Guwahati",
+            "IIT - Kharagpur",
+            "ISM - Dhanbad",
+            "NIT - Jamshedpur",
+            "NIT - Rourkela",
+            "OPJIT-Raigarh",
+            "NIT - Raipur",
+            "IIT - Chennai",
+            "NIT - Suratkal",
+            "NIT - Trichy",
+            "NIT - Warangal",
+            "Delhi College of Engineering"
+          ]
+        },
+        {
+          "list_index": 2,
+          "type": "ul",
+          "items": [
+            "FMS - Delhi",
+            "MDI - Gurgaon",
+            "Jindal Global Business School",
+            "IIM - Lucknow",
+            "IIM - Ahmedabad",
+            "IIM - Indore",
+            "XLRI - Jamshedpur",
+            "SP Jain Institute of Management & Research",
+            "IIM - Bangalore",
+            "IIM - Calcutta",
+            "IIM Kozhikode",
+            "IIM - Ranchi",
+            "IIM - Raipur",
+            "IIM - Rohtak",
+            "JBIMS - Mumbai",
+            "IIFT- Delhi"
+          ]
+        }
+      ]
+    },
+    "other_information": {
+      "raw_text": "Contact:\nHelp Desk details:\nMobile No : +91 9971676289\nE-mail : opjems.helpdesk@jindalsaw.com",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Announcement of results": "Tue Oct 23 2018",
+        "Personal interview": "Wed Oct 10 2018",
+        "Announcement of shortlisted students for interview": "Sat Sep 15 2018",
+        "Administration of online test at campus": "Wed Sep 05 2018",
+        "Last date for Registration (submission of application form online)": "Fri Aug 31 2018",
+        "Announcement for OPJEMS-2018": "Tue Aug 07 2018"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS",
     "original_title": "Unknown",
     "scrape_index": 2,
-    "scraped_at": "2025-07-24T17:39:39.852497",
+    "scraped_at": "2025-07-24T17:59:04.966884",
     "scrape_status": "success"
   },
   {
     "title": "Merit Cum Means Scholarship For Professional and Technical Courses CS",
-    "general_information": "NSP Merit Cum Means Scholarship for Professional and Technical Courses CS (Minorities) 2022-23 is an initiative for minority community students who are pursuing technical or professional courses at the undergraduate or postgraduate level. The scholarship is being offered by the Ministry of Minority Affairs (MoMA), Government of India. The scholarship aims at providing suitable financial assistance to meritorious and underprivileged students belonging to minority communities to enable them to pursue technical and professional courses. The selected candidates will receive course fees and maintenance allowance.",
-    "awards": "The scholarship is to be awarded for studies in India in a Government or private institution, selected and notified in a transparent manner by the State Government/Union Territory Administration concerned. It will cover technical and professional courses at undergraduate and post graduate level.\nScholarship will be provided for the entire academic year/course. Similarly, the maintenance allowance will be given as fixed lump sum amount for an academic year (Rs. 10,000/- for Hosteller and Rs. 5,000/- for Day Scholar).",
-    "eligibility": "To be eligible, an applicant must - \nbelong to Minority communities (Muslims, Sikhs, Christians, Buddhists, Jain, and Parsis/Zoroastrians)\nbe pursuing a technical or professional course at the undergraduate or postgraduate level from a recognized institution\nhave secured at least 50% marks or equivalent grade in the previous final examination\nhave an annual family income of less than INR 2.50 lakhs from all sources",
-    "application_fees": "No application fees.",
-    "application_procedure": "How to apply-\nThe scheme is implemented through the National Scholarship Portal (NSP). It is mandatory for all students to apply online on the website i.e. http://www.scholarships.gov.in.\nOpen till 15-11-2022\n  For further details, please check-\nhttps://scholarships.gov.in/public/schemeGuidelines/MoMA_MCM_2018-20.pdf",
-    "selection_process": "(i) Fresh - The number of scholarship has been fixed State/UT-wise on the basis of Community-wise minority population of the States/UTs as per Census 2001 (2017-18) & 2011 (2018-20). Within the State-wise allocations, the applications from Listed Institutions will be exhausted first in merit list. In case number of such students is more than the State/Community-wise quota, normal merit list criteria shall be followed. Other verified applicant/student will be selected in the merit list, thereafter, on merit basis i.e. Percentage/marks of last academic course/board (higher secondary / graduation) exam. In case of similar marks, income will be taken as deciding factor.\n(ii) Renewal – There is no merit list generation for renewal cases. Renewal applicant will get the scholarship if one has obtained 50% in his/her previous year’s examinations (or in each semester/trimester of previous year’s) their application is approved by State Governments/UTs.\nThe monitoring of the financial and physical performance of the scheme will be evaluated by assigning evaluation/impact studies to reputed institutions/agencies by the Ministry of Minority Affairs, Government of India.",
-    "other_information": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540\nhttps://scholarships.gov.in/home",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Last date to apply": "Tue Nov 15 2022"
+    "general_information": {
+      "raw_text": "NSP Merit Cum Means Scholarship for Professional and Technical Courses CS (Minorities) 2022-23 is an initiative for minority community students who are pursuing technical or professional courses at the undergraduate or postgraduate level. The scholarship is being offered by the Ministry of Minority Affairs (MoMA), Government of India. The scholarship aims at providing suitable financial assistance to meritorious and underprivileged students belonging to minority communities to enable them to pursue technical and professional courses. The selected candidates will receive course fees and maintenance allowance.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "deadline_extracted": "Tue Nov 15 2022",
+    "awards": {
+      "raw_text": "The scholarship is to be awarded for studies in India in a Government or private institution, selected and notified in a transparent manner by the State Government/Union Territory Administration concerned. It will cover technical and professional courses at undergraduate and post graduate level.\nScholarship will be provided for the entire academic year/course. Similarly, the maintenance allowance will be given as fixed lump sum amount for an academic year (Rs. 10,000/- for Hosteller and Rs. 5,000/- for Day Scholar).",
+      "structured_data": {
+        "description": "The scholarship is to be awarded for studies in India in a Government or private institution, selected and notified in a transparent manner by the State Government/Union Territory Administration concerned. It will cover technical and professional courses at undergraduate and post graduate level.",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "To be eligible, an applicant must - \nbelong to Minority communities (Muslims, Sikhs, Christians, Buddhists, Jain, and Parsis/Zoroastrians)\nbe pursuing a technical or professional course at the undergraduate or postgraduate level from a recognized institution\nhave secured at least 50% marks or equivalent grade in the previous final examination\nhave an annual family income of less than INR 2.50 lakhs from all sources",
+      "structured_data": {
+        "requirements": [
+          "belong to Minority communities (Muslims, Sikhs, Christians, Buddhists, Jain, and Parsis/Zoroastrians)",
+          "be pursuing a technical or professional course at the undergraduate or postgraduate level from a recognized institution",
+          "have secured at least 50% marks or equivalent grade in the previous final examination",
+          "have an annual family income of less than INR 2.50 lakhs from all sources"
+        ],
+        "categories": [
+          "ST"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "belong to Minority communities (Muslims, Sikhs, Christians, Buddhists, Jain, and Parsis/Zoroastrians)",
+            "be pursuing a technical or professional course at the undergraduate or postgraduate level from a recognized institution",
+            "have secured at least 50% marks or equivalent grade in the previous final examination",
+            "have an annual family income of less than INR 2.50 lakhs from all sources"
+          ]
+        }
+      ]
+    },
+    "application_fees": {
+      "raw_text": "No application fees.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "How to apply-\nThe scheme is implemented through the National Scholarship Portal (NSP). It is mandatory for all students to apply online on the website i.e. http://www.scholarships.gov.in.\nOpen till 15-11-2022\n  For further details, please check-\nhttps://scholarships.gov.in/public/schemeGuidelines/MoMA_MCM_2018-20.pdf",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "selection_process": {
+      "raw_text": "(i) Fresh - The number of scholarship has been fixed State/UT-wise on the basis of Community-wise minority population of the States/UTs as per Census 2001 (2017-18) & 2011 (2018-20). Within the State-wise allocations, the applications from Listed Institutions will be exhausted first in merit list. In case number of such students is more than the State/Community-wise quota, normal merit list criteria shall be followed. Other verified applicant/student will be selected in the merit list, thereafter, on merit basis i.e. Percentage/marks of last academic course/board (higher secondary / graduation) exam. In case of similar marks, income will be taken as deciding factor.\n(ii) Renewal – There is no merit list generation for renewal cases. Renewal applicant will get the scholarship if one has obtained 50% in his/her previous year’s examinations (or in each semester/trimester of previous year’s) their application is approved by State Governments/UTs.\nThe monitoring of the financial and physical performance of the scheme will be evaluated by assigning evaluation/impact studies to reputed institutions/agencies by the Ministry of Minority Affairs, Government of India.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540\nhttps://scholarships.gov.in/home",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Last date to apply": "Tue Nov 15 2022"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS",
     "original_title": "Unknown",
     "scrape_index": 3,
-    "scraped_at": "2025-07-24T17:39:45.299565",
+    "scraped_at": "2025-07-24T17:59:10.573738",
     "scrape_status": "success"
   },
   {
     "title": "Tata Realty Scholarship for Girls - B.E./B.Tech",
-    "general_information": "Applications are invited for the Tata Realty Scholarship for Girls Pursuing 1st Year - B.E./B.Tech for the year 2019-2020.\nThe objective of this scheme is to recognize, promote and financially assist the meritorious girls students belonging to economically weaker sections of the society who are pursuing B.E./B.Tech course.This scholarship would enable them to complete higher education and be a part of the flourishing construction Industry.\nPlease find below the preferred institute list\n1 Narula Institute of Technology -Kolkata -West Bengal\n2 Haldia Institute of Technology -Haldia -West Bengal\n3 Indian Institute of Technology Kharagpur -Kharagpur -West Bengal\n4 Indian Institute of Technology Kharagpur -Kharagpur -West Bengal\n5 Indian Institute of Technology Guwahati -Guwahati -Assam\n6 Jadavpur University -Kolkata -West Bengal\n7 Pimpri Chinchwad College of Engineering -Pune -Maharashtra\n8 Sir J. J. College of Architecture -Mumbai -Maharashtra\n9 Sardar Patel College of Engineering -Mumbai -Maharashtra\n10 Indian Institute of Technology Bombay -Mumbai -Maharashtra\n11 College of Engineering -Pune -Maharashtra\n12 SVKM`s Narsee Monjee Institute of Management Studies -Mumbai -Maharashtra\n13 Anna University -Chennai -Tamil Nadu\n14 National Institute of Technology Tiruchirappalli -Tiruchirappalli -Tamil Nadu\n15 Thiagarajar College of Engineering -Madurai -Tamil Nadu\n16 Indian Institute of Technology Madras -Chennai -Tamil Nadu\n17 Indian Institute of Technology Hyderabad -Hyderabad -Telangana\n18 National Institute of Technology Tiruchirappalli -Tiruchirappalli -Tamil Nadu\n19 National Institute of Technology Karnataka -Surathkal -Karnataka\n20 Guru Gobind Singh Indraprastha University -New Delhi -Delhi\n21 Jamia Millia Islamia -New Delhi -Delhi\n22 School of Planning and Architecture New Delhi -New Delhi -Delhi\n23 Indian Institute of Technology Delhi -New Delhi -Delhi\n24 Indian Institute of Technology Mandi -Mandi -Himachal Pradesh\n25 Thapar Institute of Engineering and Technology (Deemed-to-be-university) -Patiala -Punjab",
-    "awards": "Scholarship Amount (INR) 1,00,000.00",
-    "eligibility": "Qualification criteria : Minimum 60% in Class 12,\nCourse Details :\nCourse Level : Under Graduate\n1) Course Name : B.E./B.Tech. (BE/BTech)\nGender : Female\nFamily Income : Scheme is available to only student whose family income is between 0.00 - 500000.00",
-    "application_fees": "Application Fees information is not available.",
-    "application_procedure": "To apply, click here.\nLast date to apply - 28-02-2020\nDocument Required :\n1- Proof of Identity\n2- Bonafide Certificate\n3- Proof of Address\n4- 10th and 12th Marksheets\n5- Student Bank Passbook\n6- Admission Confirmation letter\n7- Current year college Fees Receipt and Fee Structure\n8- Income Certificate of current year\nAll documents uploaded shall be clear and must be in .jpeg .png file only\n  For further details, please check\nhttps://www.vidyasaarathi.co.in/Vidyasaarathi/resources/2150/233_10.html",
-    "selection_process": "Applications will be evaluated.",
-    "other_information": "Contact Person\nRajdeep Mukherjee\nContact Email-ID\nFor grievance related queries : vidyasaarathi@nsdl.co.in",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Last date to apply": "Fri Feb 28 2020"
+    "general_information": {
+      "raw_text": "Applications are invited for the Tata Realty Scholarship for Girls Pursuing 1st Year - B.E./B.Tech for the year 2019-2020.\nThe objective of this scheme is to recognize, promote and financially assist the meritorious girls students belonging to economically weaker sections of the society who are pursuing B.E./B.Tech course.This scholarship would enable them to complete higher education and be a part of the flourishing construction Industry.\nPlease find below the preferred institute list\n1 Narula Institute of Technology -Kolkata -West Bengal\n2 Haldia Institute of Technology -Haldia -West Bengal\n3 Indian Institute of Technology Kharagpur -Kharagpur -West Bengal\n4 Indian Institute of Technology Kharagpur -Kharagpur -West Bengal\n5 Indian Institute of Technology Guwahati -Guwahati -Assam\n6 Jadavpur University -Kolkata -West Bengal\n7 Pimpri Chinchwad College of Engineering -Pune -Maharashtra\n8 Sir J. J. College of Architecture -Mumbai -Maharashtra\n9 Sardar Patel College of Engineering -Mumbai -Maharashtra\n10 Indian Institute of Technology Bombay -Mumbai -Maharashtra\n11 College of Engineering -Pune -Maharashtra\n12 SVKM`s Narsee Monjee Institute of Management Studies -Mumbai -Maharashtra\n13 Anna University -Chennai -Tamil Nadu\n14 National Institute of Technology Tiruchirappalli -Tiruchirappalli -Tamil Nadu\n15 Thiagarajar College of Engineering -Madurai -Tamil Nadu\n16 Indian Institute of Technology Madras -Chennai -Tamil Nadu\n17 Indian Institute of Technology Hyderabad -Hyderabad -Telangana\n18 National Institute of Technology Tiruchirappalli -Tiruchirappalli -Tamil Nadu\n19 National Institute of Technology Karnataka -Surathkal -Karnataka\n20 Guru Gobind Singh Indraprastha University -New Delhi -Delhi\n21 Jamia Millia Islamia -New Delhi -Delhi\n22 School of Planning and Architecture New Delhi -New Delhi -Delhi\n23 Indian Institute of Technology Delhi -New Delhi -Delhi\n24 Indian Institute of Technology Mandi -Mandi -Himachal Pradesh\n25 Thapar Institute of Engineering and Technology (Deemed-to-be-university) -Patiala -Punjab",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "deadline_extracted": "Fri Feb 28 2020",
-    "benefits_table": "Scholarship Amount (INR) 1,00,000.00",
+    "awards": {
+      "raw_text": "Scholarship Amount (INR) 1,00,000.00",
+      "structured_data": {
+        "description": "",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "Qualification criteria : Minimum 60% in Class 12,\nCourse Details :\nCourse Level : Under Graduate\n1) Course Name : B.E./B.Tech. (BE/BTech)\nGender : Female\nFamily Income : Scheme is available to only student whose family income is between 0.00 - 500000.00",
+      "structured_data": {
+        "requirements": [],
+        "categories": [
+          "ST",
+          "SC"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "application_fees": {
+      "raw_text": "Application Fees information is not available.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "To apply, click here.\nLast date to apply - 28-02-2020\nDocument Required :\n1- Proof of Identity\n2- Bonafide Certificate\n3- Proof of Address\n4- 10th and 12th Marksheets\n5- Student Bank Passbook\n6- Admission Confirmation letter\n7- Current year college Fees Receipt and Fee Structure\n8- Income Certificate of current year\nAll documents uploaded shall be clear and must be in .jpeg .png file only\n  For further details, please check\nhttps://www.vidyasaarathi.co.in/Vidyasaarathi/resources/2150/233_10.html",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "selection_process": {
+      "raw_text": "Applications will be evaluated.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "Contact Person\nRajdeep Mukherjee\nContact Email-ID\nFor grievance related queries : vidyasaarathi@nsdl.co.in",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Last date to apply": "Fri Feb 28 2020"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech",
     "original_title": "Unknown",
     "scrape_index": 4,
-    "scraped_at": "2025-07-24T17:39:52.840376",
+    "scraped_at": "2025-07-24T17:59:25.433174",
     "scrape_status": "success"
   },
   {
     "title": "SBIF Asha Scholarship for UG Program",
-    "general_information": "SBIF Asha Scholarship Program 2023 is an initiative of the SBI Foundation under its education vertical - Integrated Learning Mission (ILM), to provide financial assistance to meritorious students from low-income families across India to ensure continuity of their education.",
-    "awards": "Benefits:\nUp to INR 50,000 for one year",
-    "eligibility": "Eligibility\nStudents pursuing first-year of their undergraduate studies from top NIRF universities/colleges in the academic year 2022-23 are eligible.\nApplicants must have secured a minimum of 75% marks in Class 12 examination.\nThe annual family income of the applicants from all sources must not be more than INR 3 Lakh.\nStudents from PAN India are eligible to apply.",
-    "application_fees": "No Application Fees.",
-    "application_procedure": "Click the ‘Apply Now’ button below.\nLogin to Buddy4Study with your registered ID and land onto the ‘Application Form Page’.\nIf not registered - Register at Buddy4Study with your Email/Mobile/Gmail account.\nYou will now be redirected to the ‘SBIF Asha Scholarship Program 2023’ application form page.\nClick on the ‘Start Application’ button to begin the application process.\nFill the required details in the online application form.\nUpload relevant documents.\nAccept the ‘Terms and Conditions’ and click on ‘Preview’. \nIf all the details filled in by the applicant are correctly showing on the preview screen, click on the ‘Submit’ button to complete the application process.",
-    "selection_process": "The selection of scholars for the ‘SBIF Asha Scholarship Program 2023’ will be made on the basis of their academic merit and financial background. It involves a multi-stage process as detailed below –\nInitial shortlisting of applications based on their academic merit and financial background\nTelephonic interview of shortlisted candidates followed by document verification for final selection",
-    "other_information": "In case of any queries, please reach out to:\n011-430-92248 (Ext: 303) (Monday to Friday - 10:00AM to 6PM)\nEmail Id:- sbiashascholarship@buddy4study.com",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Last date to apply": "Sun Apr 30 2023"
+    "general_information": {
+      "raw_text": "SBIF Asha Scholarship Program 2023 is an initiative of the SBI Foundation under its education vertical - Integrated Learning Mission (ILM), to provide financial assistance to meritorious students from low-income families across India to ensure continuity of their education.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "deadline_extracted": "Sun Apr 30 2023",
+    "awards": {
+      "raw_text": "Benefits:\nUp to INR 50,000 for one year",
+      "structured_data": {
+        "description": "Benefits:",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "Eligibility\nStudents pursuing first-year of their undergraduate studies from top NIRF universities/colleges in the academic year 2022-23 are eligible.\nApplicants must have secured a minimum of 75% marks in Class 12 examination.\nThe annual family income of the applicants from all sources must not be more than INR 3 Lakh.\nStudents from PAN India are eligible to apply.",
+      "structured_data": {
+        "requirements": [
+          "Students pursuing first-year of their undergraduate studies from top NIRF universities/colleges in the academic year 2022-23 are eligible.",
+          "Applicants must have secured a minimum of 75% marks in Class 12 examination.",
+          "The annual family income of the applicants from all sources must not be more than INR 3 Lakh.",
+          "Students from PAN India are eligible to apply."
+        ],
+        "categories": [
+          "ST"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Students pursuing first-year of their undergraduate studies from top NIRF universities/colleges in the academic year 2022-23 are eligible.",
+            "Applicants must have secured a minimum of 75% marks in Class 12 examination.",
+            "The annual family income of the applicants from all sources must not be more than INR 3 Lakh.",
+            "Students from PAN India are eligible to apply."
+          ]
+        }
+      ]
+    },
+    "application_fees": {
+      "raw_text": "No Application Fees.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "Click the ‘Apply Now’ button below.\nLogin to Buddy4Study with your registered ID and land onto the ‘Application Form Page’.\nIf not registered - Register at Buddy4Study with your Email/Mobile/Gmail account.\nYou will now be redirected to the ‘SBIF Asha Scholarship Program 2023’ application form page.\nClick on the ‘Start Application’ button to begin the application process.\nFill the required details in the online application form.\nUpload relevant documents.\nAccept the ‘Terms and Conditions’ and click on ‘Preview’. \nIf all the details filled in by the applicant are correctly showing on the preview screen, click on the ‘Submit’ button to complete the application process.",
+      "structured_data": {},
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Click the ‘Apply Now’ button below.",
+            "Login to Buddy4Study with your registered ID and land onto the ‘Application Form Page’.\nIf not registered - Register at Buddy4Study with your Email/Mobile/Gmail account.",
+            "If not registered - Register at Buddy4Study with your Email/Mobile/Gmail account.",
+            "You will now be redirected to the ‘SBIF Asha Scholarship Program 2023’ application form page.",
+            "Click on the ‘Start Application’ button to begin the application process.",
+            "Fill the required details in the online application form.",
+            "Upload relevant documents.",
+            "Accept the ‘Terms and Conditions’ and click on ‘Preview’.",
+            "If all the details filled in by the applicant are correctly showing on the preview screen, click on the ‘Submit’ button to complete the application process."
+          ]
+        },
+        {
+          "list_index": 1,
+          "type": "ul",
+          "items": [
+            "If not registered - Register at Buddy4Study with your Email/Mobile/Gmail account."
+          ]
+        }
+      ]
+    },
+    "selection_process": {
+      "raw_text": "The selection of scholars for the ‘SBIF Asha Scholarship Program 2023’ will be made on the basis of their academic merit and financial background. It involves a multi-stage process as detailed below –\nInitial shortlisting of applications based on their academic merit and financial background\nTelephonic interview of shortlisted candidates followed by document verification for final selection",
+      "structured_data": {},
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Initial shortlisting of applications based on their academic merit and financial background",
+            "Telephonic interview of shortlisted candidates followed by document verification for final selection"
+          ]
+        }
+      ]
+    },
+    "other_information": {
+      "raw_text": "In case of any queries, please reach out to:\n011-430-92248 (Ext: 303) (Monday to Friday - 10:00AM to 6PM)\nEmail Id:- sbiashascholarship@buddy4study.com",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Last date to apply": "Sun Apr 30 2023"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha",
     "original_title": "Unknown",
     "scrape_index": 5,
-    "scraped_at": "2025-07-24T17:39:58.263408",
+    "scraped_at": "2025-07-24T17:59:31.189947",
     "scrape_status": "success"
   },
   {
     "title": "Innovation in Science Pursuit for Inspired Research (INSPIRE) Scheme Scholarship for Higher Education (SHE)",
-    "general_information": "Scholarship for Higher Education (SHE) is a component of“Innovation in Science Pursuit for Inspired Research (INSPIRE)”, which is a flagship programme of the Department of Science and Technology (DST), under the Ministry of Science and Technology, Government of India. It aims to attract students to study basic and natural Science subjects at undergraduate and postgraduate levels and pursue research as a career by providing scholarships to interested and deserving students.",
-    "awards": "The scholarship is valued at ` 80,000/- per annum. Each candidate will receive annual scholarship @ ` 5000/- per month with total value of ` 60,000/-. All the SHE scholars are required to undertake summer research projects under an active researcher in any recognized research centre across India. A summer time Mentorship grant of ` 20,000/- will be paid every year. The scholars have to submit the Project Report and Certificate from Mentor after the completion of the project in due course of time.",
-    "eligibility": "(a) Meritorious Students with aggregate marks within top 1% of their Class XII examination of any State/ Central Education Board in India are eligible. In addition, the student must be pursuing courses in Natural and Basic Sciences at the B.Sc., B.S., and Int.M.Sc./M.S. level.\n                                                                                       (or)\n(b) Those students who have secured ranks in the JEE of IIT, AIPMT (within top 10000 ranks), and are presently pursuing Natural and Basic Science courses in India at the B.Sc., B.S., Int. M.Sc./M.S. level.\n                                                                                        (or)\n(c) Students with aggregate marks within top 1% of their Class XII examination of any State/ Central Education Board in India and pursuing Integrated M.S. courses in Natural and Basic Sciences at IISERs, NISER and Department of Atomic Energy Centre for Basic SciencesUniversity of Mumbai and Visva-Bharati, Shanti Niketan.\n                                                                                         (or)\n(d) Students who have been selected under Kishore Vaigyanik Protsahan Yojana (KVPY) and pursuing Bachelor/Master level courses in Natural Sciences.\n                                                                                        (or)\n(e) National Talent Search Examination (NTSE) scholars, Jagadish Bose National Science Talent Search (JBNSTS) scholars and International Olympiad medallists pursuing Bachelor/ Master level courses in Natural Sciences are also eligible.\n\nThe following subjects under Basic and Natural Sciences are within the scope of INSPIRE Scholarship for pursuing B.Sc./B.S./Int. M.Sc./Int. M.S. courses: (1) Physics (2) Chemistry (3) Mathematics (4) Biology (5) Statistics (6) Geology (7) Astrophysics (8) Astronomy (9) Electronics (10) Botany (11) Zoology (12) Biochemistry (13) Anthropology (14) Microbiology (15) Geophysics (16) Geochemistry (17) Atmospheric Sciences & (18) Oceanic Sciences.",
-    "application_fees": "No details found.",
-    "application_procedure": "The Candidates have to register themselves at https://www.online-inspire.gov.in/\n    For further details, please check-\nhttps://www.online-inspire.gov.in/Content/SHEFAQs.pdf",
-    "selection_process": "",
-    "other_information": "",
-    "important_dates": "",
-    "important_dates_structured": {},
+    "general_information": {
+      "raw_text": "Scholarship for Higher Education (SHE) is a component of“Innovation in Science Pursuit for Inspired Research (INSPIRE)”, which is a flagship programme of the Department of Science and Technology (DST), under the Ministry of Science and Technology, Government of India. It aims to attract students to study basic and natural Science subjects at undergraduate and postgraduate levels and pursue research as a career by providing scholarships to interested and deserving students.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "awards": {
+      "raw_text": "The scholarship is valued at ` 80,000/- per annum. Each candidate will receive annual scholarship @ ` 5000/- per month with total value of ` 60,000/-. All the SHE scholars are required to undertake summer research projects under an active researcher in any recognized research centre across India. A summer time Mentorship grant of ` 20,000/- will be paid every year. The scholars have to submit the Project Report and Certificate from Mentor after the completion of the project in due course of time.",
+      "structured_data": {
+        "description": "The scholarship is valued at ` 80,000/- per annum. Each candidate will receive annual scholarship @ ` 5000/- per month with total value of ` 60,000/-. All the SHE scholars are required to undertake summer research projects under an active researcher in any recognized research centre across India. A summer time Mentorship grant of ` 20,000/- will be paid every year. The scholars have to submit the Project Report and Certificate from Mentor after the completion of the project in due course of time.",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "(a) Meritorious Students with aggregate marks within top 1% of their Class XII examination of any State/ Central Education Board in India are eligible. In addition, the student must be pursuing courses in Natural and Basic Sciences at the B.Sc., B.S., and Int.M.Sc./M.S. level.\n                                                                                       (or)\n(b) Those students who have secured ranks in the JEE of IIT, AIPMT (within top 10000 ranks), and are presently pursuing Natural and Basic Science courses in India at the B.Sc., B.S., Int. M.Sc./M.S. level.\n                                                                                        (or)\n(c) Students with aggregate marks within top 1% of their Class XII examination of any State/ Central Education Board in India and pursuing Integrated M.S. courses in Natural and Basic Sciences at IISERs, NISER and Department of Atomic Energy Centre for Basic SciencesUniversity of Mumbai and Visva-Bharati, Shanti Niketan.\n                                                                                         (or)\n(d) Students who have been selected under Kishore Vaigyanik Protsahan Yojana (KVPY) and pursuing Bachelor/Master level courses in Natural Sciences.\n                                                                                        (or)\n(e) National Talent Search Examination (NTSE) scholars, Jagadish Bose National Science Talent Search (JBNSTS) scholars and International Olympiad medallists pursuing Bachelor/ Master level courses in Natural Sciences are also eligible.\n\nThe following subjects under Basic and Natural Sciences are within the scope of INSPIRE Scholarship for pursuing B.Sc./B.S./Int. M.Sc./Int. M.S. courses: (1) Physics (2) Chemistry (3) Mathematics (4) Biology (5) Statistics (6) Geology (7) Astrophysics (8) Astronomy (9) Electronics (10) Botany (11) Zoology (12) Biochemistry (13) Anthropology (14) Microbiology (15) Geophysics (16) Geochemistry (17) Atmospheric Sciences & (18) Oceanic Sciences.",
+      "structured_data": {
+        "requirements": [],
+        "categories": [
+          "ST",
+          "SC"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "application_fees": {
+      "raw_text": "No details found.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "The Candidates have to register themselves at https://www.online-inspire.gov.in/\n    For further details, please check-\nhttps://www.online-inspire.gov.in/Content/SHEFAQs.pdf",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "selection_process": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she",
     "original_title": "Unknown",
     "scrape_index": 6,
-    "scraped_at": "2025-07-24T17:40:04.721353",
+    "scraped_at": "2025-07-24T17:59:41.327095",
     "scrape_status": "success"
   },
   {
     "title": "Samsung Star Scholar",
-    "general_information": "Samsung India Electronics Private Limited is at the forefront of empowering India’s youth with education through technology. Samsung as part of its Corporate Social Responsibility (CSR) initiatives has instituted the Star Scholar program (“Program”). The scholarship program is applicable for students of Jawahar Navodaya Vidyalaya (JNVs) currently pursuing a full-term BE/B. Tech/Dual Degree (B.Tech + M.Tech) course only in an Indian Institute of Technology (IIT) or a National Institute of Technology (NIT) in India. IIT and NIT may individually be referred to as “Institute” or collectively as “Institutes”",
-    "awards": "1. Selected Applicants will be entitled to annual scholarship amount upto Indian Rupees Two Lakh (INR 2,00,000/-) only for expenses related to tuition fee including (examination fee & registration fee), hostel and mess expenses only as certified by Institute Dean/authorized PIC in the student application form and as specifically mentioned in section 7 of these Rules.\n2. Scholarship amount support will be paid out against actual verified submitted receipts for expenses.\n3. Applicants are responsible for their administrative expenses such as refundable deposits, one time fees, Institute fees, transportation, insurance, personal spending money, medical cost, incidentals (photocopy, phone calls, etc.), supplemental study courses and materials and /or other expenses undertaken by them during his /her degree duration at the Institute. The scholarship amount will not be paid out for these expenses.\n4. In case of any conflict with respect to whether an expense is covered for disbursement under the Program, decision of Samsung shall be final and binding.",
-    "eligibility": "Applicants will be eligible to receive scholarships if they meet the defined eligibility criteria mentioned in these Rules and by following the procedures provided herein.\n1. The scholarship is available for the student(s) who have graduated from any JNV (10th or 12th-grade pass), run by the Navodaya Vidyalaya Samiti, an autonomous organization under the Ministry of Human Resource Development, Government of India.\n2. Currently pursuing a full-term BE/B. Tech/Dual Degree (B.Tech +M.Tech) course (“Degree Course”) in an Indian Institute of Technology (IIT) or a National Institute of Technology (NIT) in India as mentioned in the list of Institutes available on the Samsung India Star Scholar website (hereinafter ”Institute”). Any other courses like B.ARCH/BSC/MSC etc. are not covered under this Program.\n3. Duration of the scholarship will be for one (01) academic year, extendable to subsequent three and Four (03/04) years for B.E./B. Tech. Degree and Dual Degree courses respectively based on the fulfillment of eligibility criteria and selection approval by Samsung.\n4. Applicants in the first year of the scholarship will be selected on the basis of their all India rank which is the common rank list (CRL) in the Joint Entrance Examination (JEE Main).\n5. Subsequent to 1st year, scholarship to Applicants from 2nd to 4th year or 2nd to 5 th year (as applicable) shall be available ifa. The Applicants have received the Scholarship for all preceding applicable years and; b. The Applicants have an SGPA or CPGA grade rating of 5 or above for immediate previous two (02) semesters\n6. Applicants selected for Scholarship under the Program shall not avail any other financial assistance or scholarship from any Institute, Government or Non-Government source, during their pursuance of the Degree Course. Applicants receiving fee waivers from the Institute based on socio-economic criteria laid down by the Institute are eligible to apply, provided that the waiver is reflected in the official fee structure of the Institute. Such applicants must declare the same in the application form and not claim the amount which is waived off as per the fee structure of the Institute applicable to them.\n7. All Applicants must be in good standing with the Institute to receive the Scholarship support.\n8. Applicants who have not completed Eighteen years (18) of age at the time of application must have their parent(s)’ / legal guardian(s)’, countersign the Application Form. In the event that there is a constraint of meeting the submission deadline, parent(s) / legal guardian(s) shall submit a declaration in original and in the format, as prescribed by Samsung, within 10 days of the submitted form. In case, the Applicant fails to submit the declaration by the parent/legal guardian, Samsung reserves the right to cancel the application of the Applicant.\n9. If an Applicant fails to receive a scholarship in the current year, he/she will be ineligible to receive future Scholarships.",
-    "application_fees": "No application fees.",
-    "application_procedure": "Original application forms must be sent as a hard copy (print format) to Samsung at the address as mentioned below. Please mention New Applicant/Renewal on the outer envelope. Address for sending Application Form\nSTAR SCHOLAR\nCorporate Citizenship (CRO)\nSamsung India Electronics Pvt. Ltd.,\n20th ~ 24th Floor, Two Horizon Centre, Golf Course Road,\nSector - 43, DLF Phase V, Gurgaon, Haryana -122002, India\nScanned copy of the complete application form along with supporting documents must be sent to email id: http://star.scholar@samsung.com\nImportant Dates:\nForms are available (appended below) for download from November 20, 2020\nThe last date for submission of the Application and all related documents (hard copy) is as below :\nNew Applicants (1st year) admitted in the course in FY 2020-21: January 25, 2021\nRenewal (Star Scholars of FY 2019-20): December 20, 2020\n  For further details, please check-\nhttps://www.samsung.com/in/microsite/sapne-hue-bade/star-scholar/",
-    "selection_process": "Samsung Selection Committee will be evaluating the applications. Committeemay, at its sole discretion, refuse to accept or cancel a nomination for a Scholarship if an actual or perceived conflict of interest exists.\nSelection/rejection of the applicant for the Star Scholarship: All candidates will be informed on their selection/rejection individually through email and/or phone call/SMS before 31st March 2021.",
-    "other_information": "Contact\nApplicants are requested to ensure that any communication related to Star Scholar program is done only on official communication email id: http://star.scholar@samsung.com",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Renewal (Star Scholars of FY 2019-20)": "Sun Dec 20 2020",
-      "Last date for submission of Application and all related documents (hard copy) - New Applicants (1st year) admitted in the course in FY 2020-21": "Mon Jan 25 2021",
-      "Application Period Opens": "Fri Nov 20 2020"
+    "general_information": {
+      "raw_text": "Samsung India Electronics Private Limited is at the forefront of empowering India’s youth with education through technology. Samsung as part of its Corporate Social Responsibility (CSR) initiatives has instituted the Star Scholar program (“Program”). The scholarship program is applicable for students of Jawahar Navodaya Vidyalaya (JNVs) currently pursuing a full-term BE/B. Tech/Dual Degree (B.Tech + M.Tech) course only in an Indian Institute of Technology (IIT) or a National Institute of Technology (NIT) in India. IIT and NIT may individually be referred to as “Institute” or collectively as “Institutes”",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "benefits_table": "Renewal (Star Scholars of FY 2019-20): Sun Dec 20 2020\nLast date for submission of Application and all related documents (hard copy) - New Applicants (1st year) admitted in the course in FY 2020-21: Mon Jan 25 2021\nApplication Period Opens: Fri Nov 20 2020",
+    "awards": {
+      "raw_text": "1. Selected Applicants will be entitled to annual scholarship amount upto Indian Rupees Two Lakh (INR 2,00,000/-) only for expenses related to tuition fee including (examination fee & registration fee), hostel and mess expenses only as certified by Institute Dean/authorized PIC in the student application form and as specifically mentioned in section 7 of these Rules.\n2. Scholarship amount support will be paid out against actual verified submitted receipts for expenses.\n3. Applicants are responsible for their administrative expenses such as refundable deposits, one time fees, Institute fees, transportation, insurance, personal spending money, medical cost, incidentals (photocopy, phone calls, etc.), supplemental study courses and materials and /or other expenses undertaken by them during his /her degree duration at the Institute. The scholarship amount will not be paid out for these expenses.\n4. In case of any conflict with respect to whether an expense is covered for disbursement under the Program, decision of Samsung shall be final and binding.",
+      "structured_data": {
+        "description": "1. Selected Applicants will be entitled to annual scholarship amount upto Indian Rupees Two Lakh (INR 2,00,000/-) only for expenses related to tuition fee including (examination fee & registration fee), hostel and mess expenses only as certified by Institute Dean/authorized PIC in the student application form and as specifically mentioned in section 7 of these Rules.",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "Applicants will be eligible to receive scholarships if they meet the defined eligibility criteria mentioned in these Rules and by following the procedures provided herein.\n1. The scholarship is available for the student(s) who have graduated from any JNV (10th or 12th-grade pass), run by the Navodaya Vidyalaya Samiti, an autonomous organization under the Ministry of Human Resource Development, Government of India.\n2. Currently pursuing a full-term BE/B. Tech/Dual Degree (B.Tech +M.Tech) course (“Degree Course”) in an Indian Institute of Technology (IIT) or a National Institute of Technology (NIT) in India as mentioned in the list of Institutes available on the Samsung India Star Scholar website (hereinafter ”Institute”). Any other courses like B.ARCH/BSC/MSC etc. are not covered under this Program.\n3. Duration of the scholarship will be for one (01) academic year, extendable to subsequent three and Four (03/04) years for B.E./B. Tech. Degree and Dual Degree courses respectively based on the fulfillment of eligibility criteria and selection approval by Samsung.\n4. Applicants in the first year of the scholarship will be selected on the basis of their all India rank which is the common rank list (CRL) in the Joint Entrance Examination (JEE Main).\n5. Subsequent to 1st year, scholarship to Applicants from 2nd to 4th year or 2nd to 5 th year (as applicable) shall be available ifa. The Applicants have received the Scholarship for all preceding applicable years and; b. The Applicants have an SGPA or CPGA grade rating of 5 or above for immediate previous two (02) semesters\n6. Applicants selected for Scholarship under the Program shall not avail any other financial assistance or scholarship from any Institute, Government or Non-Government source, during their pursuance of the Degree Course. Applicants receiving fee waivers from the Institute based on socio-economic criteria laid down by the Institute are eligible to apply, provided that the waiver is reflected in the official fee structure of the Institute. Such applicants must declare the same in the application form and not claim the amount which is waived off as per the fee structure of the Institute applicable to them.\n7. All Applicants must be in good standing with the Institute to receive the Scholarship support.\n8. Applicants who have not completed Eighteen years (18) of age at the time of application must have their parent(s)’ / legal guardian(s)’, countersign the Application Form. In the event that there is a constraint of meeting the submission deadline, parent(s) / legal guardian(s) shall submit a declaration in original and in the format, as prescribed by Samsung, within 10 days of the submitted form. In case, the Applicant fails to submit the declaration by the parent/legal guardian, Samsung reserves the right to cancel the application of the Applicant.\n9. If an Applicant fails to receive a scholarship in the current year, he/she will be ineligible to receive future Scholarships.",
+      "structured_data": {
+        "requirements": [],
+        "categories": [
+          "ST",
+          "SC"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "application_fees": {
+      "raw_text": "No application fees.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "Original application forms must be sent as a hard copy (print format) to Samsung at the address as mentioned below. Please mention New Applicant/Renewal on the outer envelope. Address for sending Application Form\nSTAR SCHOLAR\nCorporate Citizenship (CRO)\nSamsung India Electronics Pvt. Ltd.,\n20th ~ 24th Floor, Two Horizon Centre, Golf Course Road,\nSector - 43, DLF Phase V, Gurgaon, Haryana -122002, India\nScanned copy of the complete application form along with supporting documents must be sent to email id: http://star.scholar@samsung.com\nImportant Dates:\nForms are available (appended below) for download from November 20, 2020\nThe last date for submission of the Application and all related documents (hard copy) is as below :\nNew Applicants (1st year) admitted in the course in FY 2020-21: January 25, 2021\nRenewal (Star Scholars of FY 2019-20): December 20, 2020\n  For further details, please check-\nhttps://www.samsung.com/in/microsite/sapne-hue-bade/star-scholar/",
+      "structured_data": {},
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Forms are available (appended below) for download from November 20, 2020",
+            "The last date for submission of the Application and all related documents (hard copy) is as below :\nNew Applicants (1st year) admitted in the course in FY 2020-21: January 25, 2021\nRenewal (Star Scholars of FY 2019-20): December 20, 2020",
+            "New Applicants (1st year) admitted in the course in FY 2020-21: January 25, 2021",
+            "Renewal (Star Scholars of FY 2019-20): December 20, 2020"
+          ]
+        },
+        {
+          "list_index": 1,
+          "type": "ul",
+          "items": [
+            "New Applicants (1st year) admitted in the course in FY 2020-21: January 25, 2021",
+            "Renewal (Star Scholars of FY 2019-20): December 20, 2020"
+          ]
+        }
+      ]
+    },
+    "selection_process": {
+      "raw_text": "Samsung Selection Committee will be evaluating the applications. Committeemay, at its sole discretion, refuse to accept or cancel a nomination for a Scholarship if an actual or perceived conflict of interest exists.\nSelection/rejection of the applicant for the Star Scholarship: All candidates will be informed on their selection/rejection individually through email and/or phone call/SMS before 31st March 2021.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "Contact\nApplicants are requested to ensure that any communication related to Star Scholar program is done only on official communication email id: http://star.scholar@samsung.com",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Renewal (Star Scholars of FY 2019-20)": "Sun Dec 20 2020",
+        "Last date for submission of Application and all related documents (hard copy) - New Applicants (1st year) admitted in the course in FY 2020-21": "Mon Jan 25 2021",
+        "Application Period Opens": "Fri Nov 20 2020"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar",
     "original_title": "Unknown",
     "scrape_index": 7,
-    "scraped_at": "2025-07-24T17:40:13.443064",
+    "scraped_at": "2025-07-24T18:00:00.884225",
     "scrape_status": "success"
   },
   {
     "title": "Reliance Foundation Undergraduate Scholarships - UG",
-    "general_information": "The Reliance Foundation Undergraduate Scholarships aim to support up to 5,000 meritorious students based on a merit-cum-means criteria for their undergraduate college education, empowering them to continue their studies without financial burden. The Scholarships aim to enable students to become successful professionals and realize their dreams, unlocking their potential to lift themselves and their communities up and contributing towards India’s future socio-economic development.",
-    "awards": "Up to INR 2,00,000 over the duration of the degree programme",
-    "eligibility": "Eligibility\nStudents must be enrolled in first-year full-time undergraduate degree in any stream from a recognised Indian institute.\nMust have passed class 12 with a minimum of 60% marks\nThe annual household income should be less than INR 15,00,000 (preference will be given to those students whose family income is less than INR 2,50,000)\nOpen for resident Indian citizens only.",
-    "application_fees": "No application fees.",
-    "application_procedure": "Application Procedure:-\nStep 1: Application Form\nRegistration Link:- https://scholarships.reliancefoundation.org/UG_Scholarship.aspx\nStep 2: Aptitude Test\nAll applicants to answer the online aptitude test.\nStep 3:\nApplications will be evaluated using a combination of aptitude test score, academic and personal information.\nStep 4: ANNOUNCEMENT\nAnnouncement of Scholars – Up to 5,000 scholars.\nAll candidates will be evaluated on the basis of merit cum means.\nResults are now declared.\n  For further details, please check-\nFAQ's:- https://scholarships.reliancefoundation.org/assets/pdf/RelianceFoundationUndergraduateScholarshipsApplicationFAQs.pdf\nOfficial website:- https://scholarships.reliancefoundation.org/UG_Scholarship.aspx",
-    "selection_process": "The selection will be a four -step process:\nStep 1: Filling an online application form with basic details and upload mandatory documents such as transcripts, household income proof and disability certificate (if applicable).\nStep 2: Students will be invited to complete a mandatory online aptitude test.\nStep 3: Document verification and evaluation of shortlisted candidates\nStep 4: Final Selection",
-    "other_information": "For any additional questions\n\nPlease text “hi” on WhatsApp to 7977 100 100\nEmail us at RF.UGScholarships@reliancefoundation.org",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Last date to apply": "Tue Feb 14 2023"
+    "general_information": {
+      "raw_text": "The Reliance Foundation Undergraduate Scholarships aim to support up to 5,000 meritorious students based on a merit-cum-means criteria for their undergraduate college education, empowering them to continue their studies without financial burden. The Scholarships aim to enable students to become successful professionals and realize their dreams, unlocking their potential to lift themselves and their communities up and contributing towards India’s future socio-economic development.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "deadline_extracted": "Tue Feb 14 2023",
+    "awards": {
+      "raw_text": "Up to INR 2,00,000 over the duration of the degree programme",
+      "structured_data": {
+        "description": "Up to INR 2,00,000 over the duration of the degree programme",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "Eligibility\nStudents must be enrolled in first-year full-time undergraduate degree in any stream from a recognised Indian institute.\nMust have passed class 12 with a minimum of 60% marks\nThe annual household income should be less than INR 15,00,000 (preference will be given to those students whose family income is less than INR 2,50,000)\nOpen for resident Indian citizens only.",
+      "structured_data": {
+        "requirements": [
+          "Students must be enrolled in first-year full-time undergraduate degree in any stream from a recognised Indian institute.",
+          "Must have passed class 12 with a minimum of 60% marks",
+          "The annual household income should be less than INR 15,00,000 (preference will be given to those students whose family income is less than INR 2,50,000)",
+          "Open for resident Indian citizens only."
+        ],
+        "categories": [
+          "ST"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Students must be enrolled in first-year full-time undergraduate degree in any stream from a recognised Indian institute.",
+            "Must have passed class 12 with a minimum of 60% marks",
+            "The annual household income should be less than INR 15,00,000 (preference will be given to those students whose family income is less than INR 2,50,000)",
+            "Open for resident Indian citizens only."
+          ]
+        }
+      ]
+    },
+    "application_fees": {
+      "raw_text": "No application fees.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "Application Procedure:-\nStep 1: Application Form\nRegistration Link:- https://scholarships.reliancefoundation.org/UG_Scholarship.aspx\nStep 2: Aptitude Test\nAll applicants to answer the online aptitude test.\nStep 3:\nApplications will be evaluated using a combination of aptitude test score, academic and personal information.\nStep 4: ANNOUNCEMENT\nAnnouncement of Scholars – Up to 5,000 scholars.\nAll candidates will be evaluated on the basis of merit cum means.\nResults are now declared.\n  For further details, please check-\nFAQ's:- https://scholarships.reliancefoundation.org/assets/pdf/RelianceFoundationUndergraduateScholarshipsApplicationFAQs.pdf\nOfficial website:- https://scholarships.reliancefoundation.org/UG_Scholarship.aspx",
+      "structured_data": {},
+      "tables": [],
+      "lists": [
+        {
+          "list_index": 0,
+          "type": "ul",
+          "items": [
+            "Step 1: Application Form\nRegistration Link:- https://scholarships.reliancefoundation.org/UG_Scholarship.aspx",
+            "Step 2: Aptitude Test\nAll applicants to answer the online aptitude test.",
+            "Step 3:\nApplications will be evaluated using a combination of aptitude test score, academic and personal information.",
+            "Step 4: ANNOUNCEMENT\nAnnouncement of Scholars – Up to 5,000 scholars.\nAll candidates will be evaluated on the basis of merit cum means.\nResults are now declared."
+          ]
+        }
+      ]
+    },
+    "selection_process": {
+      "raw_text": "The selection will be a four -step process:\nStep 1: Filling an online application form with basic details and upload mandatory documents such as transcripts, household income proof and disability certificate (if applicable).\nStep 2: Students will be invited to complete a mandatory online aptitude test.\nStep 3: Document verification and evaluation of shortlisted candidates\nStep 4: Final Selection",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "For any additional questions\n\nPlease text “hi” on WhatsApp to 7977 100 100\nEmail us at RF.UGScholarships@reliancefoundation.org",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Last date to apply": "Tue Feb 14 2023"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug",
     "original_title": "Unknown",
     "scrape_index": 8,
-    "scraped_at": "2025-07-24T17:40:27.285276",
+    "scraped_at": "2025-07-24T18:00:11.160682",
     "scrape_status": "success"
   },
   {
     "title": "AICTE Saksham Scholarship for differently abled students for Technical Education",
-    "general_information": "Applications are invited for the AICTE Saksham Scholarship for differently-abled students for Technical Education for the academic year 2020-2021.\nSaksham is an MHRD Scheme being implemented by AICTE aimed at providing encouragement and support to specially-abled children to pursue Technical Education. This is an attempt to give every young student, who is otherwise specially-abled, the opportunity to study further, and prepare for a successful future through technical education/knowledge.\nApplications are open for Degree / Diploma level courses.",
-    "awards": "All eligible specially-abled students admitted to the first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved Institution will get the scholarship.\n1) Rs 50,000 per annum for every year of study i.e. maximum 4 years for Degree and 3 years for Diploma for first year admitted students and maximum 3 years for Degree and 2 years for Diploma for second year admitted students through lateral entry as lump sum amount towards payment of college fee, computer purchase, stationery, books, Equipment, Software’s purchase etc. No other additional grant will be payable in lieu of hostel charges and medical charges etc.\n2) No documentary proof need to be attached for the above while availing benefits.",
-    "eligibility": "1) The candidate should be admitted to the first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved institutions of the respective year.\n2) Specially Abled Students, having disability of not less than 40%.\n3) Family income from all sources is not more than Rs. 8 lakh per annum during the current financial year. A valid income certificate issued by the State/UT Government needs to be enclosed.",
-    "application_fees": "No Application Fees.",
-    "application_procedure": "To apply, click here - https://nsp.gov.in/\n1) The candidate fulfilling the eligibility conditions is required to apply online on the National Scholarship Portal (NSP) after the initiation of the application process and notice to be published on the AICTE website.\n2) The host institution where the candidate is studying is required to verify the online application. 3) Department of Technical Education (DTE) of respective State/ UT will verify these applications as the second level of scrutiny.\nLast date to apply - 31-10-2020\n  For further details, please check-\nDegree - https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf\nDiploma - https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf",
-    "selection_process": "Applications will be evaluated.\nAfter selection, the awardee will be paid scholarship through DBT mode on an annual basis.",
-    "other_information": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Defective Verification / Institute Verification": "Tue Dec 15 2020",
-      "Last date to apply": "Mon Nov 30 2020"
+    "general_information": {
+      "raw_text": "Applications are invited for the AICTE Saksham Scholarship for differently-abled students for Technical Education for the academic year 2020-2021.\nSaksham is an MHRD Scheme being implemented by AICTE aimed at providing encouragement and support to specially-abled children to pursue Technical Education. This is an attempt to give every young student, who is otherwise specially-abled, the opportunity to study further, and prepare for a successful future through technical education/knowledge.\nApplications are open for Degree / Diploma level courses.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "deadline_extracted": "Mon Nov 30 2020",
+    "awards": {
+      "raw_text": "All eligible specially-abled students admitted to the first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved Institution will get the scholarship.\n1) Rs 50,000 per annum for every year of study i.e. maximum 4 years for Degree and 3 years for Diploma for first year admitted students and maximum 3 years for Degree and 2 years for Diploma for second year admitted students through lateral entry as lump sum amount towards payment of college fee, computer purchase, stationery, books, Equipment, Software’s purchase etc. No other additional grant will be payable in lieu of hostel charges and medical charges etc.\n2) No documentary proof need to be attached for the above while availing benefits.",
+      "structured_data": {
+        "description": "All eligible specially-abled students admitted to the first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved Institution will get the scholarship.",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "1) The candidate should be admitted to the first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved institutions of the respective year.\n2) Specially Abled Students, having disability of not less than 40%.\n3) Family income from all sources is not more than Rs. 8 lakh per annum during the current financial year. A valid income certificate issued by the State/UT Government needs to be enclosed.",
+      "structured_data": {
+        "requirements": [],
+        "categories": [
+          "ST"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "application_fees": {
+      "raw_text": "No Application Fees.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "To apply, click here - https://nsp.gov.in/\n1) The candidate fulfilling the eligibility conditions is required to apply online on the National Scholarship Portal (NSP) after the initiation of the application process and notice to be published on the AICTE website.\n2) The host institution where the candidate is studying is required to verify the online application. 3) Department of Technical Education (DTE) of respective State/ UT will verify these applications as the second level of scrutiny.\nLast date to apply - 31-10-2020\n  For further details, please check-\nDegree - https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf\nDiploma - https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "selection_process": {
+      "raw_text": "Applications will be evaluated.\nAfter selection, the awardee will be paid scholarship through DBT mode on an annual basis.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Defective Verification / Institute Verification": "Tue Dec 15 2020",
+        "Last date to apply": "Mon Nov 30 2020"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education",
     "original_title": "Unknown",
     "scrape_index": 9,
-    "scraped_at": "2025-07-24T17:40:33.860778",
+    "scraped_at": "2025-07-24T18:00:21.509693",
     "scrape_status": "success"
   },
   {
     "title": "AICTE Saksham Scholarship for differently abled students",
-    "general_information": "Online applications are invited for Scholarship to Differently Abled Students under SAKSHAM Scheme, which was implemented by All India Council For Technical Education, New Delhi. \nSaksham is a MHRD Scheme being implemented by of AICTE aimed at providing encouragement and support to specially abled children to pursue Technical Education. This is an attempt to give every young student, who is otherwise specially-abled, the opportunity to study further and prepare for a successful future through technical education/knowledge.",
-    "awards": "All eligible specially-abled students admitted to first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved Institution will get the scholarship.\n1) Rs 50,000 per annum for every year of study i.e. maximum 4 years for Degree and 3 years for Diploma for first year admitted students and maximum 3 years for Degree and 2 years for Diploma for second year admitted students through lateral entry as lump sum amount towards payment of college fee, computer purchase, stationery, books, Equipment, Software’s purchase etc. No other additional grant will be payable in lieu of hostel charges and medical charges etc.\n2) No documentary proof need to be attached for the above while availing benefits.",
-    "eligibility": "1) The candidate should be admitted to first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved institutions of respective year.\n2) Specially Abled Students, having disability of not less than 40%.\n3) Family income from all sources is not more than Rs. 8 lakh per annum during the current financial year. A valid income certificate issued by State/UT Government need to be enclosed.",
-    "application_fees": "No Application Fees.",
-    "application_procedure": "Applications are invited once in a year through the National e-Scholarship Portal of the Government of India.\n1) The candidate fulfilling the eligibility conditions is required to apply online on the National Scholarship Portal (NSP) after the initiation of the application process and notice to be published on the AICTE website.\n2) The host institution where the candidate is studying is required to verify the online application.\n3) Department of Technical Education (DTE) of respective State/ UT will verify these applications as the second level of scrutiny.\n  For further details, please check-\nhttps://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
-    "selection_process": "The selection of candidate will be made on merit on the basis of qualifying examination to peruse the respective Technical Degree/Diploma course from any of the AICTE approved institution.",
-    "other_information": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540\nhttps://scholarships.gov.in/",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Last date to apply": "Sun Dec 31 2023"
+    "general_information": {
+      "raw_text": "Online applications are invited for Scholarship to Differently Abled Students under SAKSHAM Scheme, which was implemented by All India Council For Technical Education, New Delhi. \nSaksham is a MHRD Scheme being implemented by of AICTE aimed at providing encouragement and support to specially abled children to pursue Technical Education. This is an attempt to give every young student, who is otherwise specially-abled, the opportunity to study further and prepare for a successful future through technical education/knowledge.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "deadline_extracted": "Sun Dec 31 2023",
+    "awards": {
+      "raw_text": "All eligible specially-abled students admitted to first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved Institution will get the scholarship.\n1) Rs 50,000 per annum for every year of study i.e. maximum 4 years for Degree and 3 years for Diploma for first year admitted students and maximum 3 years for Degree and 2 years for Diploma for second year admitted students through lateral entry as lump sum amount towards payment of college fee, computer purchase, stationery, books, Equipment, Software’s purchase etc. No other additional grant will be payable in lieu of hostel charges and medical charges etc.\n2) No documentary proof need to be attached for the above while availing benefits.",
+      "structured_data": {
+        "description": "All eligible specially-abled students admitted to first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved Institution will get the scholarship.",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "1) The candidate should be admitted to first year of Degree/Diploma level course OR Second year of Degree/Diploma course through lateral entry in any of the AICTE approved institutions of respective year.\n2) Specially Abled Students, having disability of not less than 40%.\n3) Family income from all sources is not more than Rs. 8 lakh per annum during the current financial year. A valid income certificate issued by State/UT Government need to be enclosed.",
+      "structured_data": {
+        "requirements": [],
+        "categories": [
+          "ST"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "application_fees": {
+      "raw_text": "No Application Fees.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "Applications are invited once in a year through the National e-Scholarship Portal of the Government of India.\n1) The candidate fulfilling the eligibility conditions is required to apply online on the National Scholarship Portal (NSP) after the initiation of the application process and notice to be published on the AICTE website.\n2) The host institution where the candidate is studying is required to verify the online application.\n3) Department of Technical Education (DTE) of respective State/ UT will verify these applications as the second level of scrutiny.\n  For further details, please check-\nhttps://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "selection_process": {
+      "raw_text": "The selection of candidate will be made on merit on the basis of qualifying examination to peruse the respective Technical Degree/Diploma course from any of the AICTE approved institution.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540\nhttps://scholarships.gov.in/",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Last date to apply": "Sun Dec 31 2023"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students",
     "original_title": "Unknown",
     "scrape_index": 10,
-    "scraped_at": "2025-07-24T17:40:40.330223",
+    "scraped_at": "2025-07-24T18:00:31.788958",
     "scrape_status": "success"
   },
   {
     "title": "AICTE - SWANATH SCHOLARSHIP SCHEME",
-    "general_information": "All India Council for Technical Education Vasant Kunj is inviting applications for the SWANATH SCHOLARSHIP SCHEME. The Scheme is being implemented by AICTE to provide encouragement and support to orphans, wards of parents died due to Covid-19, wards of Armed Forces and Central Paramilitary Forces martyred in action (Shaheed) to pursue education. This is an attempt to give every such child, an opportunity to study further and prepare for a successful future through education in AICTE Approved institutions and courses.\nApplications are invited once in a year through National e-Scholarship Portal of the Government of India.",
-    "awards": "NUMBER OF SCHOLARSHIPS: A maximum of 2000 scholarships (1000 for Degree Students and 1000 for Diploma Students) will be awarded every year to eligible candidates as above.\nAMOUNT OF SCHOLARSHIP: Rs. 50,000/- per annum for every year of study i.e. maximum 4 years for first year admitted Degree students and maximum 3 years for Diploma Students as lump sum amount towards payment of college fee, purchase of computer, stationeries, books, equipment, software etc. No other additional grant will be payable in lieu of hostel charges and medical charges etc. In case student is currently studying in the 2nd/ 3 rd/ 4 th year at degree level, the duration of the scholarship will be reduced to 3/2/1 year respectively. Similarly, for students currently studying in the 2nd/ 3 rd year at diploma level, the duration of the scholarship will be reduced to 2/1 year respectively",
-    "eligibility": "1) The candidate should be from any one of the following categories: (i) Orphan (ii) Either or both parents died due to Covid-19 (iii) Wards of Armed Forces and Central Paramilitary Forces martyred in action (Shaheed)\n2) Family income from all sources should not be more than Rs. 8 Lakh per annum during the financial year of the application. A valid income certificate issued by State/UT Government is to be enclosed.\n3) The candidate should be currently studying in the AICTE Approved institutions and courses at Degree/ Diploma level in regular mode.",
-    "application_fees": "No Application Fees.",
-    "application_procedure": "To apply, click here https://scholarships.gov.in/\n1) The candidate fulfilling the eligibility conditions is required to apply online on National Scholarship Portal (NSP) after initiation of application process and notice to be published on AICTE/ NSP website.\n2) The host institution where the candidate is studying, will be required to verify the online application\n3) Department of Education (DTE) of respective State/ UT will verify these applications as second level of scrutiny.\nCheck the notification here https://www.aicte-india.org/sites/default/files/Swanath_Notification.pdf\n  https://www.aicte-india.org/sites/default/files/stdc/AICTE%20SWANATH%20SCHEME%20GUIDELINES.pdf",
-    "selection_process": "CRITERIA OF SELECTION:\n(i) For Degree Level: The selection of candidate will be carried out solely on the basis of merit of qualifying examination to pursue the Degree course from any of the AICTE approved institutions i.e. on the basis of percentage of marks obtained in the 10+2/ equivalent examination. Method of Resolving ties (For Degree Level): The procedure to be adopted for breaking ties (similar percentiles) shall be as under: -\nA) Percentage of Marks in 10th Examination: In case qualifying examination percentile does not break ties, then higher percentage of marks in 10th examination will be ranked higher.\nB) Age: In case 10th examination percentile does not break ties, then the candidate of elder age will be ranked higher.\nC) Annual family income: If above methods do not break ties, and then the candidate with lower annual family income will be ranked higher.\n(ii) For Diploma Level: The selection of candidate will be carried out solely on the basis of merit of qualifying examination to pursue the Diploma course from any of the AICTE approved institutions i.e. on the basis of percentage of marks obtained in the 10th / equivalent examination. Method of Resolving ties (For Diploma Level): The procedure to be adopted for breaking ties (similar percentiles) shall be as under: -\nA) Age: In case qualifying examination percentile does not break ties, then the candidate of elder age will be ranked higher.\nB) Annual family income: If above method does not break ties, and then the candidate with lower annual family income will be ranked higher.\nRESERVATION: As per Government of India (GOI) norms",
-    "other_information": "Contact\nNelson Mandela Marg,\nVasant Kunj, New Delhi-110070\nPhone: 011-26131576-78,80\nhttps://www.aicte-india.org/contact",
-    "important_dates": "",
-    "important_dates_structured": {
-      "Last date to apply": "Tue Nov 30 2021"
+    "general_information": {
+      "raw_text": "All India Council for Technical Education Vasant Kunj is inviting applications for the SWANATH SCHOLARSHIP SCHEME. The Scheme is being implemented by AICTE to provide encouragement and support to orphans, wards of parents died due to Covid-19, wards of Armed Forces and Central Paramilitary Forces martyred in action (Shaheed) to pursue education. This is an attempt to give every such child, an opportunity to study further and prepare for a successful future through education in AICTE Approved institutions and courses.\nApplications are invited once in a year through National e-Scholarship Portal of the Government of India.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
     },
-    "deadline_extracted": "Tue Nov 30 2021",
+    "awards": {
+      "raw_text": "NUMBER OF SCHOLARSHIPS: A maximum of 2000 scholarships (1000 for Degree Students and 1000 for Diploma Students) will be awarded every year to eligible candidates as above.\nAMOUNT OF SCHOLARSHIP: Rs. 50,000/- per annum for every year of study i.e. maximum 4 years for first year admitted Degree students and maximum 3 years for Diploma Students as lump sum amount towards payment of college fee, purchase of computer, stationeries, books, equipment, software etc. No other additional grant will be payable in lieu of hostel charges and medical charges etc. In case student is currently studying in the 2nd/ 3 rd/ 4 th year at degree level, the duration of the scholarship will be reduced to 3/2/1 year respectively. Similarly, for students currently studying in the 2nd/ 3 rd year at diploma level, the duration of the scholarship will be reduced to 2/1 year respectively",
+      "structured_data": {
+        "description": "NUMBER OF SCHOLARSHIPS: A maximum of 2000 scholarships (1000 for Degree Students and 1000 for Diploma Students) will be awarded every year to eligible candidates as above.",
+        "amounts": {},
+        "benefits": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "eligibility": {
+      "raw_text": "1) The candidate should be from any one of the following categories: (i) Orphan (ii) Either or both parents died due to Covid-19 (iii) Wards of Armed Forces and Central Paramilitary Forces martyred in action (Shaheed)\n2) Family income from all sources should not be more than Rs. 8 Lakh per annum during the financial year of the application. A valid income certificate issued by State/UT Government is to be enclosed.\n3) The candidate should be currently studying in the AICTE Approved institutions and courses at Degree/ Diploma level in regular mode.",
+      "structured_data": {
+        "requirements": [],
+        "categories": [
+          "ST"
+        ],
+        "academic_criteria": {},
+        "institutes": []
+      },
+      "tables": [],
+      "lists": []
+    },
+    "application_fees": {
+      "raw_text": "No Application Fees.",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "application_procedure": {
+      "raw_text": "To apply, click here https://scholarships.gov.in/\n1) The candidate fulfilling the eligibility conditions is required to apply online on National Scholarship Portal (NSP) after initiation of application process and notice to be published on AICTE/ NSP website.\n2) The host institution where the candidate is studying, will be required to verify the online application\n3) Department of Education (DTE) of respective State/ UT will verify these applications as second level of scrutiny.\nCheck the notification here https://www.aicte-india.org/sites/default/files/Swanath_Notification.pdf\n  https://www.aicte-india.org/sites/default/files/stdc/AICTE%20SWANATH%20SCHEME%20GUIDELINES.pdf",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "selection_process": {
+      "raw_text": "CRITERIA OF SELECTION:\n(i) For Degree Level: The selection of candidate will be carried out solely on the basis of merit of qualifying examination to pursue the Degree course from any of the AICTE approved institutions i.e. on the basis of percentage of marks obtained in the 10+2/ equivalent examination. Method of Resolving ties (For Degree Level): The procedure to be adopted for breaking ties (similar percentiles) shall be as under: -\nA) Percentage of Marks in 10th Examination: In case qualifying examination percentile does not break ties, then higher percentage of marks in 10th examination will be ranked higher.\nB) Age: In case 10th examination percentile does not break ties, then the candidate of elder age will be ranked higher.\nC) Annual family income: If above methods do not break ties, and then the candidate with lower annual family income will be ranked higher.\n(ii) For Diploma Level: The selection of candidate will be carried out solely on the basis of merit of qualifying examination to pursue the Diploma course from any of the AICTE approved institutions i.e. on the basis of percentage of marks obtained in the 10th / equivalent examination. Method of Resolving ties (For Diploma Level): The procedure to be adopted for breaking ties (similar percentiles) shall be as under: -\nA) Age: In case qualifying examination percentile does not break ties, then the candidate of elder age will be ranked higher.\nB) Annual family income: If above method does not break ties, and then the candidate with lower annual family income will be ranked higher.\nRESERVATION: As per Government of India (GOI) norms",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "other_information": {
+      "raw_text": "Contact\nNelson Mandela Marg,\nVasant Kunj, New Delhi-110070\nPhone: 011-26131576-78,80\nhttps://www.aicte-india.org/contact",
+      "structured_data": {},
+      "tables": [],
+      "lists": []
+    },
+    "important_dates": {
+      "raw_text": "",
+      "structured_data": {},
+      "tables": [],
+      "lists": [],
+      "main_dates_table": {
+        "Last date to apply": "Tue Nov 30 2021"
+      }
+    },
     "scholarship_id": 1,
     "url": "https://assessment.jitinchawla.com/scholarships/AICTE-SWANATH-SCHOLARSHIP-SCHEME",
     "original_title": "Unknown",
     "scrape_index": 11,
-    "scraped_at": "2025-07-24T17:40:46.843781",
+    "scraped_at": "2025-07-24T18:00:41.985370",
     "scrape_status": "success"
   }
 ]
