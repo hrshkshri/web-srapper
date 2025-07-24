@@ -3,6 +3,7 @@ import os
 import tempfile
 import time
 import json
+import re
 from datetime import datetime
 
 from selenium import webdriver
@@ -62,6 +63,89 @@ def parse_table_to_structured_data(table_element):
     except Exception as e:
         logger.warning(f"Error parsing table: {e}")
         return {}
+
+
+def extract_selection_structured_data(content_wrapper):
+    """
+    Breaks down the Selection Process section into:
+      - quotas (how many students from each category)
+      - process_steps (each step in the selection pipeline)
+      - renewal_advice (bullets under "Please be advised that:")
+      - assessment_criteria (bullets under "The Assessment Criteria:")
+    """
+    text = content_wrapper.text
+    data = {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": [],
+    }
+
+    # 1) quotas
+    # e.g. "180 students from the IIMs and XLRI"
+    quota_matches = re.findall(
+        r"(\d+)\s+students\s+from\s+([^,\.]+)", text, flags=re.IGNORECASE
+    )
+    for count, category in quota_matches:
+        data["quotas"].append({"category": category.strip(), "count": int(count)})
+
+    # 2) process_steps: block between "process:" and "Please be advised that:"
+    if "process:" in text and "Please be advised that:" in text:
+        steps_block = text.split("process:")[1].split("Please be advised that:")[0]
+        lines = [line.strip() for line in steps_block.splitlines() if line.strip()]
+        data["process_steps"] = lines
+
+    # 3) renewal_advice: bullets under "Please be advised that:"
+    if (
+        "Please be advised that:" in text
+        and "The performance assessment criteria" in text
+    ):
+        advice_block = text.split("Please be advised that:")[1].split(
+            "The performance assessment criteria"
+        )[0]
+        bullets = [
+            line.strip("- ").strip()
+            for line in advice_block.splitlines()
+            if line.strip().startswith(("The", "-", "•"))
+        ]
+        data["renewal_advice"] = bullets
+
+    # 4) assessment_criteria: bullets under "The Assessment Criteria:"
+    if "The Assessment Criteria:" in text:
+        criteria_block = text.split("The Assessment Criteria:")[1]
+        bullets = [
+            line.strip("- ").strip()
+            for line in criteria_block.splitlines()
+            if line.strip().startswith(("Assessment", "At least", "A", "This"))
+        ]
+        data["assessment_criteria"] = bullets
+
+    return data
+
+
+def extract_other_information_structured_data(content_wrapper):
+    """
+    Parses the Other Information section into contact_person, designation, email.
+    """
+    lines = [l.strip() for l in content_wrapper.text.splitlines() if l.strip()]
+    # drop leading "Contact" and the "For any further queries..." line
+    while lines and ("contact" in lines[0].lower() or "for any" in lines[0].lower()):
+        lines.pop(0)
+
+    contact_person = lines[0] if len(lines) >= 1 else ""
+    # everything between person and email is designation
+    email = ""
+    if len(lines) >= 2 and "@" in lines[-1]:
+        email = lines[-1]
+        designation = " ".join(lines[1:-1]).strip()
+    else:
+        designation = " ".join(lines[1:]).strip()
+
+    return {
+        "contact_person": contact_person,
+        "designation": designation,
+        "email": email,
+    }
 
 
 def extract_section_content(section_element, section_name, driver):
@@ -181,6 +265,14 @@ def extract_section_content(section_element, section_name, driver):
             content_data["structured_data"] = extract_dates_structured_data(
                 content_wrapper
             )
+        elif section_name.lower() == "selection process":
+            content_data["structured_data"] = extract_selection_structured_data(
+                content_wrapper
+            )
+        elif section_name.lower() == "other information":
+            content_data["structured_data"] = extract_other_information_structured_data(
+                content_wrapper
+            )
 
     except Exception as e:
         logger.warning(f"Error extracting content from {section_name}: {e}")
@@ -209,8 +301,6 @@ def extract_awards_structured_data(content_wrapper):
         if not awards_data["amounts"]:
             text_content = content_wrapper.text
             # Look for patterns like "Program: Rs. X,XXX per annum"
-            import re
-
             amount_patterns = re.findall(
                 r"([^:]+):\s*Rs\.?\s*([\d,]+)\s*per\s*annum",
                 text_content,
@@ -261,8 +351,6 @@ def extract_eligibility_structured_data(content_wrapper):
                 eligibility_data["categories"].append(category.upper())
 
         # Extract ranking criteria
-        import re
-
         ranking_match = re.search(
             r"top (\d+) students", content_wrapper.text, re.IGNORECASE
         )
@@ -288,8 +376,6 @@ def extract_dates_structured_data(content_wrapper):
     except:
         # If no table, try to extract from text
         try:
-            import re
-
             text_content = content_wrapper.text
             date_patterns = re.findall(r"([^:]+):\s*([^\n]+)", text_content)
             for key, value in date_patterns:

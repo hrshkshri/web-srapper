@@ -84,13 +84,50 @@
     },
     "selection_process": {
       "raw_text": "Selection Procedure:\nThe Scholarships entail the following process:\nThe applicants: 180 students from the IIMs and XLRI, 160 students from the IITs and BITS (Pilani) and 100 students from law campuses will be evaluated on the basis of the information given in the application form.\n\nThe students' overall achievements spanning academic and co-curricular excellence will be assessed to select him/her for the next round.\nEssays written by these students will then be reviewed by a panel to shortlist candidates for the final round.\nShortlisted students will be invited for an interview which will determine the best 16 students each from - engineering and management and 8 from law who will be named Aditya Birla Scholars.\nThe interviews will be conducted by an eminent panel of luminaries and academicians. Shortlisted students should carry all supporting documents such as copies of certificates, mark sheets, etc.\n\nThe interviews will be held in Mumbai for which the shortlisted candidates will be provided accommodation, travel reimbursement and a token allowance.\nPlease be advised that:\nThe performance of the Scholars will be monitored closely for the renewal of the Scholarship every year.\nThe Deans / Directors of IIMs, XLRI, IITs, BITS (Pilani) and law campuses have agreed to administer the monies. The Scholarship amount will be sent through a cheque directly to their office.\nThe Scholarships are valid for the course, subject to ongoing performance. As the Scholarship is announced only in September and given that students would have already paid their fees, the Institute will refund the amount paid.\n\nThe performance assessment criteria for the renewal of the scholarship\nThe Aditya Birla Scholar will be assessed on qualitative and quantitative parameters to judge his / her excellence on the academic and leadership front. This assessment will help determine the continuation of the disbursement of the Scholarship amount and the honour of continuing as \"The Aditya Birla Scholar\".\n\nThe assessment will be done every year until the completion of the course. \n\nThe Assessment Criteria:\nAssessment of certain scholastic standards being met\nTo belong to the top 25% of the batch population\nAssessment of work done by the Scholar during the course of the programme\nAt least 60% of the assignments to have a rating of 7 on a 9 point scale\nAssessment of participation in a minimum of two forums of campus\nAssessment of learnings of the Scholar\nA 250-word write-up on 'Being an Aditya Birla Scholar - experience sharing'\nThis data for the performance measurement has to be submitted by the Scholar and certified by the academic Dean at the institute. The assessment will be done based on the overall performance in all areas. No single factor will be a major determinant.",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [
+          {
+            "category": "the IIMs and XLRI",
+            "count": 180
+          },
+          {
+            "category": "the IITs and BITS (Pilani) and 100 students from law campuses will be evaluated on the basis of the information given in the application form",
+            "count": 160
+          }
+        ],
+        "process_steps": [
+          "The applicants: 180 students from the IIMs and XLRI, 160 students from the IITs and BITS (Pilani) and 100 students from law campuses will be evaluated on the basis of the information given in the application form.",
+          "The students' overall achievements spanning academic and co-curricular excellence will be assessed to select him/her for the next round.",
+          "Essays written by these students will then be reviewed by a panel to shortlist candidates for the final round.",
+          "Shortlisted students will be invited for an interview which will determine the best 16 students each from - engineering and management and 8 from law who will be named Aditya Birla Scholars.",
+          "The interviews will be conducted by an eminent panel of luminaries and academicians. Shortlisted students should carry all supporting documents such as copies of certificates, mark sheets, etc.",
+          "The interviews will be held in Mumbai for which the shortlisted candidates will be provided accommodation, travel reimbursement and a token allowance."
+        ],
+        "renewal_advice": [
+          "The performance of the Scholars will be monitored closely for the renewal of the Scholarship every year.",
+          "The Deans / Directors of IIMs, XLRI, IITs, BITS (Pilani) and law campuses have agreed to administer the monies. The Scholarship amount will be sent through a cheque directly to their office.",
+          "The Scholarships are valid for the course, subject to ongoing performance. As the Scholarship is announced only in September and given that students would have already paid their fees, the Institute will refund the amount paid."
+        ],
+        "assessment_criteria": [
+          "Assessment of certain scholastic standards being met",
+          "Assessment of work done by the Scholar during the course of the programme",
+          "At least 60% of the assignments to have a rating of 7 on a 9 point scale",
+          "Assessment of participation in a minimum of two forums of campus",
+          "Assessment of learnings of the Scholar",
+          "A 250-word write-up on 'Being an Aditya Birla Scholar - experience sharing'",
+          "This data for the performance measurement has to be submitted by the Scholar and certified by the academic Dean at the institute. The assessment will be done based on the overall performance in all areas. No single factor will be a major determinant."
+        ]
+      },
       "tables": [],
       "lists": []
     },
     "other_information": {
       "raw_text": "Contact\nFor any further queries, please connect with:\n  Dr. (Mrs.) Pragnya Ram\nGroup executive President - Corporate \nCommunications & CSR\npragnya.ram@adityabirla.com",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "Dr. (Mrs.) Pragnya Ram",
+        "designation": "Group executive President - Corporate Communications & CSR",
+        "email": "pragnya.ram@adityabirla.com"
+      },
       "tables": [],
       "lists": []
     },
@@ -118,7 +155,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/Aditya-Birla-Group-Scholarship",
     "original_title": "Unknown",
     "scrape_index": 1,
-    "scraped_at": "2025-07-24T17:58:54.270057",
+    "scraped_at": "2025-07-24T18:15:24.005820",
     "scrape_status": "success"
   },
   {
@@ -211,7 +248,12 @@
     },
     "selection_process": {
       "raw_text": "There is a three step process:\nStep A: Students will be shortlisted based on the eligibility criteria.\nStep B: Eligible students will take an online test.\nStep C: Shortlisted students from Step B shall appear for a personal interview.\nList of Participating Institutes\nEngineering Institutes\nIIT - Delhi\nIIT - Kanpur\nIIT - Roorkee\nIIT BHU - Varanasi\nNIT - Allahabad\nMNIT - Jaipur\nNIT - Kurukshetra\nBITS - Pilani\nIIT - Mumbai\nNIT - Nagpur\nSVNIT – Surat\nNIT - Durgapur\nIIT - Guwahati\nIIT - Kharagpur\nISM - Dhanbad\nNIT - Jamshedpur\nNIT - Rourkela\nOPJIT-Raigarh\nNIT - Raipur\nIIT - Chennai\nNIT - Suratkal\nNIT - Trichy\nNIT - Warangal\nDelhi College of Engineering\nManagement Institutes\nFMS - Delhi\nMDI - Gurgaon\nJindal Global Business School\nIIM - Lucknow\nIIM - Ahmedabad\nIIM - Indore\nXLRI - Jamshedpur\nSP Jain Institute of Management & Research\nIIM - Bangalore\nIIM - Calcutta\nIIM Kozhikode\nIIM - Ranchi\nIIM - Raipur\nIIM - Rohtak\nJBIMS - Mumbai\nIIFT- Delhi",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": [
         {
@@ -279,7 +321,11 @@
     },
     "other_information": {
       "raw_text": "Contact:\nHelp Desk details:\nMobile No : +91 9971676289\nE-mail : opjems.helpdesk@jindalsaw.com",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "Help Desk details:",
+        "designation": "Mobile No : +91 9971676289",
+        "email": "E-mail : opjems.helpdesk@jindalsaw.com"
+      },
       "tables": [],
       "lists": []
     },
@@ -301,7 +347,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/OP-JINDAL-ENGINEER-MANAGEMENT-SCHOLARSHIPS",
     "original_title": "Unknown",
     "scrape_index": 2,
-    "scraped_at": "2025-07-24T17:59:04.966884",
+    "scraped_at": "2025-07-24T18:15:34.671094",
     "scrape_status": "success"
   },
   {
@@ -365,13 +411,22 @@
     },
     "selection_process": {
       "raw_text": "(i) Fresh - The number of scholarship has been fixed State/UT-wise on the basis of Community-wise minority population of the States/UTs as per Census 2001 (2017-18) & 2011 (2018-20). Within the State-wise allocations, the applications from Listed Institutions will be exhausted first in merit list. In case number of such students is more than the State/Community-wise quota, normal merit list criteria shall be followed. Other verified applicant/student will be selected in the merit list, thereafter, on merit basis i.e. Percentage/marks of last academic course/board (higher secondary / graduation) exam. In case of similar marks, income will be taken as deciding factor.\n(ii) Renewal – There is no merit list generation for renewal cases. Renewal applicant will get the scholarship if one has obtained 50% in his/her previous year’s examinations (or in each semester/trimester of previous year’s) their application is approved by State Governments/UTs.\nThe monitoring of the financial and physical performance of the scheme will be evaluated by assigning evaluation/impact studies to reputed institutions/agencies by the Ministry of Minority Affairs, Government of India.",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": []
     },
     "other_information": {
       "raw_text": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540\nhttps://scholarships.gov.in/home",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "0120 - 6619540",
+        "designation": "https://scholarships.gov.in/home",
+        "email": ""
+      },
       "tables": [],
       "lists": []
     },
@@ -388,7 +443,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/Merit-Cum-Means-Scholarship-For-Professional-and-Technical-Courses-CS",
     "original_title": "Unknown",
     "scrape_index": 3,
-    "scraped_at": "2025-07-24T17:59:10.573738",
+    "scraped_at": "2025-07-24T18:15:40.395949",
     "scrape_status": "success"
   },
   {
@@ -437,13 +492,22 @@
     },
     "selection_process": {
       "raw_text": "Applications will be evaluated.",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": []
     },
     "other_information": {
       "raw_text": "Contact Person\nRajdeep Mukherjee\nContact Email-ID\nFor grievance related queries : vidyasaarathi@nsdl.co.in",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "Rajdeep Mukherjee",
+        "designation": "Contact Email-ID",
+        "email": "For grievance related queries : vidyasaarathi@nsdl.co.in"
+      },
       "tables": [],
       "lists": []
     },
@@ -460,7 +524,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/Tata-Realty-Scholarship-for-Girls-BE-BTech",
     "original_title": "Unknown",
     "scrape_index": 4,
-    "scraped_at": "2025-07-24T17:59:25.433174",
+    "scraped_at": "2025-07-24T18:15:55.306116",
     "scrape_status": "success"
   },
   {
@@ -547,7 +611,12 @@
     },
     "selection_process": {
       "raw_text": "The selection of scholars for the ‘SBIF Asha Scholarship Program 2023’ will be made on the basis of their academic merit and financial background. It involves a multi-stage process as detailed below –\nInitial shortlisting of applications based on their academic merit and financial background\nTelephonic interview of shortlisted candidates followed by document verification for final selection",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": [
         {
@@ -562,7 +631,11 @@
     },
     "other_information": {
       "raw_text": "In case of any queries, please reach out to:\n011-430-92248 (Ext: 303) (Monday to Friday - 10:00AM to 6PM)\nEmail Id:- sbiashascholarship@buddy4study.com",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "In case of any queries, please reach out to:",
+        "designation": "011-430-92248 (Ext: 303) (Monday to Friday - 10:00AM to 6PM)",
+        "email": "Email Id:- sbiashascholarship@buddy4study.com"
+      },
       "tables": [],
       "lists": []
     },
@@ -579,7 +652,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/sbif-asha",
     "original_title": "Unknown",
     "scrape_index": 5,
-    "scraped_at": "2025-07-24T17:59:31.189947",
+    "scraped_at": "2025-07-24T18:16:01.141755",
     "scrape_status": "success"
   },
   {
@@ -648,7 +721,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/dst-inspire-she",
     "original_title": "Unknown",
     "scrape_index": 6,
-    "scraped_at": "2025-07-24T17:59:41.327095",
+    "scraped_at": "2025-07-24T18:16:11.251133",
     "scrape_status": "success"
   },
   {
@@ -670,7 +743,7 @@
       "lists": []
     },
     "eligibility": {
-      "raw_text": "Applicants will be eligible to receive scholarships if they meet the defined eligibility criteria mentioned in these Rules and by following the procedures provided herein.\n1. The scholarship is available for the student(s) who have graduated from any JNV (10th or 12th-grade pass), run by the Navodaya Vidyalaya Samiti, an autonomous organization under the Ministry of Human Resource Development, Government of India.\n2. Currently pursuing a full-term BE/B. Tech/Dual Degree (B.Tech +M.Tech) course (“Degree Course”) in an Indian Institute of Technology (IIT) or a National Institute of Technology (NIT) in India as mentioned in the list of Institutes available on the Samsung India Star Scholar website (hereinafter ”Institute”). Any other courses like B.ARCH/BSC/MSC etc. are not covered under this Program.\n3. Duration of the scholarship will be for one (01) academic year, extendable to subsequent three and Four (03/04) years for B.E./B. Tech. Degree and Dual Degree courses respectively based on the fulfillment of eligibility criteria and selection approval by Samsung.\n4. Applicants in the first year of the scholarship will be selected on the basis of their all India rank which is the common rank list (CRL) in the Joint Entrance Examination (JEE Main).\n5. Subsequent to 1st year, scholarship to Applicants from 2nd to 4th year or 2nd to 5 th year (as applicable) shall be available ifa. The Applicants have received the Scholarship for all preceding applicable years and; b. The Applicants have an SGPA or CPGA grade rating of 5 or above for immediate previous two (02) semesters\n6. Applicants selected for Scholarship under the Program shall not avail any other financial assistance or scholarship from any Institute, Government or Non-Government source, during their pursuance of the Degree Course. Applicants receiving fee waivers from the Institute based on socio-economic criteria laid down by the Institute are eligible to apply, provided that the waiver is reflected in the official fee structure of the Institute. Such applicants must declare the same in the application form and not claim the amount which is waived off as per the fee structure of the Institute applicable to them.\n7. All Applicants must be in good standing with the Institute to receive the Scholarship support.\n8. Applicants who have not completed Eighteen years (18) of age at the time of application must have their parent(s)’ / legal guardian(s)’, countersign the Application Form. In the event that there is a constraint of meeting the submission deadline, parent(s) / legal guardian(s) shall submit a declaration in original and in the format, as prescribed by Samsung, within 10 days of the submitted form. In case, the Applicant fails to submit the declaration by the parent/legal guardian, Samsung reserves the right to cancel the application of the Applicant.\n9. If an Applicant fails to receive a scholarship in the current year, he/she will be ineligible to receive future Scholarships.",
+      "raw_text": "Applicants will be eligible to receive scholarships if they meet the defined eligibility criteria mentioned in these Rules and by following the procedures provided herein.\n1. The scholarship is available for the student(s) who have graduated from any JNV (10th or 12th-grade pass), run by the Navodaya Vidyalaya Samiti, an autonomous organization under the Ministry of Human Resource Development, Government of India.\n2. Currently pursuing a full-term BE/B. Tech/Dual Degree (B.Tech +M.Tech) course (“Degree Course”) in an Indian Institute of Technology (IIT) or a National Institute of Technology (NIT) in India as mentioned in the list of Institutes available on the Samsung India Star Scholar website (hereinafter ”Institute”). Any other courses like B.ARCH/BSC/MSC etc. are not covered under this Program.\n3. Duration of the scholarship will be for one (01) academic year, extendable to subsequent three and Four (03/04) years for B.E./B. Tech. Degree and Dual Degree courses respectively based on the fulfillment of eligibility criteria and selection approval by Samsung.",
       "structured_data": {
         "requirements": [],
         "categories": [
@@ -716,13 +789,22 @@
     },
     "selection_process": {
       "raw_text": "Samsung Selection Committee will be evaluating the applications. Committeemay, at its sole discretion, refuse to accept or cancel a nomination for a Scholarship if an actual or perceived conflict of interest exists.\nSelection/rejection of the applicant for the Star Scholarship: All candidates will be informed on their selection/rejection individually through email and/or phone call/SMS before 31st March 2021.",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": []
     },
     "other_information": {
       "raw_text": "Contact\nApplicants are requested to ensure that any communication related to Star Scholar program is done only on official communication email id: http://star.scholar@samsung.com",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "Applicants are requested to ensure that any communication related to Star Scholar program is done only on official communication email id: http://star.scholar@samsung.com",
+        "designation": "",
+        "email": ""
+      },
       "tables": [],
       "lists": []
     },
@@ -741,7 +823,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/Samsung-Star-Scholar",
     "original_title": "Unknown",
     "scrape_index": 7,
-    "scraped_at": "2025-07-24T18:00:00.884225",
+    "scraped_at": "2025-07-24T18:16:30.858434",
     "scrape_status": "success"
   },
   {
@@ -816,13 +898,22 @@
     },
     "selection_process": {
       "raw_text": "The selection will be a four -step process:\nStep 1: Filling an online application form with basic details and upload mandatory documents such as transcripts, household income proof and disability certificate (if applicable).\nStep 2: Students will be invited to complete a mandatory online aptitude test.\nStep 3: Document verification and evaluation of shortlisted candidates\nStep 4: Final Selection",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": []
     },
     "other_information": {
       "raw_text": "For any additional questions\n\nPlease text “hi” on WhatsApp to 7977 100 100\nEmail us at RF.UGScholarships@reliancefoundation.org",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "Please text “hi” on WhatsApp to 7977 100 100",
+        "designation": "",
+        "email": "Email us at RF.UGScholarships@reliancefoundation.org"
+      },
       "tables": [],
       "lists": []
     },
@@ -839,7 +930,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/reliance-foundation-scholarships-ug",
     "original_title": "Unknown",
     "scrape_index": 8,
-    "scraped_at": "2025-07-24T18:00:11.160682",
+    "scraped_at": "2025-07-24T18:16:41.224725",
     "scrape_status": "success"
   },
   {
@@ -887,13 +978,22 @@
     },
     "selection_process": {
       "raw_text": "Applications will be evaluated.\nAfter selection, the awardee will be paid scholarship through DBT mode on an annual basis.",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": []
     },
     "other_information": {
       "raw_text": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "0120 - 6619540",
+        "designation": "",
+        "email": ""
+      },
       "tables": [],
       "lists": []
     },
@@ -911,7 +1011,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students-for-Technical-Education",
     "original_title": "Unknown",
     "scrape_index": 9,
-    "scraped_at": "2025-07-24T18:00:21.509693",
+    "scraped_at": "2025-07-24T18:16:51.952025",
     "scrape_status": "success"
   },
   {
@@ -959,13 +1059,22 @@
     },
     "selection_process": {
       "raw_text": "The selection of candidate will be made on merit on the basis of qualifying examination to peruse the respective Technical Degree/Diploma course from any of the AICTE approved institution.",
-      "structured_data": {},
+      "structured_data": {
+        "quotas": [],
+        "process_steps": [],
+        "renewal_advice": [],
+        "assessment_criteria": []
+      },
       "tables": [],
       "lists": []
     },
     "other_information": {
       "raw_text": "Contact\nCandidates can contact the Help Desk for resolution of the technical problems\n 0120 - 6619540\nhttps://scholarships.gov.in/",
-      "structured_data": {},
+      "structured_data": {
+        "contact_person": "0120 - 6619540",
+        "designation": "https://scholarships.gov.in/",
+        "email": ""
+      },
       "tables": [],
       "lists": []
     },
@@ -982,7 +1091,7 @@
     "url": "https://assessment.jitinchawla.com/scholarships/AICTE-Saksham-Scholarship-for-differently-abled-students",
     "original_title": "Unknown",
     "scrape_index": 10,
-    "scraped_at": "2025-07-24T18:00:31.788958",
+    "scraped_at": "2025-07-24T18:17:02.099643",
     "scrape_status": "success"
   }
 ]
