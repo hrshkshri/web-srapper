@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 
 # ==== configure your file paths here ====
-INPUT = Path("../Courses/clean_courses_output.json")
+INPUT = Path("clean_courses_output.json")
 OUTPUT = Path("url_course.json")
 # ========================================
 

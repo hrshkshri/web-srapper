@@ -89,22 +89,30 @@ def main():
         with open(OUTPUT, "w", encoding="utf-8") as out:
             for idx, card in enumerate(cards, start=1):
                 logger.info(f"🔎 Scraping card {idx}/{total}")
-                # scroll into view
                 driver.execute_script(
                     "arguments[0].scrollIntoView({block:'center'});", card
                 )
                 time.sleep(0.2)
 
-                # extract name
+                # — Short Name
                 try:
                     name = card.find_element(
                         By.CSS_SELECTOR, "div[class*='ExamComponent_mainText']"
                     ).text.strip()
                 except:
                     name = ""
-                logger.info(f"  • Name: {name}")
+                logger.info(f"  • Short name: {name}")
 
-                # extract type of exam (e.g., "State Exam")
+                # — Full Name (description)
+                try:
+                    full_name = card.find_element(
+                        By.CSS_SELECTOR, "div[class*='ExamComponent_locationText']"
+                    ).text.strip()
+                except:
+                    full_name = ""
+                logger.info(f"  • Full name: {full_name}")
+
+                # — Exam Type
                 try:
                     exam_type = card.find_element(
                         By.CSS_SELECTOR, "div[class*='ExamComponent_colTypeDiv']"
@@ -112,7 +120,7 @@ def main():
                 except:
                     exam_type = ""
 
-                # extract total_exams
+                # — Total Exams
                 try:
                     total_exams = card.find_element(
                         By.CSS_SELECTOR, "div[class*='ExamComponent_noOfExamsDiv'] span"
@@ -121,49 +129,62 @@ def main():
                     total_exams = ""
                 logger.info(f"  • Total exams: {total_exams}")
 
-                # extract courses
+                # — Courses
                 courses = [
                     c.text.strip()
                     for c in card.find_elements(
                         By.CSS_SELECTOR, "div[class*='ExamComponent_course']"
                     )
                 ]
-
-                # extract Last Application Date (Late Fee)
-                try:
-                    last_app_section = card.find_element(
-                        By.XPATH,
-                        ".//div[contains(@class, 'ExamComponent_approveDiv__jMwTe')][.//div[contains(text(), 'Last Application Date (Late Fee)')]]",
-                    )
-                    last_app_name = last_app_section.find_element(
-                        By.CSS_SELECTOR, "div[class*='examName']"
-                    ).text.strip()
-                    last_app_date = last_app_section.find_element(
-                        By.CSS_SELECTOR, "div[class*='dateDiv']"
-                    ).text.strip()
-                    last_app_status = last_app_section.find_element(
-                        By.CSS_SELECTOR, "div[class*='statusDiv']"
-                    ).text.strip()
-                except:
-                    last_app_name = last_app_date = last_app_status = ""
-
-                # extract Exam Date
-                try:
-                    exam_date_section = card.find_element(
-                        By.XPATH,
-                        ".//div[contains(@class, 'ExamComponent_approveDiv__jMwTe')][.//div[contains(text(), 'Exam Date')]]",
-                    )
-                    exam_date = exam_date_section.find_element(
-                        By.CSS_SELECTOR, "div[class*='dateDiv']"
-                    ).text.strip()
-                except:
-                    exam_date = ""
-
                 logger.info(f"  • Courses: {courses}")
 
-                # write JSON line
+                # — Last Application & Exam Date sections
+                last_app_name = last_app_date = last_app_status = ""
+                exam_date = ""
+
+                sections = card.find_elements(
+                    By.CSS_SELECTOR, "div[class*='ExamComponent_approveDiv__']"
+                )
+                for sec in sections:
+                    try:
+                        head = sec.find_element(
+                            By.CSS_SELECTOR, "div[class*='ExamComponent_headDiv']"
+                        ).text.strip()
+                    except:
+                        continue
+
+                    if "Last Application Date" in head:
+                        try:
+                            last_app_name = sec.find_element(
+                                By.CSS_SELECTOR, "div[class*='ExamComponent_examName']"
+                            ).text.strip()
+                        except:
+                            last_app_name = ""
+                        try:
+                            last_app_date = sec.find_element(
+                                By.CSS_SELECTOR, "div[class*='ExamComponent_dateDiv']"
+                            ).text.strip()
+                        except:
+                            last_app_date = ""
+                        try:
+                            last_app_status = sec.find_element(
+                                By.CSS_SELECTOR, "div[class*='ExamComponent_statusDiv']"
+                            ).text.strip()
+                        except:
+                            last_app_status = ""
+
+                    elif "Exam Date" in head:
+                        try:
+                            exam_date = sec.find_element(
+                                By.CSS_SELECTOR, "div[class*='ExamComponent_dateDiv']"
+                            ).text.strip()
+                        except:
+                            exam_date = ""
+
+                # — Write JSON line
                 record = {
-                    "name": name,
+                    "short_name": name,
+                    "full_name": full_name,
                     "exam_type": exam_type,
                     "total_exams": total_exams,
                     "courses": courses,
@@ -174,7 +195,6 @@ def main():
                     },
                     "exam_date": exam_date,
                 }
-
                 out.write(json.dumps(record, ensure_ascii=False) + "\n")
                 logger.info("  ✓ Record written")
 
