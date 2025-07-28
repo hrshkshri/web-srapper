@@ -231,8 +231,8 @@ def main():
     OUTPUT_FILE.touch()
 
     opts = Options()
-    # opts.add_argument("--headless=new")
-    opts.add_argument("--start-maximized")
+    opts.add_argument("--headless=new")
+    # opts.add_argument("--start-maximized")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--disable-dev-shm-usage")
